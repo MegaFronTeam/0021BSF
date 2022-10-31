@@ -522,3 +522,8 @@ iframe {
 	cursor: pointer;
 }
 
+.row {
+	@include media-breakpoint-up(md) {
+		--bs-gutter-x: #{rem(30)};
+	}
+}
