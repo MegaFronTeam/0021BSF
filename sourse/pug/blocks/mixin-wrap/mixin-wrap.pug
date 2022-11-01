@@ -46,11 +46,17 @@ mixin page-head(t,...items)
 
 			h1= t
 
-mixin btnPrimary(text)
-	+b.defaultBtn.btn(href="#")
-		!= text
-		+e.icon
-			+icon('arrow-right')
+mixin btnPrimary(text, button)
+	if button
+		+b.BUTTON.defaultBtn.btn(type="submit")
+			!= text
+			+e.icon
+				+icon('arrow-right')
+	else
+		+b.defaultBtn.btn(href="#")
+			!= text
+			+e.icon
+				+icon('arrow-right')
 
 mixin logo()
 	+b.logo(href="/")

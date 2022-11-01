@@ -1,27 +1,125 @@
 .footer {
-		
 	margin-top: auto;
-// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	padding-top: 0;
+	padding-bottom: 0;
 	// --sTPB: #{rem()};
 	&__row{
-		// --bs-gutter-x: #{rem()};
-		--bs-gutter-y: var(--bs-gutter-x);
-
+		// --bs-gutter-x: #{rem(106)};
+		--bs-gutter-y: 15px;
+		@include media-breakpoint-up(xxl) {
+			--bs-gutter-x: #{rem(106)};
+		}
+		position: relative;
+		align-items: center;
+		padding-top: 40px;
+		margin-bottom: 40px;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 200vw;
+			height: 1px;
+			background-color: $border-color;
+			left: -50vw;
+			top: var(--bs-gutter-y);
+			@include media-breakpoint-up(sm) {
+				left: calc(var(--bs-gutter-x) / 2);
+				width: calc(100% - var(--bs-gutter-x));
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			text-align: center;
+		}
+		@include media-breakpoint-up(lg) {
+			padding-top: rem(100);
+			margin-bottom: rem(100);
+		}
 	}
-	.section-title{
-		
+	.logo {
+		display: block;
+		@include media-breakpoint-up(sm) {
+			max-width: max-content;
+		}
+		// margin-right: rem(76);
+		img {
+			max-width: 60px;
+		}
+		p {
+			font-size: 10px;
+			color: $body-color;
+		}
 	}
-	&__col{
-
+	&__text {
+		display: block;
+		&:not(:hover) {
+			color: $body-color;
+		}
+		p {
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			font-size: 10px;
+			font-weight: 600;
+			color: $gray-600;
+			margin-bottom: 0;
+		}
 	}
-	&__item{
-
+	&__link {
+		a {
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: 4px;
+			&:not(:hover) {
+				color: $body-color;
+			}
+			@include media-breakpoint-up(xxl) {
+				font-size: rem(26);
+			}
+		}
+		p {
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			font-size: 10px;
+			font-weight: 600;
+			color: $gray-600;
+			margin-bottom: 0;
+		}
 	}
-	&__slide{
-		height: auto;
+	.soc {
+		--bs-gutter-x: #{rem(15)};
+		@include media-breakpoint-down(sm) {
+			justify-content: center;
+		}
 	}
-// 
+	&__down {
+		background-color: $body-color;
+		color: $gray-600;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		font-size: 16px;
+		@include media-breakpoint-up(lg) {
+			padding-top: rem(45);
+			padding-bottom: rem(45);
+		}
+	}
+	&__down-row {
+		--bs-gutter-y: 15px;
+	}
+	&__rights {
+		text-align: center;
+		@include media-breakpoint-down(sm) {
+			max-width: 250px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	&__info {
+		color: $gray-600;
+		display: block;
+		text-align: center;
+		&:hover {
+			color: #fff
+		}
+	}
 @include media-breakpoint-up(xl) {}
 
 @include media-breakpoint-up(lg) {}

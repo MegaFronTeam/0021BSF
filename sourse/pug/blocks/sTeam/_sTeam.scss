@@ -116,6 +116,10 @@
 		font-weight: 700;
 		color: $cyan;
 		padding-top: rem(10);
+		&:hover {
+			color: $cyan;
+			opacity: .7;
+		}
 		@include media-breakpoint-up(lg) {
 			display: none;
 		}

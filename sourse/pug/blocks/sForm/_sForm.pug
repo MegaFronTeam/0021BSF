@@ -2,14 +2,36 @@ mixin sForm()
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sForm
-				
 			+e.row.row
-			+form-wrap
-				+input("asdasd",'').is-valid
-				+input("2f3rf",'').is-invalid
-				+input("asd",'')
-				+input("Комментарий (рекомендуем указать название компании, возможный чек или другую, которая поможет провести разговор более эффективно)",'textarea')
-				+input('asd', 'select')
+				.col
+					.section-title
+						h2 Связаться с нами
+						p Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в ближайшее время для утонения деталей
+				.col-lg-8
+					+form-wrap
+						+e.row.row
+							.col-lg-6
+								+input("Ваше имя",'text')
+							.col-lg-6
+								+input("Ваш email",'email').is-invalid
+							.col-lg-6
+								+input("Ваш телефон",'tel')
+							.col-lg-6
+								//- +input("Интересующий продукт",'select')
+								+e.input-wrap.form-group
+									+e.SELECT.input--default.form-select( name= 'select')
+										option(value= 'Интересующий продукт') Интересующий продукт
+										- for (var x = 1; x < 5; x++)
+											option(value=` placeholder ${x}`)= `placeholder ${x}`
+									//- +e.SPAN.underline
+							.col-lg-12
+								//- +input("Комментарий (рекомендуем указать название компании, возможный чек или другую, которая поможет провести разговор более эффективно)",'textarea')
+								+e.input-wrap.form-group
+									+e.TEXTAREA.input.form-control(name='select' placeholder="Комментарий (рекомендуем указать название компании, возможный чек или другую, которая поможет провести разговор более эффективно)")
+									+e.SPAN.underline
+						+e.inner-row.row
+							.col-lg.order-2.order-lg-1
+								+policy
+							.col-lg-auto.order-1.order-lg-2
+								+btnPrimary('отправить заявку', true)
 	// end sForm

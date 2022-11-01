@@ -47,10 +47,19 @@
 			padding-right: rem(20);
 		}
 		&.is-invalid {
-			
+			& ~ .form-wrap__underline {
+				&:after {
+					height: 2px;
+					background-color: $danger;
+					z-index: 3;
+				}
+			}
 		}
 		&.is-valid {
 			
+		}
+		&:focus {
+			box-shadow: none;
 		}
 	}
 	&__btn {
@@ -144,6 +153,16 @@
  		width: 100%;
  		display: block;
  	}
+	&__policy {
+		font-size: 12px;
+		line-height: 1.67em;
+	}
+	textarea {
+		min-height: rem(130);
+		@include media-breakpoint-up(lg) {
+			min-height: rem(75);
+		}
+	}
 }
 
 

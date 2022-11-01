@@ -315,6 +315,7 @@ function eventHandler() {
 	JSCCommon.inputMask();
 	// JSCCommon.sendForm();
 	JSCCommon.heightwindow();
+	JSCCommon.getCurrentYear('.footer__rights span');
 	JSCCommon.makeDDGroup();
 	// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 	// JSCCommon.animateScroll();
@@ -408,13 +409,19 @@ function eventHandler() {
 	});
 
 	let colTexts = document.querySelectorAll('.sTeam__col-text');
-	for (let colText of colTexts) {
-		colText.querySelector('.sTeam__showMore').addEventListener('click', function(e) {
-			e.preventDefault();
-			$(this).hide();
-			$(colText.querySelector('.dots')).hide();
-			$(colText.querySelector('.moreText')).slideDown();
-		});
+	console.log();
+	if (colTexts) {
+		for (let colText of colTexts) {
+			let colTextBtn = colText.querySelector('.sTeam__showMore');
+			if (colTextBtn) {
+				colTextBtn.addEventListener('click', function(e) {
+					e.preventDefault();
+					$(this).hide();
+					$(colText.querySelector('.dots')).hide();
+					$(colText.querySelector('.moreText')).slideDown();
+				});
+			}
+		}
 	}
 };
 if (document.readyState !== 'loading') {
