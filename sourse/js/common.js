@@ -61,7 +61,8 @@ const JSCCommon = {
 			if (!toggleEv) return;
 			toggle.forEach(el => el.classList.toggle("on"));
 			menu.classList.toggle("active");
-			[document.body, document.querySelector('html')].forEach(el => el.classList.toggle("fixed"));
+			[document.querySelector('.top-nav')].forEach(el => el.classList.toggle("active"));
+			[document.body].forEach(el => el.classList.toggle("fixed"));
 		}, { passive: true });
 	},
 	closeMenu() {
@@ -71,7 +72,8 @@ const JSCCommon = {
 		if (menu.classList.contains("active")) {
 			toggle.forEach(element => element.classList.remove("on"));
 			menu.classList.remove("active");
-			[document.body, document.querySelector('html')].forEach(el => el.classList.remove("fixed"));
+			[document.body].forEach(el => el.classList.remove("fixed"));
+			[document.querySelector('.top-nav')].forEach(el => el.classList.remove("active"));
 		}
 
 	},
@@ -390,6 +392,20 @@ function eventHandler() {
 	});
 
 	// modal window
+
+	const headerBlockSwiper = new Swiper('.headerBlock__slider--js', {
+		slidesPerView: 'auto',
+		spaceBetween: 20,
+
+		loop: true,
+		freeMode: false,
+		speed: 20000,
+		loopFillGroupWithBlank: true,
+		autoplay: {
+			delay: 0, 
+			disableOnInteraction: false,
+		}, 
+	});
 
 };
 if (document.readyState !== 'loading') {

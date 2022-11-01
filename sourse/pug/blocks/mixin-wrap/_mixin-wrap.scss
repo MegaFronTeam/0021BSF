@@ -4,19 +4,37 @@
 	@include roww(10px, m);
 	display: flex;
 	&__item{
-		text-decoration: none !important; 
+		text-decoration: none !important;
 		vertical-align: middle;
 		@include mt;
 		display: grid;
 		place-items: center;
-		&:hover{
-		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		border: 1px solid var(--color);
+		@include media-breakpoint-up(md) {
+			width: rem(50);
+			height: rem(50);
+		}
+		&:hover {
+			// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			// opacity: .6 ;
+			background-color: var(--color, #000);
+			border-color: var(--color, #000);
+			.icon {
+				color: $white;
+			}
 		}
 		
 	}
 	.icon{
-		font-size: rem(30);
+		@include mt;
+		font-size: 24px;
+		color: var(--color);
+		@include media-breakpoint-up(md) {
+			font-size: rem(30);
+		}
 	}
 
 
@@ -110,4 +128,29 @@
 .breadcrumb-item{
 	width: auto;
 	margin-right: rem(32);
+}
+
+.logo {
+	text-align: center;
+	img {
+		width: 100%;
+		max-width: rem(28);
+		@include media-breakpoint-up(lg) {
+			max-width: rem(60);
+		}
+	}
+	p {
+		@include mt;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 800;
+		margin-bottom: 0;
+		font-size: 8px;
+		line-height: 1.5em;
+		@include media-breakpoint-up(lg) {
+			line-height: 2em;
+			font-size: 10px;
+		}
+	}
 }

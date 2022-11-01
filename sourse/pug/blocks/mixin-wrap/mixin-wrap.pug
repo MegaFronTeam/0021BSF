@@ -45,3 +45,14 @@ mixin page-head(t,...items)
 			+breadcrumb('Главная',...items)
 
 			h1= t
+
+mixin btnPrimary(text)
+	+b.defaultBtn.btn(href="#")
+		!= text
+		+e.icon
+			+icon('arrow-right')
+
+mixin logo()
+	+b.logo
+		+img('img/svg/logo.svg')
+		p Capital

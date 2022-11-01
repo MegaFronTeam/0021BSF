@@ -1,10 +1,34 @@
 mixin headerBlock()
 	// start headerBlock
-	+b.headerBlock.section#headerBlock&attributes(attributes)
-		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
-			.row
-						
+	+b.headerBlock.section#headerBlock&attributes(attributes).bg-wrap
+		video.picture-bg(loop, autoplay, muted, preload)
+			source(src="video/headerBlock-video.webm", type="video/webm")
+			source(src="video/headerBlock-video.mov", type="video/mov")
+		+e.container.container
+			+e.main-row.row
+				.col-xl-7
+					+e.wrap
+						h1 Инвестиционный офис – для себя<br>и для своих
+						+e.content
+							p BSF Capital&nbsp;&mdash; это инвестиционно-банковские услуги и&nbsp;управление инвестициями с&nbsp;повышенной доходностью.
+							p Мы&nbsp;оперируем собственным капиталом, делимся своими инвестиционными возможностями и&nbsp;экспертизой с&nbsp;нашим друзьями партнерами.
+						+btnPrimary('связаться с нами')
+			+e.bottom-row.row.d-none.d-lg-flex
+				.col-auto
+					+e.link(href='#')
+						+icon('mouse')
+						| Листайте вниз
+				.col-lg-7.ms-auto
+					+e.slider--js.swiper
+						.swiper-wrapper
+							mixin slide(i)
+								+e.slide.swiper-slide
+									+e.img-wrap
+										.img-wrap-center
+											+img(`img/svg/headerBlock-img-${i}.svg`)
+							-for(let i = 0; i < 2; i++)
+								+slide(1)
+								+slide(2)
+								+slide(3)
+								+slide(4)
 	// end headerBlock

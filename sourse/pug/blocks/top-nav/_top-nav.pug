@@ -11,23 +11,41 @@ mixin mob-mnu()
 		//- request.responseType = 'json';
 		//- let dataJson = JSON.parse(json);
 	//- h1= dataJson['lala'] 
-	+b.menu-mobile--js
-		+b.toggle-menu-mobile--js
-			span
+	+b.menu-mobile--js.d-block.d-lg-none
+		//- +b.toggle-menu-mobile--js
+		//- 	span
 		+e.inner
 			+mnu()
+			+e.contacts
+				+e.link
+					a(href="tel:+74959607770") +7 (495) 960-77-70
+					p пн-пт с 9.00 до 19.00
+				+e.link
+					a(href="mailto:info@bsfcapital.ru") info@bsfcapital.ru
+					p по любым вопросам
+				+e.text(href="#")
+					+e.address Москва, ул. Арбат, д. 6/2, 119019
+					p посмотреть на карте
+				+soc
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
-			.row
-				.col.order-lg-0.order-last
+			+e.row.row
+				.col-auto.order-2.order-lg-1.ms-auto.ms-lg-0
+					+logo
+				.col-auto.col-lg.order-lg-2.d-none.d-lg-block
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
-							+menu-toggle()
+							//- +menu-toggle()
 							+mnu()
 					
-				.col-auto.d-lg-none
-					+menu-toggle()
+				.col-auto.d-lg-none.order-4.ms-auto.ms-lg-0
+					+e.menu-toggle-wrap
+						+menu-toggle()
+				.col-auto.order-1.order-lg-4
+					+e.lang
+						+img('img/svg/lang-1.svg')
+						| en
 	// end top-nav
