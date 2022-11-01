@@ -11,15 +11,15 @@
 		<link href="libs/@fancyapps/ui/fancybox.css" rel="stylesheet"/>
 		<link href="css/main.min.css" rel="stylesheet"/>
 	</head>
-	<body class="main-page">
+	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
 			<div class="menu-mobile menu-mobile--js d-block d-lg-none">
 				<div class="menu-mobile__inner">
 					<nav>
 						<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О нас</a></li>
+							<li class="menu-item" itemprop="item"><a href="#sAbout" itemprop="url">О нас</a></li>
 							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Продукты</a></li>
-							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Команда</a></li>
+							<li class="menu-item" itemprop="item"><a href="#sTeam" itemprop="url">Команда</a></li>
 							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Партнеры</a></li>
 							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">почему мы</a></li>
 							<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
@@ -60,18 +60,18 @@
 					<div class="container">
 						<div class="top-nav__row row">
 							<div class="col-auto order-2 order-lg-1 ms-auto ms-lg-0">
-								<div class="logo"><img src="img/svg/logo.svg" alt="" loading="lazy"/>
+								<a class="logo" href="/"><img src="img/svg/logo.svg" alt="" loading="lazy"/>
 									<p>Capital</p>
-								</div>
+								</a>
 							</div>
 							<div class="col-auto col-lg order-lg-2 d-none d-lg-block">
 								<div class="menu-mobile menu-mobile--js">
 									<div class="menu-mobile__inner">
 										<nav>
 											<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О нас</a></li>
+												<li class="menu-item" itemprop="item"><a href="#sAbout" itemprop="url">О нас</a></li>
 												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Продукты</a></li>
-												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Команда</a></li>
+												<li class="menu-item" itemprop="item"><a href="#sTeam" itemprop="url">Команда</a></li>
 												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Партнеры</a></li>
 												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">почему мы</a></li>
 												<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
@@ -107,7 +107,7 @@
 						<div class="headerBlock__main-row row">
 							<div class="col-xl-7">
 								<div class="headerBlock__wrap">
-									<h1>Инвестиционный офис – для себя<br>и для своих</h1>
+									<h1>Инвестиционный офис&nbsp;&mdash; для себя и&nbsp;для своих</h1>
 									<div class="headerBlock__content">
 										<p>BSF Capital&nbsp;&mdash; это инвестиционно-банковские услуги и&nbsp;управление инвестициями с&nbsp;повышенной доходностью.</p>
 										<p>Мы&nbsp;оперируем собственным капиталом, делимся своими инвестиционными возможностями и&nbsp;экспертизой с&nbsp;нашим друзьями партнерами.</p>
@@ -124,7 +124,7 @@
 						</div>
 						<div class="headerBlock__bottom-row row d-none d-lg-flex">
 							<div class="col-auto">
-								<a class="headerBlock__link" href="#">
+								<a class="headerBlock__link" href="#sAbout">
 									<svg class="icon icon-mouse ">
 										<use xlink:href="img/svg/sprite.svg#mouse"></use>
 									</svg>Листайте вниз
@@ -200,9 +200,182 @@
 								<p>Мы поддерживаем коммуникацию с широкой сетью предпринимателей, экспертов, инвестиционных фондов, корпораций и банков. Наши связи и опыт обеспечивают доступ к уникальным сделкам и финансовым решениям на лучших условиях.</p>
 							</div>
 						</div>
+						<div class="sAbout__item-row row">
+							<div class="col-sm-6 col-lg-4">
+								<div class="sAbout__item" style="--color: #219653">
+									<svg class="icon icon-flag ">
+										<use xlink:href="img/svg/sprite.svg#flag"></use>
+									</svg>
+									<p>22&nbsp;года команда BSF Capital управляет активами и&nbsp;инвестирует</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<div class="sAbout__item" style="--color: #C3363A">
+									<svg class="icon icon-bag ">
+										<use xlink:href="img/svg/sprite.svg#bag"></use>
+									</svg>
+									<p>Более 200 закрытых сделок партнерами нашей компании</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<div class="sAbout__item" style="--color: #1096C9">
+									<svg class="icon icon-graphic ">
+										<use xlink:href="img/svg/sprite.svg#graphic"></use>
+									</svg>
+									<p>Более 1&nbsp;миллиарда долларов дохода принесли своим партнерам</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 				<!-- end sAbout-->
+				<!-- start sTeam-->
+				<section class="sTeam section" id="sTeam">
+					<div class="container">
+						<div class="sTeam__row row">
+							<div class="col">
+								<h2>Команда</h2>
+							</div>
+							<div class="sTeam__col col-lg-8">
+								<div class="sTeam__inner-row row">
+									<div class="sTeam__col-img col-lg">
+										<div class="sTeam__img-wrap"><img src="img/sTeam-img-1.jpg" alt="" loading="lazy"/>
+										</div>
+										<div class="sTeam__wrap">
+											<h4 class="d-block d-lg-none">Алексей Басов</h4>
+											<div class="sTeam__place d-block d-lg-none">управляющий партнер
+											</div>
+											<div class="soc">
+												<a class="soc__item" href="#" target="_blank" style="--color: #039BE5;">
+													<svg class="icon icon-telegram ">
+														<use xlink:href="img/svg/sprite.svg#telegram"></use>
+													</svg>
+												</a>
+												<a class="soc__item" href="#" target="_blank" style="--color: #3E6AD6;">
+													<svg class="icon icon-fb ">
+														<use xlink:href="img/svg/sprite.svg#fb"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="sTeam__col-text col-lg">
+										<h4 class="d-none d-lg-block">Алексей Басов</h4>
+										<div class="sTeam__place d-none d-lg-block">управляющий партнер
+										</div>
+										<p>22&nbsp;года опыта частных и&nbsp;корпоративных инвестиций. В&nbsp;прошлом&nbsp;&mdash; основатель ряда технологических компаний, вице-президент Ростелеком и&nbsp;Mail.ru Group, управляющий партнер Finam IT&nbsp;Fund и&nbsp;Commit Capital 
+											 <span class="dots">...</span> 
+											 <span class="moreText">Fun. Занимал пост главы Фонда Фондов RVC, управляя 29&nbsp;PE&amp;VC фондам объемом более $1&nbsp;мдрд. долл. Бизнес-ангел с&nbsp;2002&nbsp;года. Более 100 выходов объемом в&nbsp;$800&nbsp;млн. через российские частные и госкомпании, международные корпорации и&nbsp;инвестиционные фонды. Заместитель председателя комитета РСПП по&nbsp;инвестполитке, член координационного совета ММВБ, член&nbsp;СД ряда институтов развития и технологических компаний. Лауреат ряда профессиональных премий и наград.</span>
+										</p>
+										<a class="sTeam__showMore" href="#">Подробнее
+										</a>
+									</div>
+								</div>
+								<div class="sTeam__inner-row row">
+									<div class="sTeam__col-img col-lg">
+										<div class="sTeam__img-wrap"><img src="img/sTeam-img-2.jpg" alt="" loading="lazy"/>
+										</div>
+										<div class="sTeam__wrap">
+											<h4 class="d-block d-lg-none">Иван Неудахин</h4>
+											<div class="sTeam__place d-block d-lg-none">венчурный партнер
+											</div>
+											<div class="soc">
+												<a class="soc__item" href="#" target="_blank" style="--color: #039BE5;">
+													<svg class="icon icon-telegram ">
+														<use xlink:href="img/svg/sprite.svg#telegram"></use>
+													</svg>
+												</a>
+												<a class="soc__item" href="#" target="_blank" style="--color: #3E6AD6;">
+													<svg class="icon icon-fb ">
+														<use xlink:href="img/svg/sprite.svg#fb"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="sTeam__col-text col-lg">
+										<h4 class="d-none d-lg-block">Иван Неудахин</h4>
+										<div class="sTeam__place d-none d-lg-block">венчурный партнер
+										</div>
+										<p>18&nbsp;лет опыта инвестиционной деятельности в&nbsp;инвестиционных банках, PE/VC фондах и&nbsp;институтах развития, а&nbsp;также стартапах. В&nbsp;прошлом&nbsp;&mdash; управляющий директор &laquo;РВК&raquo;, управляющий директор ВЭБ, советник по 
+											 <span class="dots">...</span> 
+											 <span class="moreText">инвестициям ЗГД &laquo;Ренова&raquo;, управляющий директор инвестбанка Rothschild. Более 35&nbsp;закрытых&nbsp;IB и&nbsp;PE/VС сделок по&nbsp;широкому спектру отраслей. Член Совета директоров страховой компании МАКС. Аккредитован CFA Charter.</span>
+										</p>
+										<a class="sTeam__showMore" href="#">Подробнее
+										</a>
+									</div>
+								</div>
+								<div class="sTeam__inner-row row">
+									<div class="sTeam__col-img col-lg">
+										<div class="sTeam__img-wrap"><img src="img/sTeam-img-3.jpg" alt="" loading="lazy"/>
+										</div>
+										<div class="sTeam__wrap">
+											<h4 class="d-block d-lg-none">Артем Утенов</h4>
+											<div class="sTeam__place d-block d-lg-none">Венчурный партнер
+											</div>
+											<div class="soc">
+												<a class="soc__item" href="#" target="_blank" style="--color: #039BE5;">
+													<svg class="icon icon-telegram ">
+														<use xlink:href="img/svg/sprite.svg#telegram"></use>
+													</svg>
+												</a>
+												<a class="soc__item" href="#" target="_blank" style="--color: #3E6AD6;">
+													<svg class="icon icon-fb ">
+														<use xlink:href="img/svg/sprite.svg#fb"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="sTeam__col-text col-lg">
+										<h4 class="d-none d-lg-block">Артем Утенов</h4>
+										<div class="sTeam__place d-none d-lg-block">Венчурный партнер
+										</div>
+										<p>10&nbsp;лет в&nbsp;инвестициях и&nbsp;банковской сфере. В&nbsp;прошлом&nbsp;&mdash; Директор по&nbsp;сопровождению портфеля из&nbsp;более 200 стартапов в&nbsp;РВК и&nbsp;РФПИ, инвестиционный менеджер в&nbsp;Абсолют Банке. Создал систему оценки 
+											 <span class="dots">...</span> 
+											 <span class="moreText">качества и&nbsp;стоимости венчурного инвестиционного портфеля фонда фондов, подтвержденную аудиторами большой четверки. Обеспечил более 30&nbsp;успешных аудиторских, казначейских проверок и&nbsp;Due Diligence. MBA, сертифицированный трекер и&nbsp;эксперт в&nbsp;акселерационных программах.</span>
+										</p>
+										<a class="sTeam__showMore" href="#">Подробнее
+										</a>
+									</div>
+								</div>
+								<div class="sTeam__inner-row row">
+									<div class="sTeam__col-img col-lg">
+										<div class="sTeam__img-wrap"><img src="img/sTeam-img-4.jpg" alt="" loading="lazy"/>
+										</div>
+										<div class="sTeam__wrap">
+											<h4 class="d-block d-lg-none">Юрий Усанов</h4>
+											<div class="sTeam__place d-block d-lg-none">Венчурный партнер
+											</div>
+											<div class="soc">
+												<a class="soc__item" href="#" target="_blank" style="--color: #039BE5;">
+													<svg class="icon icon-telegram ">
+														<use xlink:href="img/svg/sprite.svg#telegram"></use>
+													</svg>
+												</a>
+												<a class="soc__item" href="#" target="_blank" style="--color: #3E6AD6;">
+													<svg class="icon icon-fb ">
+														<use xlink:href="img/svg/sprite.svg#fb"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="sTeam__col-text col-lg">
+										<h4 class="d-none d-lg-block">Юрий Усанов</h4>
+										<div class="sTeam__place d-none d-lg-block">Венчурный партнер
+										</div>
+										<p>Международный управленческий опыт более 20&nbsp;лет. В&nbsp;прошлом&nbsp;&mdash; M&amp;A Freedom Finance, CEO инвестиционного бутика Swiss AMF. Сопровождал крупные сделки M&amp;A в&nbsp;Швейцарии, Австрии, Лихтенштейне. 
+												
+											 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sTeam-->
 			</main>
 			<footer class="footer section">
 				<div class="container">

@@ -1,12 +1,19 @@
 // start .sAbout
 .sAbout {
-	// --sPT: #{rem()};
+	--sPT: 60px;
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(100)};
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 
+		margin-bottom: 40px;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(100);
+		}
 	}
 	h2 {
 		margin-bottom: 20px;
@@ -16,13 +23,37 @@
 		line-height: 1.35em;
 		margin-bottom: 20px;
 		@include media-breakpoint-up(lg) {
-			margin-bottom: rem(30);
+			margin-bottom: rem(33.600);
+			padding-top: 4px;
 		}
 	}
 	p {
 		margin-bottom: 0;
+		line-height: 1.67em;
 	}
-
+	&__item-row {
+		--bs-gutter-y: 20px;
+	}
+	&__item {
+		@include mt;
+		padding: 30px;
+		border: 1px solid $gray-200;
+		height: 100%;
+		&:hover {
+			box-shadow: 0px 5px 30px rgba(31, 30, 36, 0.15);
+		}
+		@include media-breakpoint-up(lg) {
+			padding: rem(45);
+		}
+		.icon {
+			font-size: 60px;
+			color: var(--color, #000);
+			margin-bottom: 30px;
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(43.200);
+			}
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

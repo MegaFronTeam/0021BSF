@@ -6,9 +6,9 @@ $file-format: woff2;
 
 // If font from googlefont, next lines remove
 
-@include font-face ($default-font, $addr + "MazzardH/MazzardH-Regular", 400, $file-formats: $file-format);
-@include font-face ($default-font, $addr + "MazzardH/MazzardH-SemiBold", 600, $file-formats: $file-format);
-@include font-face ($default-font, $addr + "MazzardH/MazzardH-Bold", 700, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "MazzardM/MazzardM-Regular", 400, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "MazzardM/MazzardM-SemiBold", 600, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "MazzardM/MazzardM-Bold", 700, $file-formats: $file-format);
 // @include font-face ($default-font, $addr + "Roboto-Black/Roboto-Black", 900, $file-formats: $file-format);
 
 // font-weight helper:

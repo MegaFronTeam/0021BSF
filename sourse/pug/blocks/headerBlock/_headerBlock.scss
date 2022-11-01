@@ -27,6 +27,7 @@
 		margin-bottom: 20px;
 		@include media-breakpoint-up(lg) {
 			margin-bottom: rem(45);
+			max-width: 90%;
 		}
 		@include media-breakpoint-down(sm) {
 			word-break: break-all;

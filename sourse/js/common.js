@@ -407,6 +407,15 @@ function eventHandler() {
 		}, 
 	});
 
+	let colTexts = document.querySelectorAll('.sTeam__col-text');
+	for (let colText of colTexts) {
+		colText.querySelector('.sTeam__showMore').addEventListener('click', function(e) {
+			e.preventDefault();
+			$(this).hide();
+			$(colText.querySelector('.dots')).hide();
+			$(colText.querySelector('.moreText')).slideDown();
+		});
+	}
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

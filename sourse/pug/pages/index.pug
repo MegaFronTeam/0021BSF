@@ -14,10 +14,11 @@ include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/footer/_footer.pug
 
 include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sTeam/_sTeam.pug
 
 block variables
 	- let  mainPage= 'main-page' 
-	- let  bg= null
+	- let  bg= 'main.jpg'
 
 block title
 	- let  title= 'BSF Capital | Инвестиционный офис – для себя и для своих'
@@ -32,7 +33,7 @@ block pagecontent
 	main
 		+headerBlock 
 		+sAbout
-		
+		+sTeam
 	+footer()
       
 

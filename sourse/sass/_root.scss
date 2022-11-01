@@ -9,14 +9,14 @@
 		--sTPB: #{rem(40)};
 	}
 	@include media-breakpoint-up(lg) {
-		--sPT: #{rem(100)};
+		--sPT: #{rem(92.800)};
 		--sPB: #{rem(100)};
 	}
 	@include media-breakpoint-up(xl) {
 		--bs-body-font-size: #{$em-base};
 	}
-	--sPT: 60px;
-	--sPB: 60px;
+	--sPT: 30px;
+	--sPB: 30px;
 	--sTPB: #{rem(40 * .5)};
 
 
