@@ -67,7 +67,7 @@
 		a {
 			font-size: 20px;
 			font-weight: 600;
-			margin-bottom: 4px;
+			margin-bottom: 5px;
 			&:not(:hover) {
 				color: $body-color;
 			}
@@ -84,6 +84,9 @@
 			margin-bottom: 0;
 		}
 	}
+	&__address {
+		margin-bottom: rem(10);
+	}
 	.soc {
 		--bs-gutter-x: #{rem(15)};
 		@include media-breakpoint-down(sm) {
@@ -97,8 +100,8 @@
 		padding-bottom: 40px;
 		font-size: 16px;
 		@include media-breakpoint-up(lg) {
-			padding-top: rem(45);
-			padding-bottom: rem(45);
+			padding-top: rem(41.400);
+			padding-bottom: rem(43.200);
 		}
 	}
 	&__down-row {

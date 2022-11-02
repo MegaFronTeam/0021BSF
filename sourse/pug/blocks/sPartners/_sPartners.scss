@@ -2,7 +2,10 @@
 .sPartners {
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sTPB: 40px;
+	@include media-breakpoint-up(lg) {
+		--sTPB: #{rem(85)};
+	}
 	&__row{
 		--bs-gutter-x: 20px;
 		--bs-gutter-y: 20px;
@@ -10,7 +13,7 @@
 		@include media-breakpoint-up(lg) {
 			--bs-gutter-x: #{rem(30)};
 			--bs-gutter-y: #{rem(30)};
-			margin-bottom: rem(100);
+			margin-bottom: rem(105.400);
 		}
 	}
 	&__col {
