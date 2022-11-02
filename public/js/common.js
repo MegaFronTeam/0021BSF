@@ -429,10 +429,7 @@ function eventHandler() {
 		loopFillGroupWithBlank: true,
 		watchOverflow: true,
 		// centeredSlides: false,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
+		
 		
 	});
 
