@@ -50,12 +50,12 @@ mixin btnPrimary(text, button)
 	if button
 		+b.BUTTON.defaultBtn.btn(type="submit")
 			!= text
-			+e.icon
+			+e.SPAN.icon
 				+icon('arrow-right')
 	else
-		+b.defaultBtn.btn(href="#")
+		+b.defaultBtn.btn&attributes(attributes)(href=`#`)
 			!= text
-			+e.icon
+			+e.SPAN.icon
 				+icon('arrow-right')
 
 mixin logo()

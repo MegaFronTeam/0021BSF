@@ -5,7 +5,7 @@
 	--sPB: 60px;
 	// --sTPB: #{rem()};
 	@include media-breakpoint-up(lg) {
-		--sPB: #{rem(200)};
+		--sPB: #{rem(198.200)};
 	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
@@ -29,12 +29,15 @@
 		}
 	}
 	.form-wrap {
+		@include media-breakpoint-up(lg) {
+			padding-top: rem(8);
+		}
 		&__row {
 			--bs-gutter-y: 20px;
 			margin-bottom: 30px;
 			@include media-breakpoint-up(lg) {
 				--bs-gutter-y: #{rem(30)};
-				margin-bottom: rem(60);
+				margin-bottom: rem(63.600);
 			}
 		}
 		&__input {

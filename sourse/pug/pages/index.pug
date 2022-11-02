@@ -16,6 +16,7 @@ include ../blocks/sAbout/_sAbout.pug
 include ../blocks/sProducts/_sProducts.pug
 include ../blocks/sAdvantages/_sAdvantages.pug
 include ../blocks/sTeam/_sTeam.pug
+include ../blocks/sPartners/_sPartners.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -36,6 +37,7 @@ block pagecontent
 		+sProducts()
 		+sAbout
 		+sTeam
+		+sPartners
 		+sAdvantages()
 		+sForm
 	+footer()
