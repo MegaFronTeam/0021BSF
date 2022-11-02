@@ -155,3 +155,32 @@
 		}
 	}
 }
+
+.changeLang {
+	&__lang {
+		@include mt;
+		display: flex;
+		align-items: center;
+		color: #fff;
+		font-size: 10px;
+		font-weight: 800;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		width: 70px;
+		@include media-breakpoint-up(lg) {
+			justify-content: flex-end;
+			width: rem(60);
+		}
+		&:hover {
+			opacity: .7;
+		}
+		img {
+			flex: 0 0 auto;
+			margin-right: 10px;
+		}
+		&:hover {
+			color: #fff;
+			opacity: .7;
+		}
+	}
+}

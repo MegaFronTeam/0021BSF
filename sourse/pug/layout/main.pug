@@ -1,13 +1,33 @@
 include include.pug
 include js-css.pug
 include ../blocks/modal/_modal.pug
+
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/footer/_footer.pug
+
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sProducts/_sProducts.pug
+include ../blocks/sAdvantages/_sAdvantages.pug
+include ../blocks/sTeam/_sTeam.pug
+include ../blocks/sPartners/_sPartners.pug
+
+block variables
 doctype html
-html(lang="ru")
+html(lang= lan.lang)
 	head
 		meta(charset="utf-8")
 
 		block title
-			title title
+			title BSF Capital | Инвестиционный офис – для себя и для свои
 		meta(name="description", content= 'BSF Capital – это инвестиционно-банковские услуги и управление инвестициями с повышенной доходностью. Мы оперируем собственным капита')
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(property="og:title" content= 'BSF Capital | Инвестиционный офис – для себя и для своих')
@@ -17,24 +37,7 @@ html(lang="ru")
 		meta(property="og:image" content="img/og.png")
 		meta(property="og:image:width" content="1280")
 		meta(property="og:image:height" content="670")
-		//- meta(name="viewport", content="width=device-width, shrink-to-fit=no")
-		//- meta(name="viewport",  content="width=575,   maximum-scale=1 , user-scalable=0, shrink-to-fit=no")
-		//- script.
-		//- 	let viewport = document.querySelector("meta[name=viewport]");
-		//- 	var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-		//- 	if (is_safari) {
-		//- 		//- alert(navigator.userAgent);
-		//- 		function w() {
-		//- 			this.outerWidth > 575 
-		//- 				? viewport.content = "width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" 
-		//- 				:  viewport.content = "width=575,   maximum-scale=1 , user-scalable=0, shrink-to-fit=no" 
-		//- 			//- alert(this.outerWidth + ', '+  viewport.content);
-		//- 		}
-		//- 		 w();
-		//- 		window.addEventListener('resize', () => { 
-		//- 		 w();
-		//- 		}, { passive: true });
-		//- 	}
+
 		meta(name="viewport", content="width=device-width,initial-scale=1.0,  shrink-to-fit=no")
 		link(rel='apple-touch-icon' sizes='180x180' href='favicon/apple-touch-icon.png')
 		link(rel='icon' type='image/png' sizes='32x32' href='favicon/favicon-32x32.png')
@@ -45,14 +48,27 @@ html(lang="ru")
 		meta(name='theme-color' content='#ffffff')
 		<meta name="format-detection" content="telephone=no"> 
 		+allcss()
-	block variables
+	//- block variables
 	//- style.
 	//- 	.loaded_hiding {  opacity: 0; pointer-events: none;  } .loaded_hiding::before { display: none; }
 	//- body.loaded_hiding(class= mainPage) 
 	body(class=mainPage data-bg=bg)
 		.main-wrapper
-			block pagecontent
-				h3 content
+			+mob-mnu()
+				+mnu(lan.nav)
+			+header()
+				+top-nav()
+					+mnu(lan.nav)
+			main
+				+headerBlock
+				+sAbout
+				+sProducts()
+				+sTeam
+				+sPartners
+				+sAdvantages()
+				+sForm
+			+footer()
+		block pagecontent
 		
 		+modal()
 

@@ -62,3 +62,14 @@ mixin logo()
 	+b.logo(href="/")
 		+img('img/svg/logo.svg')
 		p Capital
+
+mixin changeLang(active)
+	+b.changeLang
+		if lan.lang == "ru"
+			+e.lang(href="index-eng.html")
+				+img('img/svg/lang-1.svg')
+				| en
+		else
+			+e.lang(href="index.html")
+				+img('img/svg/lang-2.svg')
+				| ru

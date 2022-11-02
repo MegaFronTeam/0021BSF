@@ -15,7 +15,8 @@ mixin mob-mnu()
 		//- +b.toggle-menu-mobile--js
 		//- 	span
 		+e.inner
-			+mnu()
+			//- +mnu()
+			block
 			+e.contacts
 				+e.link
 					a(href="tel:+74959607770") +7 (495) 960-77-70
@@ -28,7 +29,7 @@ mixin mob-mnu()
 					p посмотреть на карте
 				+soc
 	//  мобильное меню
-mixin top-nav() 
+mixin top-nav(data) 
 	// start top-nav
 	+b.top-nav.block-with-lazy
 		.container
@@ -39,13 +40,15 @@ mixin top-nav()
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
 							//- +menu-toggle()
-							+mnu()
+							//- +mnu()
+							block
 					
 				.col-auto.d-lg-none.order-4.ms-auto.ms-lg-0
 					+e.menu-toggle-wrap
 						+menu-toggle()
 				.col-auto.order-1.order-lg-4
-					+e.lang
-						+img('img/svg/lang-1.svg')
-						| en
+					+changeLang(data)
+					//- +e.lang
+					//- 	+img('img/svg/lang-1.svg')
+					//- 	| en
 	// end top-nav

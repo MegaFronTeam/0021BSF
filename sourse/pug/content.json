@@ -1,33 +1,28 @@
 {
-	"nav":[
-		{ "name":"О нас", "url":"#sAbout"},
-		{	"name":"Продукты", "url":"#"},
-		{"name":"Команда", "url":"#sTeam"},
-		{"name":"Партнеры", "url":"#"} ,
-		{"name":"почему мы", "url":"#"} ,
-		{"name":"Контакты", "url":"#"}
-	],
+	"ru": {
+		"lang": "ru",
+		"nav":[
+			{ "name":"О нас", "url":"#sAbout"},
+			{	"name":"Продукты", "url":"#sProducts"},
+			{"name":"Команда", "url":"#sTeam"},
+			{"name":"Партнеры", "url":"#sPartners"} ,
+			{"name":"почему мы", "url":"#sAdvantages"} ,
+			{"name":"Контакты", "url":"#footer"}
+		]
+	},
+	"en": {
+		"lang": "en",
+		"nav":[
+			{ "name":"О нас", "url":"#sAbout"},
+			{	"name":"Продукты", "url":"#sProducts"},
+			{"name":"Команда", "url":"#sTeam"},
+			{"name":"Партнеры", "url":"#sPartners"} ,
+			{"name":"почему мы", "url":"#sAdvantages"} ,
+			{"name":"Контакты", "url":"#footer"}
+		]
+	},
 	"social":[
 		{"name": "fb", "color": "#3E6AD6"},
 		{"name": "telegram", "color": "#039BE5"}
-	],
-	"index":{
-		"head": {
-			"title": "тест dffsdf dfsdтест 2222"
-		}
-	},
-	"items": [
-			{
-			"title": "заловок",
-			"text": "текст"
-		},
-			{
-			"title": "заловок 22",
-			"text": "текст"
-		},
-			{
-			"title": "заловок 33",
-			"text": "текст"
-			}
-		]
-	}
+	]
+}
