@@ -407,6 +407,20 @@ function eventHandler() {
 			disableOnInteraction: false,
 		}, 
 	});
+	const sAdvantagesSwiper = new Swiper('.sAdvantages__slider--js', {
+		slidesPerView: 'auto',
+		spaceBetween: 0,
+		loop: true,
+		freeMode: false,
+		loopFillGroupWithBlank: true,
+		watchOverflow: true,
+		// centeredSlides: false,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		
+	});
 
 	let colTexts = document.querySelectorAll('.sTeam__col-text');
 	console.log();
