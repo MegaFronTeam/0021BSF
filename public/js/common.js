@@ -422,14 +422,39 @@ function eventHandler() {
 		
 	});
 	const sProductsSwiper = new Swiper('.sProducts__slider--js', {
-		slidesPerView: 3,
+		slidesPerView: 'auto',
 		spaceBetween: 0,
 		// loop: true,
 		freeMode: false,
 		loopFillGroupWithBlank: true,
 		watchOverflow: true,
 		// centeredSlides: false,
-		
+		scrollbar: {
+			el: '.swiper-scrollbar',
+			draggable: true,
+			
+		},
+		breakpoints: {
+			// when window width is >= 320px
+			// 769: {
+			// 	slidesPerView: 2,
+			// 	spaceBetween: 20
+			// },
+			// when window width is >= 480px
+			// 768: {
+			// 	slidesPerView: 3,
+			// 	spaceBetween: 20
+			// },
+			// when window width is >= 640px
+			// 992: {
+			// 	slidesPerView: 3,
+			// 	spaceBetween: 20
+			// },
+			1200: {
+				slidesPerView: 3,
+				spaceBetween: 30
+			}
+		}
 		
 	});
 
