@@ -1,0 +1,123 @@
+// start .sProducts
+.sProducts {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+
+	.section-title {
+		
+	}
+	&__col {
+	}
+	&__slider {
+		overflow: visible;
+	}
+	&__slide {
+		height: auto;
+		&:nth-child(1) {
+			display: none;
+			@include media-breakpoint-up(lg) {
+				display: block;
+			}
+		}
+	}
+	&__item {
+		color: $white;
+		// display: flex;
+		// flex-direction: column;
+		// align-items: center;
+		height: 100%;
+		@include media-breakpoint-up(lg) {
+			position: relative;
+			&::before {
+				@include mt;
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				z-index: 2;
+				background: linear-gradient(180deg, rgba(31, 30, 36, 0) 0%, #1f1e24 100%);
+				overflow: hidden;
+			}
+			&:hover {
+				img {
+					transform: scale(1.1);
+				}
+				.defaultBtn {
+					transform: translateY(0);
+				}
+				.sProducts__wrapper {
+					max-height: 100%;
+				}
+			}
+		}
+		.defaultBtn {
+			@include mt;
+			position: relative;
+			margin-top: rem(30);
+			transform: translateY(120px);
+		}
+	}
+	&__wrapper {
+		@include mt(0.5s);
+		max-height: 0px;
+	}
+
+	&__item-content {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: rem(45);
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 3;
+		h4 {
+		}
+		p {
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__img-wrap {
+		@include block(411, 560);
+		background-color: $body-color;
+		overflow: hidden;
+		// @include media-breakpoint-up(lg) {
+		// 	--ratio: 329/450;
+		// }
+		img {
+			@include mt;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0.8;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sProducts
