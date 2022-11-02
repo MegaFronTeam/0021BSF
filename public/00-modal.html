@@ -18,6 +18,7 @@
 					<h1>Страница для  демонстрации модальных окон</h1>
 					<div class="row">
 												<div class="col-auto mb-2"><a class="btn btn-primary" href="#" data-src="modal-call" data-fancybox="modal">modal-call</a></div>
+												<div class="col-auto mb-2"><a class="btn btn-primary" href="#" data-src="modal-tnx" data-fancybox="modal">modal-tnx</a></div>
 					</div>
 				</div>
 			</main>
@@ -28,16 +29,42 @@
 				<div class="form-wrap">
 					<form>
 						<div class="text-center">
-							<div class="form-wrap__title form-data h3 ttu">Обратный звонок
+							<div class="form-wrap__title form-data h3">Получить консультацию
 							</div>
-							<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
+							<p class="after-headline">Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами для консультации и&nbsp;уточнения деталей</p>
 						</div>
 						<div class="form-wrap__input-wrap form-group">
-							<label><input class="form-wrap__input form-control" name="text" type="text" placeholder="Ваше Имя" required="required"/><span class="form-wrap__input-title">Ваше Имя</span><span class="form-wrap__underline"></span> 
+							<label><input class="form-wrap__input form-control" name="text" type="text" placeholder="Ваше имя" required="required"/><span class="form-wrap__input-title">Ваше имя</span><span class="form-wrap__underline"></span> 
 							</label>
 						</div>
 						<!-- +e.input-wrap-->
-						<button class="form-wrap__btn btn" type="submit"> 
+						<div class="form-wrap__input-wrap form-group">
+							<label><input class="form-wrap__input form-control" name="tel" type="tel" placeholder="Ваш телефон" required="required"/><span class="form-wrap__input-title">Ваш телефон</span><span class="form-wrap__underline"></span> 
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group">
+							<label><input class="form-wrap__input form-control" name="email" type="email" placeholder="Ваш email" required="required"/><span class="form-wrap__input-title">Ваш email</span><span class="form-wrap__underline"></span>
+							</label>
+						</div>
+						<!-- +e.input-wrap-->
+						<div class="form-wrap__input-wrap form-group">
+							<select class="form-wrap__input form-wrap__input--default form-select" name="select">
+								<option value="Интересующий продукт">Интересующий продукт</option>
+								<option value=" placeholder 1">placeholder 1</option>
+								<option value=" placeholder 2">placeholder 2</option>
+								<option value=" placeholder 3">placeholder 3</option>
+								<option value=" placeholder 4">placeholder 4</option>
+							</select>
+						</div>
+						<div class="form-wrap__input-wrap form-group"><textarea class="form-wrap__input form-control" name="select" placeholder="Комментарий"></textarea><span class="form-wrap__underline"></span>
+						</div>
+						<button class="defaultBtn btn" type="submit">отправить заявку
+							<div class="defaultBtn__icon">
+								<svg class="icon icon-arrow-right ">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
 						</button>
 						<div class="form-wrap__policy"><span class="text-secondary">Нажимая на кнопку “Отправить заявку” я подтверждаю, что ознакомился с условиями</span> <a href="#">обработки персональных данных</a>. Ваши данные конфиденциальны и не передаются третьим лицам.
 						</div>
@@ -46,6 +73,23 @@
 			</div>
 		</div>
 		<!-- #modal-call-->
+		<div id="modal-tnx" style="display: none">
+			<div class="modal-win modal-win--tnx">
+				<div class="text-center">
+					<div class="modal-win__title form-data h3">Спасибо за обращение!
+					</div>
+					<p class="after-headline">Мы&nbsp;сявжемся с&nbsp;Вами в&nbsp;ближайшее время для консультации и&nbsp;уточнения деталей</p>
+					<a class="defaultBtn btn" href="#">отправить заявку
+						<div class="defaultBtn__icon">
+							<svg class="icon icon-arrow-right ">
+								<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- #modal-tnx-->
 		<!-- end modals-->
 		<script src="libs/jquery/jquery.min.js"></script>
 		<script src="libs/@fancyapps/ui/fancybox.umd.js"> </script>

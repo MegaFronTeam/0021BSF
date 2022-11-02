@@ -1,0 +1,137 @@
+// start .sPartners
+.sPartners {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		--bs-gutter-x: 20px;
+		--bs-gutter-y: 20px;
+		margin-bottom: 60px;
+		@include media-breakpoint-up(lg) {
+			--bs-gutter-x: #{rem(30)};
+			--bs-gutter-y: #{rem(30)};
+			margin-bottom: rem(100);
+		}
+	}
+	&__col {
+		// &:nth-child(4n + 4) {
+		// 	.sPartners__content {
+		// 		@include media-breakpoint-up(lg) {
+		// 			left: unset;
+		// 			right: 0;
+		// 			transform: none;
+		// 		}
+		// 	}
+		// }
+		&:nth-child(2n) {
+			.sPartners__content {
+				@include media-breakpoint-down(sm) {
+					left: calc(-100% - (var(--bs-gutter-x) ));
+				}
+			}
+		}
+	}
+	&__item {
+		position: relative;
+		height: 100%;
+		&:hover {
+			.sPartners__content {
+				opacity: 1;
+				pointer-events: all;
+			}
+		}
+	}
+	&__wrap {
+		padding: rem(45) 0 rem(0);
+		h5 {
+			margin-bottom: 5px;
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(15);
+			}
+		}
+		&--person {
+			padding: 0;
+			text-align: center;
+		}
+	}
+	&__logo-wrap {
+		@include block(209, 60);
+		max-width: rem(209);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: rem(30);
+	}
+	&__text {
+		font-weight: 600;
+		font-size: 10px;
+		text-align: center;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: $gray-600;
+		line-height: 2em;
+	}
+	&__content {
+		@include mt;
+		position: absolute;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 30px rgba(31, 30, 36, 0.15);
+		border-radius: 15px;
+		bottom: 100%;
+		left: 0;
+		// transform: translateX(-50%);
+		width: 100%;
+		opacity: 0;
+		pointer-events: none;
+		padding: 20px;
+		@include media-breakpoint-down(sm) {
+			width: calc(200% + var(--bs-gutter-x));
+		}
+		@include media-breakpoint-up(md) {
+			width: max-content;
+			max-width: 410px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		@include media-breakpoint-up(lg) {
+			padding: rem(30);
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	&__person-row {
+		--bs-gutter-x: 20px;
+		--bs-gutter-y: 20px;
+		@include media-breakpoint-up(lg) {
+			--bs-gutter-x: #{rem(30)};
+			--bs-gutter-y: #{rem(45)};
+		}
+	}
+	&__person-img {
+		@include block(140, 140);
+		overflow: hidden;
+		border-radius: 15px;
+		max-width: rem(140);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(30);
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sPartners

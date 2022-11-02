@@ -53,7 +53,7 @@ mixin btnPrimary(text, button)
 			+e.icon
 				+icon('arrow-right')
 	else
-		+b.defaultBtn.btn(href="#")
+		+b.defaultBtn.btn&attributes(attributes)(href=`#`)
 			!= text
 			+e.icon
 				+icon('arrow-right')

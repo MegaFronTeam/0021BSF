@@ -13,16 +13,16 @@
 		// 	background-color: #fff;
 		// 	width: 100%;
 		// }
-		&::before {
-			content: "";
-			position: absolute;
-			left: 1px;
-			top: 1px;
-			width: calc(100% - 2px);
-			height: calc(var(--sp-y) * 1.375);
-			background-color: $white;
-			pointer-events: none;
-		}
+		// &::before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	left: 1px;
+		// 	top: 1px;
+		// 	width: calc(100% - 2px);
+		// 	height: calc(var(--sp-y) * 1.375);
+		// 	background-color: $white;
+		// 	pointer-events: none;
+		// }
 	}
 	&__btn {
 	}
@@ -159,6 +159,9 @@
 	}
 	textarea {
 		min-height: rem(130);
+		&::placeholder {
+			opacity: 1 !important;
+		}
 		@include media-breakpoint-up(lg) {
 			min-height: rem(75);
 		}
