@@ -1,12 +1,12 @@
 // start .headerBlock
 .headerBlock {
-	--sPT: 60px;
-	--sPB: 60px;
+	--sPT: 0;
+	--sPB: 0;
 	background-color: $body-color;
 	// --sTPB: #{rem()}; 
 	// min-height: 100vh;
 	min-height: calc(var(--vh, 1vh) * 100);
-	
+	padding: calc(env(safe-area-inset-top, 0px) + #{rem(60)}) 0 calc(env(safe-area-inset-bottom, 0px) + #{rem(60)});
 	@include media-breakpoint-up(lg) {
 		--sPT: #{rem(140)};
 		--sPB: #{rem(47)};
@@ -16,7 +16,7 @@
 		--sPB: #{rem(80)};
 	}
 	&__container {
-		min-height: calc(100vh - var(--sPT) - var(--sPB));
+		min-height: calc(100vh - #{rem(120)});
     display: flex;
 		flex-direction: column;
 		align-items: stretch;
