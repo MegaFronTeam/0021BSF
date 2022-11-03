@@ -6,9 +6,9 @@
 	left: 0;
 	width: 100%;
 	z-index: 999;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	height: 60px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	// height: 60px;
 	@include media-breakpoint-up(lg) {
 		padding-top: rem(40);
 		padding-bottom: rem(20);
