@@ -148,7 +148,9 @@
 			overflow-x: hidden;
 			overflow-y: auto;
 			-webkit-overflow-scrolling: touch;
-			height: 100vh;
+			// height: calc(100vh - #{rem(119)} - #{rem(40)});
+			// height: calc(100vh);
+			height: 100%;
 			display: flex;
     	flex-direction: column;
 			// @include mt(.3s);

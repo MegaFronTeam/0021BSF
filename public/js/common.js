@@ -62,6 +62,7 @@ const JSCCommon = {
 			toggle.forEach(el => el.classList.toggle("on"));
 			menu.classList.toggle("active");
 			[document.querySelector('.top-nav')].forEach(el => el.classList.toggle("active"));
+			[document.querySelector('.header')].forEach(el => el.classList.toggle("active"));
 			[document.body].forEach(el => el.classList.toggle("fixed"));
 		}, { passive: true });
 	},
@@ -74,6 +75,7 @@ const JSCCommon = {
 			menu.classList.remove("active");
 			[document.body].forEach(el => el.classList.remove("fixed"));
 			[document.querySelector('.top-nav')].forEach(el => el.classList.remove("active"));
+			[document.querySelector('.header')].forEach(el => el.classList.remove("active"));
 		}
 
 	},

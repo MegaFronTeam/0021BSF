@@ -8,9 +8,9 @@ mixin modal()
 				.text-center
 					+e.title.form-data.h3 Получить консультацию
 					p.after-headline Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами для консультации и&nbsp;уточнения деталей
-				+input("Ваше имя", 'text')(required)  
+				+input("Ваше имя", 'text')
 				+input("Ваш телефон", 'tel')(required)  
-				+input("Ваш email", 'email')(required)
+				+input("Ваш email", 'email')
 				+e.input-wrap.form-group
 					+e.SELECT.input--default.form-select( name= 'select')
 						option(value='Интересующий продукт') Интересующий продукт
