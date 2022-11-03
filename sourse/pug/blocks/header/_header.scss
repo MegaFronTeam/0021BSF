@@ -20,6 +20,44 @@
 	&.active {
 		background-color: #fff;
 	}
+	&--js{
+		&.fixed-animate{
+			transition: transform .4s;
+			position: fixed;
+		}
+		&.fixed{
+			transform: translateY(-100%);
+			// padding-top: .875rem;
+			// padding-top: 0;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #fff;
+			.top-nav {
+				.logo {
+					p {
+						color: $body-color;
+					}
+				}
+				.changeLang {
+					&__lang {
+						color: $body-color;
+					}
+				}
+				.menu-item {
+					a {
+						color: $body-color;
+					}
+				}
+				.toggle-menu-mobile {
+					--color: #{$body-color};
+				}
+			}
+		}
+		&.fixed-show{
+			transform: translateY(0);
+			
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

@@ -35,7 +35,7 @@
 		// border-top: none;
 		// border-left: none;
 		// border-right: none;
-		resize: none;
+		// resize: none;
 		// font-weight: bold;
 		// &:focus {
 		// 	border-color: $primary;
@@ -168,6 +168,9 @@
 		@include media-breakpoint-up(lg) {
 			min-height: rem(75);
 		}
+	}
+	select.form-wrap__input.form-wrap__input--default {
+		color: $body-color;
 	}
 }
 

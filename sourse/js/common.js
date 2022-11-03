@@ -69,6 +69,7 @@ const JSCCommon = {
 	closeMenu() {
 		const toggle = document.querySelectorAll(".toggle-menu-mobile--js");
 		const menu = document.querySelector(".menu-mobile--js");
+		let menuItems = document.querySelectorAll(".menu-item a");
 		if (!menu) return;
 		if (menu.classList.contains("active")) {
 			toggle.forEach(element => element.classList.remove("on"));
@@ -77,7 +78,15 @@ const JSCCommon = {
 			[document.querySelector('.top-nav')].forEach(el => el.classList.remove("active"));
 			[document.querySelector('.header')].forEach(el => el.classList.remove("active"));
 		}
-
+		for (let menuItem of menuItems) {
+			menuItem.addEventListener('click', function() {
+				document.body.classList.remove('fixed');
+				menu.classList.remove('active');
+				toggle.forEach(element => element.classList.remove("on"));
+				document.querySelector('.header').classList.remove('active');
+				document.querySelector('.top-nav').classList.remove('active');
+			});
+		}
 	},
 	mobileMenu() { 
 		const menu = document.querySelector(".menu-mobile--js");
@@ -153,7 +162,7 @@ const JSCCommon = {
 		// mask for input
 		let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
 		InputTel.forEach(element => element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}"));
-		Inputmask({"mask":"+9 (999) 999-99-99", showMaskOnHover: false}).mask(InputTel);
+		Inputmask({"mask":"+9(999)999-99-99", showMaskOnHover: false}).mask(InputTel);
 	},
 	// /inputMask
 	ifie() {
@@ -315,7 +324,7 @@ function eventHandler() {
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
-	// JSCCommon.sendForm();
+	JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.getCurrentYear('.footer__rights span');
 	JSCCommon.makeDDGroup();
@@ -332,11 +341,14 @@ function eventHandler() {
 
 
 	function setFixedNav() {
-		let topNav = document.querySelector('.top-nav  ');
+		let topNav = document.querySelector('.header');
 		if (!topNav) return;
-		window.scrollY > 0
-			? topNav.classList.add('fixed')
-			: topNav.classList.remove('fixed');
+		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		// console.log(scrollTop);
+
+		scrollTop > 160 ? topNav.classList.add('fixed') : topNav.classList.remove('fixed');
+		scrollTop > 250 ? topNav.classList.add('fixed-animate') : topNav.classList.remove('fixed-animate');
+		scrollTop > 400 ? topNav.classList.add('fixed-show') : topNav.classList.remove('fixed-show');
 	}
 
 	function whenResize() {
