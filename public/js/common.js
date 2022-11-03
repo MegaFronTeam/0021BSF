@@ -199,7 +199,7 @@ const JSCCommon = {
 			}).done(function (data) {
 
 				Fancybox.close();
-				Fancybox.show([{ src: "#modal-thanks", type: "inline" }]);
+				Fancybox.show([{ src: "#modal-tnx", type: "inline" }]);
 				// window.location.replace("/thanks.html");
 				setTimeout(function () {
 					// Done Functions

@@ -1,12 +1,12 @@
 // start .headerBlock
 .headerBlock {
-	--sPT: 0;
-	--sPB: 0;
+	--sPT: #{rem(80)};
+	--sPB: #{rem(60)};
 	background-color: $body-color;
 	// --sTPB: #{rem()}; 
 	// min-height: 100vh;
 	min-height: calc(var(--vh, 1vh) * 100);
-	padding: calc(env(safe-area-inset-top, 0px) + #{rem(80)}) 0 calc(env(safe-area-inset-bottom, 0px) + #{rem(60)});
+	padding: calc(env(safe-area-inset-top, 0px) + var(--sPT)) 0 calc(env(safe-area-inset-bottom, 0px) + var(--sPB));
 	@include media-breakpoint-up(lg) {
 		--sPT: #{rem(140)};
 		--sPB: #{rem(47)};
@@ -21,6 +21,12 @@
 		flex-direction: column;
 		align-items: stretch;
 		justify-content: center;
+		@include media-breakpoint-up(lg) {
+			min-height: calc(100vh - #{rem(187)});
+		}
+		@include media-breakpoint-up(xxl) {
+			min-height: calc(100vh - #{rem(220)});
+		}
 	}
 	h1 {
 		color: #fff;
@@ -36,11 +42,13 @@
 	&__main-row {
 		@include media-breakpoint-up(lg) {
 			margin-top: auto;
+			padding-top: rem(20);
 		}
 	}
 	&__bottom-row {
 		margin-top: auto;
 		align-items: center;
+		padding-top: rem(20);
 	}
 	&__wrap {
 		position: relative;

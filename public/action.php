@@ -11,6 +11,7 @@ $mail->CharSet = 'utf-8';
 
 ///who send 
 $mail->setFrom('info@info.com','info info');
+// $mail->setFrom('janis.paberzs18@gmail.com','info info');
 
 //  $mail->addAddress('wol1414@gmail.com');
  $mail->addAddress('janis.paberzs18@gmail.com');
@@ -76,9 +77,9 @@ $mail->Body = $html;
 
 $uploaddir = __DIR__ . '/upload/';
 
-if ($_FILES['file']['tmp_name']) {    
-    $mail->addAttachment($_FILES['file']['tmp_name'],$_FILES['file']['name']);
-}
+// if ($_FILES['file']['tmp_name']) {    
+//     $mail->addAttachment($_FILES['file']['tmp_name'],$_FILES['file']['name']);
+// }
 
 // if ($_FILES['file2']['tmp_name']) {    
 //  $mail->addAttachment($_FILES['file2']['tmp_name'],$_FILES['file2']['name']);

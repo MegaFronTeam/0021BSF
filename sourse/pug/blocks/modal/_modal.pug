@@ -34,7 +34,10 @@ mixin modal()
 			.text-center
 				+e.title.form-data.h3 Спасибо за обращение!
 				p.after-headline Мы&nbsp;сявжемся с&nbsp;Вами в&nbsp;ближайшее время для консультации и&nbsp;уточнения деталей
-				+btnPrimary('отправить заявку')
+				+b.defaultBtn.btn.modal-close-js
+					| Закрыть
+					+e.SPAN.icon
+						+icon('arrow-right')
 	// #modal-tnx
 	
 	div(id="modal-map"  style="display: none" )
