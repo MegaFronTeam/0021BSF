@@ -2,13 +2,19 @@
 .sProducts {
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sTPB: 40px;
 	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
 
 	.section-title {
+		.h2 {
+			margin-bottom: 20px;
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(30);
+			}
+		}
 	}
 	&__col {
 	}
@@ -20,6 +26,7 @@
 			border-radius: 0;
 			width: 100%;
 			margin-top: 40px;
+			overflow: hidden;
 			cursor: grab;
 			@include media-breakpoint-up(lg) {
 				margin-top: rem(100);
@@ -65,12 +72,7 @@
 		}
 		.section-title {
 			@include mt;
-			.h2 {
-				margin-bottom: 20px;
-				@include media-breakpoint-up(lg) {
-					margin-bottom: rem(30);
-				}
-			}
+			
 		}
 	}
 	&__item {
