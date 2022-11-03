@@ -46,6 +46,9 @@
 				.menu-item {
 					a {
 						color: $body-color;
+						&:after {
+							background-color: $body-color;
+						}
 					}
 				}
 				.toggle-menu-mobile {

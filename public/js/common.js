@@ -486,6 +486,24 @@ function eventHandler() {
 				});
 			}
 		}
+	};
+
+	let sProductsItems = document.querySelectorAll('.sProducts__item');
+	let modalWinSelect = document.querySelector('.modal-win select');
+	let modalWinOptions = document.querySelectorAll('.modal-win select option');
+	if (sProductsItems) {
+		for (let sProductsItem of sProductsItems) {
+			let sProductsItemTitle = sProductsItem.querySelector('.defaultBtn').dataset.product;
+			sProductsItem.querySelector('.defaultBtn').addEventListener('click', function() {
+				for (let modalWinOption of modalWinOptions) {
+					if(sProductsItemTitle == modalWinOption.value) {
+						console.log(true);
+						modalWinSelect.value = sProductsItemTitle;
+						return;
+					}
+				}
+			});
+		}
 	}
 };
 if (document.readyState !== 'loading') {
