@@ -35,6 +35,7 @@
 	&__slide {
 		@include mt;
 		padding: 20px;
+		cursor: grab;
 		height: auto;
 		background-color: $light;
 		opacity: 0.5;

@@ -125,9 +125,9 @@
 			& ~ .form-wrap__input-title {
 				//  color: #846951;
 				transform: scale(0.75) translateY(var(--up-t, -75%));
-				text-transform: uppercase;
-				letter-spacing: 0.2em;
-				font-weight: 600;
+				// text-transform: uppercase;
+				// letter-spacing: 0.2em;
+				// font-weight: 600;
 			}
 			& ~ .form-wrap__input {
 				border: none;

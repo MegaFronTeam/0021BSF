@@ -9,11 +9,11 @@
 	&__row{
 		--bs-gutter-x: 20px;
 		--bs-gutter-y: 20px;
-		margin-bottom: 60px;
+		// margin-bottom: 60px;
 		@include media-breakpoint-up(lg) {
 			--bs-gutter-x: #{rem(30)};
 			--bs-gutter-y: #{rem(30)};
-			margin-bottom: rem(105.400);
+			// margin-bottom: rem(105.400);
 		}
 	}
 	&__col {
@@ -37,6 +37,7 @@
 	&__item {
 		position: relative;
 		height: 100%;
+		cursor: pointer;
 		&:hover {
 			.sPartners__content {
 				opacity: 1;
@@ -108,6 +109,9 @@
 		@include media-breakpoint-up(lg) {
 			--bs-gutter-x: #{rem(30)};
 			--bs-gutter-y: #{rem(45)};
+		}
+		.sPartners__content {
+			bottom: calc(100% + 10px);
 		}
 	}
 	&__person-img {

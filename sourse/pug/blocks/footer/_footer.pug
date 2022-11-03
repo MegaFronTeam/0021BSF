@@ -5,7 +5,7 @@ mixin footer()
 				.col-sm-6.col-lg-auto
 					+logo
 				.col-sm-6.col-lg.col-xxl-auto
-					+e.text(href="#")
+					+e.text(href="#" data-src='modal-map' data-fancybox="modal")
 						+e.address Москва, ул. Арбат, д. 6/2, 119019
 						p посмотреть на карте
 				.col-sm-6.col-lg.col-xxl-auto
@@ -26,4 +26,4 @@ mixin footer()
 					.col-lg.order-1.order-lg-2
 						+e.rights &copy;&nbsp; #[span]&nbsp;ООО &laquo;БСФ Капитал&raquo;. Все права защищены.
 					.col-lg-auto.order-3
-						+e.info(href="#") Разработка сайта – Artsman
+						+e.info(href="https://t.me/arts_man" target="_blank") Разработка сайта – Artsman

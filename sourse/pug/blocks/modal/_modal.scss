@@ -72,12 +72,29 @@
 		--bs-btn-color: #{$body-color};
 		--bs-btn-border-color: #{$body-color};
 	}
+	&__map {
+		@include block(546, 546);
+		& > * {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
 	&--tnx {
 		.h3 {
 			margin-bottom: rem(15);
 		}
 		p {
 			margin-bottom: rem(30);
+		}
+	}
+	&--map {
+		padding: rem(42);
+		& + .is-close {
+			top: 5px !important;
+			right: 5px !important;
 		}
 	}
 }
