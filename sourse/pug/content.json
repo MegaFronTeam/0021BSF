@@ -22,7 +22,7 @@
 		]
 	},
 	"social":[
-		{"name": "fb", "color": "#3E6AD6"},
-		{"name": "telegram", "color": "#039BE5"}
+		{"name": "fb", "color": "#3E6AD6", "link": "https://www.facebook.com/alexey.basov "},
+		{"name": "telegram", "color": "#039BE5", "link": "https://t.me/basovalexey"}
 	]
 }

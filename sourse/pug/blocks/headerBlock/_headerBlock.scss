@@ -29,9 +29,9 @@
 			margin-bottom: rem(45);
 			max-width: 90%;
 		}
-		@include media-breakpoint-down(sm) {
-			word-break: break-all;
-		}
+		// @include media-breakpoint-down(sm) {
+		// 	word-break: break-all;
+		// }
 	}
 	&__main-row {
 		@include media-breakpoint-up(lg) {
@@ -44,6 +44,10 @@
 	}
 	&__wrap {
 		position: relative;
+	}
+	.swiper-wrapper {
+		-webkit-transition-timing-function: linear !important;
+						transition-timing-function: linear !important;
 	}
 	&__content {
 		color: #fff;

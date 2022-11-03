@@ -13,16 +13,22 @@ mixin sForm()
 							.col-lg-6
 								+input("Ваше имя",'text')
 							.col-lg-6
-								+input("Ваш email",'email').is-invalid
+								+input("Ваш email",'email')
 							.col-lg-6
-								+input("Ваш телефон",'tel')
+								+input("Ваш телефон",'tel')(required)
 							.col-lg-6
 								//- +input("Интересующий продукт",'select')
 								+e.input-wrap.form-group
 									+e.SELECT.input--default.form-select( name= 'select')
 										option(value= 'Интересующий продукт') Интересующий продукт
-										- for (var x = 1; x < 5; x++)
-											option(value=` placeholder ${x}`)= `placeholder ${x}`
+										option(value=`Управление фондами`) Управление фондами
+										option(value=`Привлечение финансирования`) Привлечение финансирования
+										option(value=`Поиск и приобретение активов`) Поиск и приобретение активов
+										option(value=`Продажа активов`) Продажа активов
+										option(value=`Управление активами`) Управление активами
+										option(value=`Независимый директор`) Независимый директор
+										option(value=`Семейный офис`) Семейный офис
+										option(value=`Присоединение к сделкам BSF`) Присоединение к сделкам BSF
 									//- +e.SPAN.underline
 							.col-lg-12
 								//- +input("Комментарий (рекомендуем указать название компании, возможный чек или другую, которая поможет провести разговор более эффективно)",'textarea')

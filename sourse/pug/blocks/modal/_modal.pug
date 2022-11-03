@@ -13,9 +13,15 @@ mixin modal()
 				+input("Ваш email", 'email')(required)
 				+e.input-wrap.form-group
 					+e.SELECT.input--default.form-select( name= 'select')
-						option(value= 'Интересующий продукт') Интересующий продукт
-						- for (var x = 1; x < 5; x++)
-							option(value=` placeholder ${x}`)= `placeholder ${x}`
+						option(value='Интересующий продукт') Интересующий продукт
+						option(value=`Управление фондами`) Управление фондами
+						option(value=`Привлечение финансирования`) Привлечение финансирования
+						option(value=`Поиск и приобретение активов`) Поиск и приобретение активов
+						option(value=`Продажа активов`) Продажа активов
+						option(value=`Управление активами`) Управление активами
+						option(value=`Независимый директор`) Независимый директор
+						option(value=`Семейный офис`) Семейный офис
+						option(value=`Присоединение к сделкам BSF`) Присоединение к сделкам BSF
 				+e.input-wrap.form-group
 					+e.TEXTAREA.input.form-control(name='select' placeholder="Комментарий")
 					+e.SPAN.underline
@@ -31,4 +37,10 @@ mixin modal()
 				+btnPrimary('отправить заявку')
 	// #modal-tnx
 	
+	div(id="modal-map"  style="display: none" )
+		+b.modal-win--map
+			script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=2066e304-cee0-4ed2-9cb2-5f6521d5f96c')
+			+e.map
+				#map
+	// #modal-map
 	// end modals

@@ -20,6 +20,7 @@
 			border-radius: 0;
 			width: 100%;
 			margin-top: 40px;
+			cursor: grab;
 			@include media-breakpoint-up(lg) {
 				margin-top: rem(100);
 			}
@@ -38,6 +39,7 @@
 		height: auto;
 		max-width: 288px;
 		margin-right: 20px;
+		cursor: grab;
 		@include media-breakpoint-up(sm) {
 			max-width: 330px;
 		}
