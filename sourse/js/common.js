@@ -421,7 +421,7 @@ function eventHandler() {
 			disableOnInteraction: false,
 		}, 
 	});
-	const sAdvantagesSwiper = new Swiper('.sAdvantages__slider--js', {
+	const sAdvantagesSwiper = new Swiper('.default-slider', {
 		slidesPerView: 'auto',
 		spaceBetween: 0,
 		loop: true,

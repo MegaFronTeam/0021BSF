@@ -10,11 +10,11 @@ $mail->Encoding = 'base64';
 $mail->CharSet = 'utf-8';
 
 ///who send 
-$mail->setFrom('info@info.com','info');
+$mail->setFrom('info@bsfcapital.ru','info');
 // $mail->setFrom('janis.paberzs18@gmail.com','info info');
 
 //  $mail->addAddress('wol1414@gmail.com');
- $mail->addAddress('arts.man@mail.ru');
+ $mail->addAddress('janis.paberzs18@gmail.com');
  // $mail->addAddress('horenkova369@gmail.com');
 // $mail->addAddress('stab@inbox.support');
 

@@ -129,6 +129,15 @@
 	video {
 		opacity: .2;
 		object-fit: cover;
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+	.img-bg {
+		opacity: .2;
+		@include media-breakpoint-up(sm) {
+			display: none;
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 

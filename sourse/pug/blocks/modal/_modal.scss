@@ -74,6 +74,9 @@
 	}
 	&__map {
 		@include block(546, 546);
+		@include media-breakpoint-down(sm) {
+			--ratio: 836/546;
+		}
 		& > * {
 			position: absolute;
 			top: 0;
@@ -92,6 +95,11 @@
 	}
 	&--map {
 		padding: rem(42);
+		@include media-breakpoint-down(sm) {
+			align-items: stretch;
+			justify-content: center;
+			flex-direction: column;
+		}
 		& + .is-close {
 			top: 5px !important;
 			right: 5px !important;
