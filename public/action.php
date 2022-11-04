@@ -10,7 +10,7 @@ $mail->Encoding = 'base64';
 $mail->CharSet = 'utf-8';
 
 ///who send 
-$mail->setFrom('info@info.com','info info');
+$mail->setFrom('info@info.com','info');
 // $mail->setFrom('janis.paberzs18@gmail.com','info info');
 
 //  $mail->addAddress('wol1414@gmail.com');
