@@ -8,7 +8,7 @@ mixin modal()
 				.text-center
 					+e.title.form-data.h3 Получить консультацию
 					p.after-headline Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами для консультации и&nbsp;уточнения деталей
-				+input("Ваше имя", 'text')
+				+input("Ваше имя",'text','Ваше имя','name')
 				+input("Ваш телефон", 'tel')(required)  
 				+input("Ваш email", 'email')
 				+e.input-wrap.form-group
@@ -23,7 +23,7 @@ mixin modal()
 						option(value=`Семейный офис`) Семейный офис
 						option(value=`Присоединение к сделкам BSF`) Присоединение к сделкам BSF
 				+e.input-wrap.form-group
-					+e.TEXTAREA.input.form-control(name='select' placeholder="Комментарий")
+					+e.TEXTAREA.input.form-control(name='comment' placeholder="Комментарий")
 					+e.SPAN.underline
 				+btnPrimary('отправить заявку', true)(data-src='modal-tnx' data-fancybox="modal")
 				+policy()

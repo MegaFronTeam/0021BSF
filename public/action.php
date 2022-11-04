@@ -14,14 +14,14 @@ $mail->setFrom('info@info.com','info');
 // $mail->setFrom('janis.paberzs18@gmail.com','info info');
 
 //  $mail->addAddress('wol1414@gmail.com');
- $mail->addAddress('janis.paberzs18@gmail.com');
+ $mail->addAddress('arts.man@mail.ru');
  // $mail->addAddress('horenkova369@gmail.com');
 // $mail->addAddress('stab@inbox.support');
 
 
 
 //Субъект
-$mail->Subject = 'Заявка с сайта';
+$mail->Subject = 'Заявка с сайта BSF CAPITAL';
 
 $time = date('d.m.Y в H:i');
 $html = '
@@ -49,6 +49,9 @@ $html = '
 
     if (!empty($_POST['comment'])) {
         $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;"> Отзыв:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['comment'] . '</b></td>';
+    }
+    if (!empty($_POST['select'])) {
+        $html .= ' <tr style="background-color: #f8f8f8;"> <td style="padding: 10px; border: #e9e9e9 1px solid;"> Продукт:</td>   <td style="padding: 10px; border: #e9e9e9 1px solid;">' . $_POST['select'] . '</b></td>';
     }
 
     // if (!empty($_POST['tech'])) {

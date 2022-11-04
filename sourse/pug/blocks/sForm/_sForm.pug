@@ -5,13 +5,13 @@ mixin sForm()
 			+e.row.row
 				.col
 					.section-title
-						h2 Связаться с нами
+						h2 Связаться с&nbsp;нами
 						p Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в ближайшее время для утонения деталей
 				.col-lg-8
 					+form-wrap
 						+e.row.row
 							.col-lg-6
-								+input("Ваше имя",'text')
+								+input("Ваше имя",'text','Ваше имя','name')
 							.col-lg-6
 								+input("Ваш email",'email')
 							.col-lg-6
@@ -33,7 +33,7 @@ mixin sForm()
 							.col-lg-12
 								//- +input("Комментарий (рекомендуем указать название компании, возможный чек или другую, которая поможет провести разговор более эффективно)",'textarea')
 								+e.input-wrap.form-group
-									+e.TEXTAREA.input.form-control(name='select' placeholder="Комментарий (рекомендуем указать название компании, возможный чек или другую, которая поможет провести разговор более эффективно)")
+									+e.TEXTAREA.input.form-control(name='comment' placeholder="Комментарий (рекомендуем указать название компании, возможный чек или друг, которая поможет провести разговор более эффективно)")
 									+e.SPAN.underline
 						+e.inner-row.row
 							.col-lg.order-2.order-lg-1
