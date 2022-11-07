@@ -480,9 +480,11 @@ function eventHandler() {
 			if (colTextBtn) {
 				colTextBtn.addEventListener('click', function(e) {
 					e.preventDefault();
-					$(this).hide();
-					$(colText.querySelector('.dots')).hide();
-					$(colText.querySelector('.moreText')).slideDown();
+					this.innerHTML = (this.innerHTML == this.dataset.hide)
+						? this.dataset.show
+						: this.dataset.hide;
+					$(colText.querySelector('.dots')).toggle();
+					$(colText.querySelector('.moreText')).slideToggle();
 				});
 			}
 		}

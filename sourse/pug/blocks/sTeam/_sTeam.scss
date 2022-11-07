@@ -10,6 +10,9 @@
 	}
 	h2 {
 		margin-bottom: 40px;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(100);
+		}
 	}
 	&__col {
 		@include media-breakpoint-up(lg) {
@@ -90,7 +93,7 @@
 			margin-bottom: 0;
 			line-height: 1.67em;
 			.dots {
-				display: none;
+				// display: none;
 				@include media-breakpoint-up(lg) {
 				}
 			}
