@@ -424,7 +424,7 @@ function eventHandler() {
 	const sAdvantagesSwiper = new Swiper('.default-slider', {
 		slidesPerView: 'auto',
 		spaceBetween: 0,
-		loop: true,
+		// loop: true,
 		freeMode: false,
 		loopFillGroupWithBlank: true,
 		watchOverflow: true,

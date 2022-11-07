@@ -90,13 +90,13 @@
 			margin-bottom: 0;
 			line-height: 1.67em;
 			.dots {
+				display: none;
 				@include media-breakpoint-up(lg) {
-					display: none;
 				}
 			}
 			.moreText {
+				display: none;
 				@include media-breakpoint-down(lg) {
-					display: none;
 				}
 			}
 		}
@@ -120,31 +120,33 @@
 			color: $cyan;
 			opacity: .7;
 		}
-		@include media-breakpoint-up(lg) {
-			display: none;
-		}
+		// @include media-breakpoint-up(lg) {
+		// 	display: none;
+		// }
 	}
 	&__swiper {
 		overflow: visible;
 	}
 	.swiper-wrapper {
-		@include media-breakpoint-up(md) {
-			display: block;
-			transform: translate3d(0px,0,0) !important;
-			--bs-gutter-y: #{rem(20)};
-			margin-top: calc(var(--bs-gutter-y) * -1);
-			& > * {
-				margin-top: var(--bs-gutter-y);
-			}
-		}
-		@include media-breakpoint-up(lg) {
-			--bs-gutter-y: #{rem(100)};
-		}
+		// @include media-breakpoint-up(md) {
+		// 	display: block;
+		// 	transform: translate3d(0px,0,0) !important;
+		// 	--bs-gutter-y: #{rem(20)};
+		// 	margin-top: calc(var(--bs-gutter-y) * -1);
+		// 	& > * {
+		// 		margin-top: var(--bs-gutter-y);
+		// 	}
+		// }
+		// @include media-breakpoint-up(lg) {
+		// 	--bs-gutter-y: #{rem(100)};
+		// }
 	}
 	&__slide {
-		@include media-breakpoint-down(md) {
-			margin-right: 20px;
-    	max-width: 280px;
+		max-width: 330px;
+		margin-right: 20px;
+		@include media-breakpoint-up(md) {
+			margin-right: 60px;
+			max-width: 600px;
 		}
 	}
 	&__arrow-wrap {
@@ -155,9 +157,9 @@
 		@include media-breakpoint-up(lg) {
 			margin-top: rem(60);
 		}
-		@include media-breakpoint-up(md) {
-			display: none;
-		}
+		// @include media-breakpoint-up(md) {
+		// 	display: none;
+		// }
 		.swiper-button-hand {
 			position: static;
 			margin: 0 5px;
@@ -166,11 +168,11 @@
 			}
 		}
 	}
-	.swiper-slide-duplicate {
-		@include media-breakpoint-up(md) {
-			display: none;
-		}
-	}
+	// .swiper-slide-duplicate {
+	// 	@include media-breakpoint-up(md) {
+	// 		display: none;
+	// 	}
+	// }
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

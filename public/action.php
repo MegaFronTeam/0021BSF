@@ -14,7 +14,7 @@ $mail->setFrom('info@bsfcapital.ru','info');
 // $mail->setFrom('janis.paberzs18@gmail.com','info info');
 
 //  $mail->addAddress('wol1414@gmail.com');
- $mail->addAddress('janis.paberzs18@gmail.com');
+ $mail->addAddress('info@bsfcapital.ru');
  // $mail->addAddress('horenkova369@gmail.com');
 // $mail->addAddress('stab@inbox.support');
 

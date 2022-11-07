@@ -27,10 +27,10 @@ mixin headerBlock()
 								+e.slide.swiper-slide
 									+e.img-wrap
 										.img-wrap-center
-											+img(`img/svg/headerBlock-img-${i}.svg`)
+											+img(`img/${i}`)
 							-for(let i = 0; i < 2; i++)
-								+slide(1)
-								+slide(2)
-								+slide(3)
-								+slide(4)
+								+slide('svg/headerBlock-img-1.svg')
+								+slide('svg/headerBlock-img-2.svg')
+								+slide('svg/headerBlock-img-3.svg')
+								+slide('headerBlock-img-4.png')
 	// end headerBlock
