@@ -54,6 +54,14 @@
 			}
 		}
 	}
+	&__headline {
+		&.h2 {
+			margin-bottom: rem(50);
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(100);
+			}
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

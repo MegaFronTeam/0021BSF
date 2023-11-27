@@ -1541,15 +1541,15 @@ $figure-caption-color:              $gray-600 !default;
 // Breadcrumbs
 
 // scss-docs-start breadcrumb-variables
-$breadcrumb-font-size:              null !default;
+$breadcrumb-font-size:              rem(16) !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
-$breadcrumb-item-padding-x:         .5rem !default;
-$breadcrumb-margin-bottom:          1rem !default;
+$breadcrumb-item-padding-x:         rem(5) !default;
+$breadcrumb-margin-bottom:          rem(30) !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.7154 7.6098L6.26527 3.15975C6.16235 3.05675 6.02495 3 5.87845 3C5.73195 3 5.59455 3.05675 5.49162 3.15975L5.1639 3.48739C4.95065 3.70089 4.95065 4.04788 5.1639 4.26105L8.90078 7.99793L5.15975 11.739C5.05683 11.842 5 11.9793 5 12.1257C5 12.2723 5.05683 12.4096 5.15975 12.5127L5.48748 12.8402C5.59048 12.9433 5.7278 13 5.8743 13C6.0208 13 6.1582 12.9433 6.26113 12.8402L10.7154 8.38614C10.8186 8.2828 10.8752 8.14484 10.8749 7.99817C10.8752 7.85094 10.8186 7.71305 10.7154 7.6098Z' fill='%239B99A6'/%3E%3C/svg%3E%0A") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables

@@ -15,10 +15,9 @@ include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/footer/_footer.pug
 
 include ../blocks/sAbout/_sAbout.pug
-include ../blocks/sProducts/_sProducts.pug
-include ../blocks/sAdvantages/_sAdvantages.pug
-include ../blocks/sTeam/_sTeam.pug
-include ../blocks/sPartners/_sPartners.pug
+include ../blocks/sHowWeWork/_sHowWeWork.pug
+include ../blocks/sInfo/_sInfo.pug
+include ../blocks/sParticipant/_sParticipant.pug
 
 block variables
 doctype html
@@ -60,12 +59,11 @@ html(lang= lan.lang)
 				+top-nav()
 					+mnu(lan.nav)
 			main
-				+headerBlock('Инвестиционный офис&nbsp;&mdash; для себя и&nbsp;для своих', ['BSF Capital&nbsp;&mdash; это инвестиционно-банковские услуги и&nbsp;управление инвестициями с&nbsp;повышенной доходностью.', 'Мы&nbsp;оперируем собственным капиталом, делимся своими инвестиционными возможностями и&nbsp;экспертизой с&nbsp;нашим друзьями партнерами.'], 'связаться с нами', true)
-				+sAbout
-				+sProducts()
-				+sTeam
-				+sPartners
-				+sAdvantages()
+				+headerBlock('Консультационный продукт &laquo;От&nbsp;стартапа к&nbsp;IPO&raquo;', ['BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.'], 'Оставить заявку', false, ['Главная', 'От стартапа к IPO'])
+				+sAbout2
+				+sHowWeWork
+				+sInfo
+				+sParticipant
 				+sForm
 			+footer()
 		block pagecontent

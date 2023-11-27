@@ -1,0 +1,47 @@
+// start .sInfo
+.sInfo {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		--bs-gutter-x: #{rem(30)};
+		--bs-gutter-y: #{rem(30)};
+
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: rem(50);
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(200);
+			}
+		}
+		&:nth-child(even) {
+			.sInfo__wrap {
+				@include media-breakpoint-up(xl) {
+					margin-left: rem(110);
+				}
+			}
+		}
+	}
+	&__wrap {
+		h2 {
+			margin-bottom: rem(20);
+			@include media-breakpoint-up(lg) {
+				margin-bottom: rem(30);
+			}
+		}
+		p {
+			margin-bottom: 0;
+			line-height: 1.66;
+			@include media-breakpoint-up(lg) {
+				font-size: rem(18);
+			}
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sInfo
