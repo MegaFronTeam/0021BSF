@@ -1,10 +1,12 @@
-mixin headerBlock(title, texts=[], btn, slider, breadcrumbs=[])
+mixin headerBlock(title, texts=[], btn, slider, breadcrumbs=[], bg)
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes).bg-wrap
-		+img('img/heaederBlock-bg.jpg').img-bg.picture-bg
-		video.picture-bg(loading='lazy' preload='auto' no-controls autoplay loop playsinline muted)
-			source(src="video/headerBlock-video.webm", type="video/webm")
-			source(src="video/headerBlock-video.mp4", type="video/mp4")
+		+img(bg).img-bg.picture-bg.d-block
+		if !bg
+			+img('img/heaederBlock-bg.jpg').img-bg.picture-bg
+			video.picture-bg(loading='lazy' preload='auto' no-controls autoplay loop playsinline muted)
+				source(src="video/headerBlock-video.webm", type="video/webm")
+				source(src="video/headerBlock-video.mp4", type="video/mp4")
 			//- source(src="video/headerBlock-video.mov", type="video/mov")
 		+e.container.container
 			+e.main-row.row
