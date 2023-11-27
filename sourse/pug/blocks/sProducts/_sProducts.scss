@@ -201,8 +201,8 @@
 			top: rem(-100);
 			--swiperArrowPosition: calc(var(--swiperArrowSize)*-1/2);
 		}
-		&-prev {
-			display: none;
+		&.swiper-button-disabled {
+			opacity: 0 ;
 			// @include media-breakpoint-up(lg) {
 			// 	--swiperArrowPosition: 0;
 			// }
