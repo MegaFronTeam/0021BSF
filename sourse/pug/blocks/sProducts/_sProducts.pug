@@ -11,7 +11,7 @@ mixin sProducts(data)
 						+b.section-title
 							.h2 Продукты
 							p Мы&nbsp;поддерживаем коммуникацию с&nbsp;широкой сетью предпринимателей, экспертов, банков, инвестиционных фондов и&nbsp;корпораций
-					mixin slide(i, h, t, product=h,label)
+					mixin slide(i, h, t, product=h,label, modal=true)
 						+e.slide.swiper-slide
 							+e.item
 								if label
@@ -22,9 +22,12 @@ mixin sProducts(data)
 									h4!= h
 									p!= t
 									+e.wrapper
-										+btnPrimary('оставить заявку')(data-src='modal-call' data-fancybox="modal" data-product=`${product}`)
-					+slide(1, `Управление фондами`, 
-					`Полный цикл или поддержка на любом этапе фандрайзинга, структурирования, инвестиционного периода, продажи активов или закрытия PE&VC фонда.`, h, 'Новая услуга')
+										if modal
+											+btnPrimary('оставить заявку')(data-src='modal-call' data-fancybox="modal" data-product=`${product}`)
+										else
+											+btnPrimary('Подробнее')
+					+slide(9, `Управление фондами`, 
+					`Полный цикл или поддержка на любом этапе фандрайзинга, структурирования, инвестиционного периода, продажи активов или закрытия PE&VC фонда.`, h, 'Новая услуга', false)
 					+slide(2, `Привлечение финансирования`, 
 					`Подготовка материалов для фандрайзинга, разработка структуры и условий сделки, поиск инвестора, координация переговорного процесса на sell-side до закрытия сделки.`)
 					+slide(3, `Поиск и приобретение активов`, 

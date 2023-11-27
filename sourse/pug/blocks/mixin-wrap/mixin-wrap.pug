@@ -49,12 +49,12 @@ mixin page-head(t,...items)
 mixin btnPrimary(text, button)
 	if button
 		+b.BUTTON.defaultBtn.btn(type="submit")
-			!= text
+			+e.text!= text
 			+e.SPAN.icon
 				+icon('arrow-right')
 	else
 		+b.defaultBtn.btn&attributes(attributes)(href=`#`)
-			!= text
+			+e.text!= text
 			+e.SPAN.icon
 				+icon('arrow-right')
 

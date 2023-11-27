@@ -202,9 +202,10 @@
 			--swiperArrowPosition: calc(var(--swiperArrowSize)*-1/2);
 		}
 		&-prev {
-			@include media-breakpoint-up(lg) {
-				--swiperArrowPosition: 0;
-			}
+			display: none;
+			// @include media-breakpoint-up(lg) {
+			// 	--swiperArrowPosition: 0;
+			// }
 		}
 	}
 	@include media-breakpoint-up(xl) {
