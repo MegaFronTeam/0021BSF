@@ -54,14 +54,16 @@ html(lang= lan.lang)
 	body(class=mainPage data-bg=bg)
 		.main-wrapper
 			+mob-mnu()
-				+mnu(lan.nav)
+				+mnu()
 			+header()
 				+top-nav()
-					+mnu(lan.nav)
+					+mnu()
 			main
-				+headerBlock('Консультационный продукт &laquo;От&nbsp;стартапа к&nbsp;IPO&raquo;', ['BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.'], 'Оставить заявку', false, ['Главная', 'От стартапа к IPO'],'img/ipo-bg.jpg')
-				+sAbout2
-				+sHowWeWork
+				
+				+headerBlock(lan.headerBlock.title, lan.headerBlock.text, lan.headerBlock.btn, false, lan.headerBlock.bread,'img/ipo-bg.jpg')
+				//- +headerBlock('', ['BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.'], 'Оставить заявку', false, ['Главная', 'От стартапа к IPO'],'img/ipo-bg.jpg')
+				+sAbout2()
+				+sHowWeWork()
 				+sInfo
 				+sParticipant
 				+sForm(true)

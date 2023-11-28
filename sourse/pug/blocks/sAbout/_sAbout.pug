@@ -19,25 +19,23 @@ mixin sAbout(data)
 				+item('graphic', 'Более 1&nbsp;миллиарда долларов дохода принесли своим партнерам', '#1096C9')
 	// end sAbout
 
-mixin sAbout2(data)
-	// start sAbout
-	+b.SECTION.sAbout.section#sAbout&attributes(attributes)
-		.container
-			+e.row.row
-				.col
-					h2 IPO ближе,<br>чем кажется
-				.col-lg-6
-					h4 Мы&nbsp;накопили многолетний опыт инвестиционно-банковских услуг, прямых и&nbsp;венчурных инвестиций, управления фондами и&nbsp;крупными активами.
-					p Мы&nbsp;поддерживаем коммуникацию с&nbsp;широкой сетью предпринимателей, экспертов, инвестиционных фондов, корпораций и&nbsp;банков. Наши связи и&nbsp;опыт обеспечивают доступ к&nbsp;уникальным сделкам и&nbsp;финансовым решениям на&nbsp;лучших условиях.
-			+e.headline.h2 Результат
-			+e.item-row.row
-				mixin item(icon, text, color)
-					.col-sm-6.col-lg-4.col-xl-3
-						+e.item(style=`--color: ${color}`)
-							+icon(icon)
-							p!= text
-				+item('flag', 'Возможность привлечения долга с&nbsp;публичных рынков', '#219653')
-				+item('money', 'Готовность к&nbsp;первичному листингу на&nbsp;российских биржах', '#C3363A')
-				+item('rocket', 'Повышение эффективности бизнеса и&nbsp;качество управления', '#1096C9')
-				+item('invest', 'Рост капитализации и&nbsp;привлекательности для инвесторов', '#FFA801')
-	// end sAbout
+mixin sAbout2()
+	- const data = lan.sAbout
+	if data
+		// start sAbout
+		+b.SECTION.sAbout.section#sAbout&attributes(attributes)
+			.container
+				+e.row.row
+					.col
+						h2!= data.h2
+					.col-lg-6
+						h4!= data.h4
+						p!= data.p
+				+e.headline.h2= data.h2Second
+				+e.item-row.row
+					each item in data.items
+						.col-sm-6.col-lg-4.col-xl-3
+							+e.item(style=`--color: ${item[2]}`)
+								+icon(item[0])
+								p!= item[1]
+		// end sAbout

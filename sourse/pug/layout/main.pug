@@ -20,6 +20,10 @@ include ../blocks/sAdvantages/_sAdvantages.pug
 include ../blocks/sTeam/_sTeam.pug
 include ../blocks/sPartners/_sPartners.pug
 
+include ../blocks/sHowWeWork/_sHowWeWork.pug
+include ../blocks/sInfo/_sInfo.pug
+include ../blocks/sParticipant/_sParticipant.pug
+
 block variables
 doctype html
 html(lang= lan.lang)
@@ -60,13 +64,22 @@ html(lang= lan.lang)
 				+top-nav()
 					+mnu(lan.nav)
 			main
-				+headerBlock('Инвестиционный офис&nbsp;&mdash; для себя и&nbsp;для своих', ['BSF Capital&nbsp;&mdash; это инвестиционно-банковские услуги и&nbsp;управление инвестициями с&nbsp;повышенной доходностью.', 'Мы&nbsp;оперируем собственным капиталом, делимся своими инвестиционными возможностями и&nbsp;экспертизой с&nbsp;нашим друзьями партнерами.'], 'связаться с нами', true)
-				+sAbout
-				+sProducts()
-				+sTeam
-				+sPartners
-				+sAdvantages()
-				+sForm
+				if page == 'ipo'
+					+headerBlock(lan.headerBlock.title, lan.headerBlock.text, lan.headerBlock.btn, false, lan.headerBlock.bread,'img/ipo-bg.jpg')
+					//- +headerBlock('', ['BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.'], 'Оставить заявку', false, ['Главная', 'От стартапа к IPO'],'img/ipo-bg.jpg')
+					+sAbout2()
+					+sHowWeWork()
+					+sInfo
+					+sParticipant
+					+sForm(true)
+				else
+					+headerBlock('Инвестиционный офис&nbsp;&mdash; для себя и&nbsp;для своих', ['BSF Capital&nbsp;&mdash; это инвестиционно-банковские услуги и&nbsp;управление инвестициями с&nbsp;повышенной доходностью.', 'Мы&nbsp;оперируем собственным капиталом, делимся своими инвестиционными возможностями и&nbsp;экспертизой с&nbsp;нашим друзьями партнерами.'], 'связаться с нами', true)
+					+sAbout
+					+sProducts()
+					+sTeam
+					+sPartners
+					+sAdvantages()
+					+sForm
 			+footer()
 		block pagecontent
 		

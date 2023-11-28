@@ -46,14 +46,14 @@ mixin page-head(t,...items)
 
 			h1= t
 
-mixin btnPrimary(text, button)
+mixin btnPrimary(text, button, a="#")
 	if button
 		+b.BUTTON.defaultBtn.btn(type="submit")
 			+e.text!= text
 			+e.SPAN.icon
 				+icon('arrow-right')
 	else
-		+b.defaultBtn.btn&attributes(attributes)(href=`#`)
+		+b.defaultBtn.btn&attributes(attributes)(href= a)
 			+e.text!= text
 			+e.SPAN.icon
 				+icon('arrow-right')
@@ -66,15 +66,15 @@ mixin logo()
 mixin changeLang(active)
 	+b.changeLang
 		if lan.page == "ruMain"
-			+e.lang(href="eng.html")
+			+e.lang(href="eng")
 				+img('img/svg/lang-1.svg')
 				| en
 		else if lan.page == "ruIpo"
-			+e.lang(href="ipo-eng.html")
+			+e.lang(href="ipo-eng")
 				+img('img/svg/lang-1.svg')
 				| en
 		else if lan.page == "enIpo"
-			+e.lang(href="ipo.html")
+			+e.lang(href="ipo")
 				+img('img/svg/lang-2.svg')
 				| ru
 		else
