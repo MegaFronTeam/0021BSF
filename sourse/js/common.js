@@ -421,20 +421,25 @@ function eventHandler() {
 			disableOnInteraction: false,
 		}, 
 	});
-	const sAdvantagesSwiper = new Swiper('.default-slider', {
-		slidesPerView: 'auto',
-		spaceBetween: 0,
-		// loop: true,
-		freeMode: false,
-		loopFillGroupWithBlank: true,
-		watchOverflow: true,
-		// centeredSlides: false,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		
-	});
+	let defSliders = document.querySelectorAll('.default-slider');
+	if(defSliders.length > 0) {
+		defSliders.forEach((defSlider => {
+			const sAdvantagesSwiper = new Swiper(defSlider, {
+				slidesPerView: 'auto',
+				spaceBetween: 0,
+				// loop: true,
+				freeMode: false,
+				loopFillGroupWithBlank: true,
+				watchOverflow: true,
+				// centeredSlides: false,
+				navigation: {
+					nextEl: defSlider.querySelector('.swiper-button-next'),
+					prevEl: defSlider.querySelector('.swiper-button-prev'),
+				},
+				
+			});
+		}))
+	}
 	const sProductsSwiper = new Swiper('.sProducts__slider--js', {
 		slidesPerView: 'auto',
 		spaceBetween: 0,

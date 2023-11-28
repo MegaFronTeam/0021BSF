@@ -65,10 +65,18 @@ mixin logo()
 
 mixin changeLang(active)
 	+b.changeLang
-		if lan.lang == "ru"
+		if lan.page == "ruMain"
 			+e.lang(href="eng.html")
 				+img('img/svg/lang-1.svg')
 				| en
+		else if lan.page == "ruIpo"
+			+e.lang(href="ipo-eng.html")
+				+img('img/svg/lang-1.svg')
+				| en
+		else if lan.page == "enIpo"
+			+e.lang(href="ipo.html")
+				+img('img/svg/lang-2.svg')
+				| ru
 		else
 			+e.lang(href="/")
 				+img('img/svg/lang-2.svg')

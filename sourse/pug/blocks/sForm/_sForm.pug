@@ -1,4 +1,4 @@
-mixin sForm()
+mixin sForm(selected)
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
@@ -21,6 +21,10 @@ mixin sForm()
 								+e.input-wrap.form-group
 									+e.SELECT.input--default.form-select( name= 'select')
 										option(value= 'Интересующий продукт') Интересующий продукт
+										if selected 
+											option(value= 'Консультационный продукт «От стартапа к IPO»' selected) Консультационный продукт «От стартапа к IPO»
+										else
+											option(value= 'Консультационный продукт «От стартапа к IPO»') Консультационный продукт «От стартапа к IPO»
 										option(value=`Управление фондами`) Управление фондами
 										option(value=`Привлечение финансирования`) Привлечение финансирования
 										option(value=`Поиск и приобретение активов`) Поиск и приобретение активов

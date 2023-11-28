@@ -1,5 +1,6 @@
 {
-	"ru": {
+	"ruMain": {
+		"page": "ruMain",
 		"lang": "ru",
 		"nav":[
 			{ "name":"О нас", "url":"#sAbout"},
@@ -10,7 +11,8 @@
 			{"name":"Контакты", "url":"#footer"}
 		]
 	},
-	"en": {
+	"enMain": {
+		"page": "enMain",
 		"lang": "en",
 		"nav":[
 			{ "name":"О нас", "url":"#sAbout"},
@@ -20,6 +22,37 @@
 			{"name":"почему мы", "url":"#sAdvantages"} ,
 			{"name":"Контакты", "url":"#footer"}
 		]
+	},
+	"ruIpo": {
+		"page": "ruIpo",
+		"lang": "ru",
+		"nav":[
+			{ "name":"О нас", "url":"#sAbout"},
+			{	"name":"Продукты", "url":"#sProducts"},
+			{"name":"Команда", "url":"#sTeam"},
+			{"name":"Партнеры", "url":"#sPartners"} ,
+			{"name":"почему мы", "url":"#sAdvantages"} ,
+			{"name":"Контакты", "url":"#footer"}
+		]
+	},
+	"enIpo": {
+		"page": "enIpo",
+		"lang": "en",
+		"nav":[
+			{ "name":"О нас", "url":"#sAbout"},
+			{	"name":"Продукты", "url":"#sProducts"},
+			{"name":"Команда", "url":"#sTeam"},
+			{"name":"Партнеры", "url":"#sPartners"} ,
+			{"name":"почему мы", "url":"#sAdvantages"} ,
+			{"name":"Контакты", "url":"#footer"}
+		],
+		"headerBlock": {
+			"title": "Consulting Product &rsquo;From Startup to&nbsp;IPO&rsquo;",
+			"text": "BSF Capital will prepare your company for operation in&nbsp;public markets and assist in&nbsp;placing bond issues or&nbsp;going public with an&nbsp;IPO."
+		},
+		"sAbout": {
+			"headline": "Results"
+		}
 	},
 	"social":[
 		{"name": "fb", "color": "#3E6AD6", "link": "https://www.facebook.com/alexey.basov "},

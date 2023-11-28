@@ -6,6 +6,13 @@
 	@include media-breakpoint-up(lg) {
 		--sTPB: #{rem(100)};
 	}
+	&__container {
+		position: relative;
+		padding-bottom: rem(70);
+		@include media-breakpoint-up(lg) {
+			padding-bottom: rem(110);
+		}
+	}
 	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
@@ -20,6 +27,7 @@
 	&__item {
 	}
 	&__slider {
+		position: static;
 		overflow: visible;
 		margin: 0 auto 0 0;
 		@include media-breakpoint-up(sm) {
@@ -86,10 +94,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-top: 20px;
-		@include media-breakpoint-up(lg) {
-			margin-top: rem(60);
-		}
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		// margin-top: 20px;
+		// @include media-breakpoint-up(lg) {
+		// 	margin-top: rem(60);
+		// }
 		.swiper-button-hand {
 			position: static;
 			margin: 0 5px;

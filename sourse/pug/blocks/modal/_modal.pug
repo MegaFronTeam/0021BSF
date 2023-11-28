@@ -1,5 +1,5 @@
 
-mixin modal() 
+mixin modal(selected) 
 	//  start modals
 	//- a(href="modal-call").link-modal-js modal-call 
 	div(id="modal-call"  style="display: none" )
@@ -14,6 +14,10 @@ mixin modal()
 				+e.input-wrap.form-group
 					+e.SELECT.input--default.form-select( name= 'select')
 						option(value='Интересующий продукт') Интересующий продукт
+						if selected 
+							option(value= 'Консультационный продукт «От стартапа к IPO»' selected) Консультационный продукт «От стартапа к IPO»
+						else
+							option(value= 'Консультационный продукт «От стартапа к IPO»') Консультационный продукт «От стартапа к IPO»
 						option(value=`Управление фондами`) Управление фондами
 						option(value=`Привлечение финансирования`) Привлечение финансирования
 						option(value=`Поиск и приобретение активов`) Поиск и приобретение активов
