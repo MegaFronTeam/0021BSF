@@ -212,8 +212,8 @@
 		"sForm": {
 			"h2": "Contact Us",
 			"p": "Fill out the form, and we will contact you soon to clarify details.",
-			"modalh3": "Получить консультацию",
-			"modalp": "Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами для консультации и&nbsp;уточнения деталей",
+			"modalh3": "Get Consultation",
+			"modalp": "Fill out the form, and we&nbsp;will contact you for a&nbsp;consultation to&nbsp;discuss and clarify the details.",
 			"inputName": "Your Name",
 			"inputEmail": "Your Email",
 			"inputTel": "Your Phone",
@@ -224,9 +224,9 @@
 			"policyTExt": "By clicking the 'Submit Application' button, you confirm that you have read the terms of  ",
 			"policyLink": "personal data processing",
 			"policyText2": ". Your data is confidential and not disclosed to third parties.",
-			"modalThankh3": "Спасибо за обращение!",
-			"modalThankp": "Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время для консультации и&nbsp;уточнения деталей",
-			"modalClose": "Закрыть"
+			"modalThankh3": "Thank you for reaching out! ",
+			"modalThankp": "We&nbsp;will contact you shortly for a&nbsp;consultation to&nbsp;discuss and clarify the details.",
+			"modalClose": "Close"
 		},
 		"sProducts": {
 			"h2": "Products",
@@ -234,10 +234,10 @@
 			"items": [
 				[
 					9,
-					"Консультационный продукт «От стартапа к IPO»",
-					"BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.",
+					"Consultation Product «From Startup to IPO»",
+					"BSF Capital will prepare your company for public market operations and assist in&nbsp;placing a&nbsp;bond issue or&nbsp;going public with an&nbsp;IPO.",
 					"h",
-					"Новая услуга",
+					"New Service",
 					"false"
 				],
 				[
@@ -597,7 +597,7 @@
 	"enIpo": {
 		"page": "enIpo",
 		"lang": "en",
-		"title":"BSF Capital | Высокотехнологичный инвестиционный банк для своих",
+		"title":"Consultation Product &laquo;From Startup to IPO&raquo;",
 		"nav": [
 			{
 				"name": "О нас",
@@ -632,13 +632,13 @@
 			"btn": "CONTACT US",
 			"bread": [
 				"Main",
-				"От стартапа к IPO"
+				"From Startup to IPO"
 			]
 		},
 		"sAbout": {
-			"h2": "IPO ближе,<br>чем кажется",
-			"h4": "Мы&nbsp;накопили многолетний опыт инвестиционно-банковских услуг, прямых и&nbsp;венчурных инвестиций, управления фондами и&nbsp;крупными активами.",
-			"p": "Мы&nbsp;поддерживаем коммуникацию с&nbsp;широкой сетью предпринимателей, экспертов, инвестиционных фондов, корпораций и&nbsp;банков. Наши связи и&nbsp;опыт обеспечивают доступ к&nbsp;уникальным сделкам и&nbsp;финансовым решениям на&nbsp;лучших условиях.",
+			"h2": "IPO is Closer <br> Than It Seems",
+			"h4": "We&nbsp;have accumulated years of&nbsp;experience in&nbsp;investment banking services, direct and venture investments, fund management, and large asset management. ",
+			"p": "We&nbsp;maintain communication with a&nbsp;broad network of&nbsp;entrepreneurs, experts, investment funds, corporations, and banks. Our connections and experience provide access to&nbsp;unique deals and financial solutions on&nbsp;the best terms.",
 			"h2Second": "Results",
 			"items": [
 				[
