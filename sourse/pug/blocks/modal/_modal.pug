@@ -15,11 +15,11 @@ mixin modal(selected)
 					+input(data.inputEmail, 'email')
 					+e.input-wrap.form-group
 						+e.SELECT.input--default.form-select( name= 'select')
-							option( ) Интересующий продукт
+							option( )= data.select
 							each item in baseLang.sProducts.items
 								option(value= item[1])= item[1]
 					+e.input-wrap.form-group
-						+e.TEXTAREA.input.form-control(name='comment' placeholder="Комментарий")
+						+e.TEXTAREA.input.form-control(name='comment' placeholder= data.textareaModal)
 						+e.SPAN.underline
 					+btnPrimary(data.btn, true)(data-src='modal-tnx' data-fancybox="modal")
 					+policy()

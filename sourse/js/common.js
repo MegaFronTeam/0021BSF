@@ -516,6 +516,11 @@ function eventHandler() {
 			});
 		}
 	}
+
+	if(document.body.classList.contains("ipo")) {
+		$("select option:nth-child(2)").attr("selected", 'selected')
+	}
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

@@ -24,7 +24,7 @@ mixin headerBlock(slider,   bg)
 				.col-auto
 					+e.link(href='#sAbout')
 						+icon('mouse')
-						| Листайте вниз
+						= baseLang.scrollDOwn
 				if slider
 					.col-lg-7.ms-auto
 						+e.slider--js.swiper

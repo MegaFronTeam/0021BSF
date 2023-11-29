@@ -22,7 +22,7 @@ mixin sForm(sel='false')
 									//- +input("Интересующий продукт",'select')
 									+e.input-wrap.form-group
 										+e.SELECT.input--default.form-select( name= 'select')
-											option( ) Интересующий продукт
+											option( )= data.select
 											each item in baseLang.sProducts.items
 												option(value= item[1])= item[1]
 								.col-lg-12

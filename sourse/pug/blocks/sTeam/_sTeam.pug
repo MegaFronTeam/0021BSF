@@ -22,7 +22,7 @@ mixin sTeam()
 													if item[5]
 														+soc()
 															+item-sos('telegram', 'https://t.me/basovalexey')(style=`--color: #039BE5`)
-															+item-sos('fb', 'https://www.fac ebook.com/alexey.basov')(style=`--color: #3E6AD6`)
+															+item-sos('fb', 'https://www.facebook.com/alexey.basov')(style=`--color: #3E6AD6`)
 															+item-sos('instagram', 'https://www.instagram.com/basovalexey/')(style=`--color: #E15494`)
 											+e.col-text.col-lg
 												h4.d-none.d-lg-block!=item[1]
@@ -37,7 +37,7 @@ mixin sTeam()
 													if item[4]
 														span.moreText!= item[4]
 												if item[4]
-													+e.showMore(href="#" data-hide= data.hide data-show= data.btnShow)= data.btnShow
+													+e.showMore(href="#" data-hide= data.btnHide data-show= data.btnShow)= data.btnShow
 							+e.arrow-wrap
 								+arrow()
 		// end sTeam

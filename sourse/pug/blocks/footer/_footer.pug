@@ -13,7 +13,7 @@ mixin footer()
 					.col-sm-6.col-lg.col-xxl-auto
 						+e.link
 							a(href="mailto:info@bsfcapital.ru") info@bsfcapital.ru
-							p по любым вопросам
+							p= data.qw
 					.col-sm-6.col-lg
 						+e.link
 							a(href="tel:+74959607770") +7 (495) 960-77-70
@@ -26,6 +26,7 @@ mixin footer()
 						.col-lg-auto.order-2.order-1
 							+e.info(href="#")= data.policy
 						.col-lg.order-1.order-lg-2
-							+e.rights &copy;&nbsp; #[span]= data.prava
+							+e.rights &copy;&nbsp; #[span]
+								!= data.prava
 						.col-lg-auto.order-3
 							+e.info(href="https://t.me/arts_man" target="_blank")= data.developer
