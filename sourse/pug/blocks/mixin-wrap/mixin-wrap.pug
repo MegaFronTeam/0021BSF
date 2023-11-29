@@ -59,7 +59,8 @@ mixin btnPrimary(text, button, a="#")
 				+icon('arrow-right')
 
 mixin logo()
-	+b.logo(href="/")
+	- let path= (baseLang.lang == "en" ? "/eng"  : "/")
+	+b.logo(href= path)
 		+img('img/svg/logo.svg')
 		p Capital
 
