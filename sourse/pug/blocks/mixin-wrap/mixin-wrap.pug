@@ -81,3 +81,12 @@ mixin changeLang(active)
 			+e.lang(href="/")
 				+img('img/svg/lang-2.svg')
 				| ru
+
+mixin section-title(data)
+	+b.section-title
+		.row
+			.col-lg-6
+				h2!= data.h2
+			.col-lg-6
+				h4!= data.h4
+				p!= data.p

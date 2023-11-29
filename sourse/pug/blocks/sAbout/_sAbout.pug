@@ -1,40 +1,14 @@
-mixin sAbout(data)
-	// start sAbout
-	+b.SECTION.sAbout.section#sAbout&attributes(attributes)
-		.container
-			+e.row.row
-				.col
-					h2 О компании
-				.col-lg-6
-					h4 Мы&nbsp;накопили многолетний опыт инвестиционно-банковских услуг, прямых и&nbsp;венчурных инвестиций, управления фондами и&nbsp;крупными активами.
-					p Мы поддерживаем коммуникацию с широкой сетью предпринимателей, экспертов, инвестиционных фондов, корпораций и банков. Наши связи и опыт обеспечивают доступ к уникальным сделкам и финансовым решениям на лучших условиях.
-			+e.item-row.row
-				mixin item(icon, text, color)
-					.col-sm-6.col-lg-4
-						+e.item(style=`--color: ${color}`)
-							+icon(icon)
-							p!= text
-				+item('flag', '22&nbsp;года команда BSF Capital управляет активами и&nbsp;инвестирует', '#219653')
-				+item('bag', 'Более 200 закрытых сделок партнерами нашей компании', '#C3363A')
-				+item('graphic', 'Более 1&nbsp;миллиарда долларов дохода принесли своим партнерам', '#1096C9')
-	// end sAbout
-
-mixin sAbout2()
+mixin sAbout()
 	- const data = lan.sAbout
 	if data
 		// start sAbout
 		+b.SECTION.sAbout.section#sAbout&attributes(attributes)
 			.container
-				+e.row.row
-					.col
-						h2!= data.h2
-					.col-lg-6
-						h4!= data.h4
-						p!= data.p
+				+section-title(data)
 				+e.headline.h2= data.h2Second
 				+e.item-row.row
 					each item in data.items
-						.col-sm-6.col-lg-4.col-xl-3
+						.col-sm-6.col-lg-4(class=(data.items.length > 3 ? "col-xl-3" : 'col-xl-4'))
 							+e.item(style=`--color: ${item[2]}`)
 								+icon(item[0])
 								p!= item[1]

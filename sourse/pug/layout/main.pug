@@ -26,7 +26,7 @@ include ../blocks/sParticipant/_sParticipant.pug
 
 block variables
 doctype html
-html(lang= lan.lang)
+html(lang= baseLang.lang)
 	head
 		meta(charset="utf-8")
 
@@ -59,21 +59,21 @@ html(lang= lan.lang)
 	body(class=mainPage data-bg=bg)
 		.main-wrapper
 			+mob-mnu()
-				+mnu(lan.nav)
+				+mnu()
 			+header()
 				+top-nav()
-					+mnu(lan.nav)
+					+mnu()
 			main
 				if page == 'ipo'
-					+headerBlock(lan.headerBlock.title, lan.headerBlock.text, lan.headerBlock.btn, false, lan.headerBlock.bread,'img/ipo-bg.jpg')
+					+headerBlock(  false, 'img/ipo-bg.jpg')
 					//- +headerBlock('', ['BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.'], 'Оставить заявку', false, ['Главная', 'От стартапа к IPO'],'img/ipo-bg.jpg')
-					+sAbout2()
+					+sAbout()
 					+sHowWeWork()
 					+sInfo
 					+sParticipant
-					+sForm(true)
+					+sForm('selected')
 				else
-					+headerBlock('Инвестиционный офис&nbsp;&mdash; для себя и&nbsp;для своих', ['BSF Capital&nbsp;&mdash; это инвестиционно-банковские услуги и&nbsp;управление инвестициями с&nbsp;повышенной доходностью.', 'Мы&nbsp;оперируем собственным капиталом, делимся своими инвестиционными возможностями и&nbsp;экспертизой с&nbsp;нашим друзьями партнерами.'], 'связаться с нами', true)
+					+headerBlock(  true)
 					+sAbout
 					+sProducts()
 					+sTeam

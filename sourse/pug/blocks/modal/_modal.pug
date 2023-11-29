@@ -1,53 +1,45 @@
 
 mixin modal(selected) 
-	//  start modals
-	//- a(href="modal-call").link-modal-js modal-call 
-	div(id="modal-call"  style="display: none" )
-		+b.modal-win
-			+form-wrap
-				.text-center
-					+e.title.form-data.h3 Получить консультацию
-					p.after-headline Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами для консультации и&nbsp;уточнения деталей
-				+input("Ваше имя",'text','Ваше имя','name')
-				+input("Ваш телефон", 'tel')(required)  
-				+input("Ваш email", 'email')
-				+e.input-wrap.form-group
-					+e.SELECT.input--default.form-select( name= 'select')
-						option(value='Интересующий продукт') Интересующий продукт
-						if selected 
-							option(value= 'Консультационный продукт «От стартапа к IPO»' selected) Консультационный продукт «От стартапа к IPO»
-						else
-							option(value= 'Консультационный продукт «От стартапа к IPO»') Консультационный продукт «От стартапа к IPO»
-						option(value=`Управление фондами`) Управление фондами
-						option(value=`Привлечение финансирования`) Привлечение финансирования
-						option(value=`Поиск и приобретение активов`) Поиск и приобретение активов
-						option(value=`Продажа активов`) Продажа активов
-						option(value=`Управление активами`) Управление активами
-						option(value=`Независимый директор`) Независимый директор
-						option(value=`Семейный офис`) Семейный офис
-						option(value=`Присоединение к сделкам BSF`) Присоединение к сделкам BSF
-				+e.input-wrap.form-group
-					+e.TEXTAREA.input.form-control(name='comment' placeholder="Комментарий")
-					+e.SPAN.underline
-				+btnPrimary('отправить заявку', true)(data-src='modal-tnx' data-fancybox="modal")
-				+policy()
-	// #modal-call
+	- let data = baseLang.sForm
+	if data
+		//  start modals
+		//- a(href="modal-call").link-modal-js modal-call 
+		div(id="modal-call"  style="display: none" )
+			+b.modal-win
+				+form-wrap
+					.text-center
+						+e.title.form-data.h3!= data.modalh3
+						p.after-headline!= data.modalp
+					+input(data.inputName,'text',data.inputName,'name')
+					+input(data.inputTel, 'tel')(required)  
+					+input(data.inputEmail, 'email')
+					+e.input-wrap.form-group
+						+e.SELECT.input--default.form-select( name= 'select')
+							option( ) Интересующий продукт
+							each item in baseLang.sProducts.items
+								option(value= item[1])= item[1]
+					+e.input-wrap.form-group
+						+e.TEXTAREA.input.form-control(name='comment' placeholder="Комментарий")
+						+e.SPAN.underline
+					+btnPrimary(data.btn, true)(data-src='modal-tnx' data-fancybox="modal")
+					+policy()
+		// #modal-call
 
-	div(id="modal-tnx"  style="display: none" )
-		+b.modal-win--tnx
-			.text-center
-				+e.title.form-data.h3 Спасибо за обращение!
-				p.after-headline Мы&nbsp;сявжемся с&nbsp;Вами в&nbsp;ближайшее время для консультации и&nbsp;уточнения деталей
-				+b.defaultBtn.btn.modal-close-js
-					| Закрыть
-					+e.SPAN.icon
-						+icon('arrow-right')
-	// #modal-tnx
-	
-	div(id="modal-map"  style="display: none" )
-		+b.modal-win--map
-			script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=2066e304-cee0-4ed2-9cb2-5f6521d5f96c')
-			+e.map
-				#map
+		div(id="modal-tnx"  style="display: none" )
+			+b.modal-win--tnx
+				.text-center
+					+e.title.form-data.h3!= data.modalThankh3
+					p.after-headline!= data.modalThankp
+					+b.defaultBtn.btn.modal-close-js
+						!= data.modalClose
+						+e.SPAN.icon
+							+icon('arrow-right')
+		// #modal-tnx
+		
+		div(id="modal-map"  style="display: none" )
+			+b.modal-win--map
+				script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=2066e304-cee0-4ed2-9cb2-5f6521d5f96c')
+				+e.map
+					#map
 	// #modal-map
 	// end modals

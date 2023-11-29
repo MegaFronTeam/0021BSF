@@ -1,4 +1,5 @@
-mixin headerBlock(title, texts=[], btn, slider, breadcrumbs=[], bg)
+mixin headerBlock(slider,   bg)
+	- let data = lan.headerBlock
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes).bg-wrap
 		+img(bg).img-bg.picture-bg.d-block
@@ -12,13 +13,13 @@ mixin headerBlock(title, texts=[], btn, slider, breadcrumbs=[], bg)
 			+e.main-row.row
 				.col-xl-7
 					+e.wrap
-						if breadcrumbs.length > 0	
-							+breadcrumb(...breadcrumbs)
-						h1!= title
+						if data.bread
+							+breadcrumb(...data.bread)
+						h1!= data.title
 						+e.content
-							each text in texts
+							each text in data.text
 								p!= text
-						+btnPrimary(btn)(data-src='modal-call' data-fancybox="modal")
+						+btnPrimary(data.btn)(data-src='modal-call' data-fancybox="modal")
 			+e.bottom-row.row.d-none.d-lg-flex
 				.col-auto
 					+e.link(href='#sAbout')

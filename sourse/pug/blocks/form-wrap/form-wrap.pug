@@ -76,4 +76,5 @@ mixin add-file(n)
 
 
 mixin policy()
-	+e.policy #[span.text-secondary Нажимая на кнопку “Отправить заявку” я подтверждаю, что ознакомился с условиями] #[a(href="#") обработки персональных данных]. Ваши данные конфиденциальны и не передаются третьим лицам.
+	+e.policy #[span.text-secondar!= baseLang.sForm.policyTExt] #[a(href="#")!= baseLang.sForm.policyLink]. 
+		= baseLang.sForm.policyText2

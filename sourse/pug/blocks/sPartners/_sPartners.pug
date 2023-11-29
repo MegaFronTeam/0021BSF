@@ -1,39 +1,20 @@
-mixin sPartners(data)
-	// start sPartners
-	+b.SECTION.sPartners.section#sPartners&attributes(attributes)
-		.container
-			+b.section-title
-				h2 Партнеры и<br>советники
-			+e.row.row
-				mixin item(i, text)
-					+e.col.col-6.col-lg-3
-						+e.item
-							+e.wrap
-								+e.logo-wrap
-									.img-wrap-center
-										+img(`img/sPartners-img-${i}.png`)
-								+e.text!= text
-							+e.content
-								p 22&nbsp;года опыта частных и&nbsp;корпоративных инвестиций. В&nbsp;прошлом&nbsp;&mdash; основатель ряда технологических компаний, вице-президент Ростелеком и&nbsp;Mail.ru Group, управляющий партнер Finam IT&nbsp;Fund и&nbsp;Commit Capital Fun.
-				+item(1, 'акселерационный партнер')
-				+item(2, 'GR партнер')
-				+item(3, 'юридический партнер')
-				//- +item(4, 'партнер')
-				//- +item(5, 'партнер')
-			//- +e.person-row.row
-			//- 	mixin personItem(i, title, text)
-			//- 		+e.col.col-6.col-md-4.col-lg-3
-			//- 			+e.item
-			//- 				+e.wrap--person
-			//- 					+e.person-img
-			//- 						+img(`img/sPartners-img-${i}.png`)
-			//- 					h5!= title
-			//- 					+e.text!= text
-			//- 				+e.content
-			//- 					p 22&nbsp;года опыта частных и&nbsp;корпоративных инвестиций. В&nbsp;прошлом&nbsp;&mdash; основатель ряда технологических компаний, вице-президент Ростелеком и&nbsp;Mail.ru Group, управляющий партнер Finam IT&nbsp;Fund и&nbsp;Commit Capital Fun.
-			//- 	+personItem(6, 'Анна Петрова', 'советник')
-			//- 	+personItem(8, 'Константин Васильев', 'советник')
-			//- 	+personItem(7, 'Антон Иванов', 'советник')
-			//- 	+personItem(6, 'Анна Петрова', 'советник')
-			//- 	+personItem(8, 'Константин Васильев', 'советник')
-	// end sPartners
+mixin sPartners()
+	- let data = baseLang.sPartners
+	if data
+		// start sPartners
+		+b.SECTION.sPartners.section#sPartners&attributes(attributes)
+			.container
+				+b.section-title
+					h2= data.h2
+				+e.row.row
+					each item in data.items
+						+e.col.col-6.col-lg-3
+							+e.item
+								+e.wrap
+									+e.logo-wrap
+										.img-wrap-center
+											+img(`img/sPartners-img-${item[0]}.png`)
+									+e.text!= item[1]
+								+e.content
+									p!= item[2]
+		// end sPartners

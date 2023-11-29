@@ -1,28 +1,15 @@
-mixin sParticipant(data)
-	// start sParticipant
-	+b.SECTION.sParticipant.section#sParticipant&attributes(attributes)
-		.container
-			+b.section-title
-				.row
-					.col-lg-6
-						h2 Участники проекта
-					.col-lg-6
-						h4 Проект лидирует партнер BSF Capital, имеющий не&nbsp;менее чем 10-летний опыт работы в&nbsp;СД компаний, опыт работы в&nbsp;руководстве публичных компаний и&nbsp;организации первичных размещений.
-						p Для подготовки компании и&nbsp;организации размещений мы&nbsp;работаем с&nbsp;лидерами отрасли: ведущими аудиторскими компаниями, рейтинговым агентствами, брокерами и&nbsp;банками.
-			mixin item(img, text)
-				+e.item
-					.img-wrap-center
-						+img(`img/${img}`)
-					span!= text
-			+e.row.row
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-1.png', 'Аудиторская компания')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-2.png', 'Аудиторская компания')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-3.png', 'Аудиторская компания')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-4.png', 'Организатор')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-5.svg', 'Организатор')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-6.svg', 'Организатор')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-7.png', 'Организатор')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-8.png', 'Организатор')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-9.png', 'биржа')
-				.col-6.col-md-4.col-lg-3: +item('sParticipant-img-10.png', 'биржа')
-	// end sParticipant
+mixin sParticipant()
+	- const data = lan.sParticipant
+	if data
+		// start sParticipant
+		+b.SECTION.sParticipant.section#sParticipant&attributes(attributes)
+			.container
+				+section-title(data)
+				+e.row.row
+					each item in data.items
+						.col-6.col-md-4.col-lg-3
+							+e.item
+								.img-wrap-center
+									+img(`img/${item[0]}`)
+								span!= item[1]
+		// end sParticipant

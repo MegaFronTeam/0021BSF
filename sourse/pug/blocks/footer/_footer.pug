@@ -1,29 +1,31 @@
 mixin footer()
-	+b.FOOTER.footer#footer.section
-		.container
-			+e.row.row
-				.col-sm-6.col-lg-auto
-					+logo
-				.col-sm-6.col-lg.col-xxl-auto
-					+e.text(href="#" data-src='modal-map' data-fancybox="modal")
-						+e.address Москва, ул. Арбат, д. 6/2, 119019
-						p посмотреть на карте
-				.col-sm-6.col-lg.col-xxl-auto
-					+e.link
-						a(href="mailto:info@bsfcapital.ru") info@bsfcapital.ru
-						p по любым вопросам
-				.col-sm-6.col-lg
-					+e.link
-						a(href="tel:+74959607770") +7 (495) 960-77-70
-						p пн-пт с 9.00 до 19.00
-				.col-sm-6.col-lg-auto
-					+soc
-		+e.down
+	- let data = baseLang.footer
+	if data
+		+b.FOOTER.footer#footer.section
 			.container
-				+e.down-row.row
-					.col-lg-auto.order-2.order-1
-						+e.info(href="#") Политика конфиденциальности
-					.col-lg.order-1.order-lg-2
-						+e.rights &copy;&nbsp; #[span]&nbsp;ООО &laquo;БСФ Капитал&raquo;. Все права защищены.
-					.col-lg-auto.order-3
-						+e.info(href="https://t.me/arts_man" target="_blank") Разработка сайта – Artsman
+				+e.row.row
+					.col-sm-6.col-lg-auto
+						+logo
+					.col-sm-6.col-lg.col-xxl-auto
+						+e.text(href="#" data-src='modal-map' data-fancybox="modal")
+							+e.address= data.address
+							p= data.lookMap
+					.col-sm-6.col-lg.col-xxl-auto
+						+e.link
+							a(href="mailto:info@bsfcapital.ru") info@bsfcapital.ru
+							p по любым вопросам
+					.col-sm-6.col-lg
+						+e.link
+							a(href="tel:+74959607770") +7 (495) 960-77-70
+							p= data.time
+					.col-sm-6.col-lg-auto
+						+soc
+			+e.down
+				.container
+					+e.down-row.row
+						.col-lg-auto.order-2.order-1
+							+e.info(href="#")= data.policy
+						.col-lg.order-1.order-lg-2
+							+e.rights &copy;&nbsp; #[span]= data.prava
+						.col-lg-auto.order-3
+							+e.info(href="https://t.me/arts_man" target="_blank")= data.developer

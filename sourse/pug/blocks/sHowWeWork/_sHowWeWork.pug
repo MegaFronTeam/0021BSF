@@ -1,31 +1,21 @@
-mixin sHowWeWork(data)
-	// start sHowWeWork
-	+b.SECTION.sHowWeWork.section#sHowWeWork&attributes(attributes)
-		.container
-			+b.section-title
-				.row
-					.col-lg-6
-						h2 Как мы работаем
-					.col-lg-6
-						h4 Проект охватывает ключевые аспекты бизнеса организации, приводя их&nbsp;к&nbsp;стандартам работы публичных компаний.
-						p В&nbsp;зависимости от&nbsp;состояния компании, изменения могут затронуть юридическую и&nbsp;организационную структуру, финансовую отчетность, корпоративное управление, процедуру раскрытия информации и&nbsp;работы с&nbsp;инвесторами.
-			mixin item(img, title, icon, ...items)
-				+e.col.col-lg-6
-					+e.item
-						+e.img-wrap
-							.img-wrap-center: +img(`img/${img}`, 'bg')
-						div
-							+e.num
-								+icon(icon)
-							.h6!=title
-							ul
-								each item in items
-									li!= item
-			+e.row.row
-				+item('sHowWeWork-img-1.jpg', 'Планирование', 'sHowWeWork-icon-1', 'Диагностика готовности компании к IPO', 'Стратегия и дорожная карта трансформации')
-				+item('sHowWeWork-img-2.jpg', 'Оценка', 'sHowWeWork-icon-2', 'Сопровождение независимого аудита', 'Получение инвестиционного рейтинга')
-				+item('sHowWeWork-img-3.jpg', 'Реструктуризация и прозрачность', 'sHowWeWork-icon-3', 'Реорганизация в акционерное общество', 'Запуск службы IR и раскрытия информации')
-				+item('sHowWeWork-img-4.jpg', 'Реформа управления', 'sHowWeWork-icon-4', 'Приведение Совета директоров по станд', 'Формирование ключевых комитетов и Правления')
-				+item('sHowWeWork-img-5.jpg', 'Подготовка размещения', 'sHowWeWork-icon-5', 'Подбор пулла участников и площадки', 'Разработка эмиссионной документации, типа и размера размещения')
-				+item('sHowWeWork-img-6.jpg', 'Роадшоу', 'sHowWeWork-icon-6', 'Разработка стратегии роад-шоу и маркетинговых материалов', 'Премаркетинг, совпровождение роадшоу и старта обращения бумаг')
-	// end sHowWeWork
+mixin sHowWeWork()
+	- const data = lan.sHowWeWork
+	if data
+		// start sHowWeWork
+		+b.SECTION.sHowWeWork.section#sHowWeWork&attributes(attributes)
+			.container
+				+section-title(data)
+				+e.row.row
+					each item in data.items
+						+e.col.col-lg-6
+							+e.item
+								+e.img-wrap
+									.img-wrap-center: +img(`img/${item[0]}`, 'bg')
+								div
+									+e.num
+										+icon(item[2])
+									.h6!=item[1]
+									ul
+										each it in item[3]
+											li!= it
+		// end sHowWeWork

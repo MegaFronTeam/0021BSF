@@ -1,47 +1,38 @@
-mixin sForm(selected)
-	// start sForm
-	+b.SECTION.sForm.section#sForm&attributes(attributes)
-		.container
-			+e.row.row
-				.col
-					.section-title
-						h2 Связаться с&nbsp;нами
-						p Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в ближайшее время для утонения деталей
-				.col-lg-8
-					+form-wrap
-						+e.row.row
-							.col-lg-6
-								+input("Ваше имя",'text','Ваше имя','name')
-							.col-lg-6
-								+input("Ваш email",'email')
-							.col-lg-6
-								+input("Ваш телефон",'tel')(required)
-							.col-lg-6
-								//- +input("Интересующий продукт",'select')
-								+e.input-wrap.form-group
-									+e.SELECT.input--default.form-select( name= 'select')
-										option(value= 'Интересующий продукт') Интересующий продукт
-										if selected 
-											option(value= 'Консультационный продукт «От стартапа к IPO»' selected) Консультационный продукт «От стартапа к IPO»
-										else
-											option(value= 'Консультационный продукт «От стартапа к IPO»') Консультационный продукт «От стартапа к IPO»
-										option(value=`Управление фондами`) Управление фондами
-										option(value=`Привлечение финансирования`) Привлечение финансирования
-										option(value=`Поиск и приобретение активов`) Поиск и приобретение активов
-										option(value=`Продажа активов`) Продажа активов
-										option(value=`Управление активами`) Управление активами
-										option(value=`Независимый директор`) Независимый директор
-										option(value=`Семейный офис`) Семейный офис
-										option(value=`Присоединение к сделкам BSF`) Присоединение к сделкам BSF
-									//- +e.SPAN.underline
-							.col-lg-12
-								//- +input("Комментарий (рекомендуем указать название компании, возможный чек или другую, которая поможет провести разговор более эффективно)",'textarea')
-								+e.input-wrap.form-group
-									+e.TEXTAREA.input.form-control(name='comment' placeholder="Комментарий (рекомендуем указать название компании, возможный чек или друг, которая поможет провести разговор более эффективно)")
-									+e.SPAN.underline
-						+e.inner-row.row
-							.col-lg.order-2.order-lg-1
-								+policy
-							.col-lg-auto.order-1.order-lg-2
-								+btnPrimary('отправить заявку', true)
-	// end sForm
+mixin sForm(sel='false')
+	- let data = baseLang.sForm
+	if data
+		// start sForm
+		+b.SECTION.sForm.section#sForm&attributes(attributes)
+			.container
+				+e.row.row
+					.col
+						.section-title
+							h2!= data.h2
+							p!= data.p
+					.col-lg-8
+						+form-wrap
+							+e.row.row
+								.col-lg-6
+									+input(data.inputName,'text',data.inputName,'name')
+								.col-lg-6
+									+input(data.inputEmail,'email')
+								.col-lg-6
+									+input(data.inputTel,'tel')(required)
+								.col-lg-6
+									//- +input("Интересующий продукт",'select')
+									+e.input-wrap.form-group
+										+e.SELECT.input--default.form-select( name= 'select')
+											option( ) Интересующий продукт
+											each item in baseLang.sProducts.items
+												option(value= item[1])= item[1]
+								.col-lg-12
+									//- +input("Комментарий (рекомендуем указать название компании, возможный чек или другую, которая поможет провести разговор более эффективно)",'textarea')
+									+e.input-wrap.form-group
+										+e.TEXTAREA.input.form-control(name='comment' placeholder=data.textarea)
+										+e.SPAN.underline
+							+e.inner-row.row
+								.col-lg.order-2.order-lg-1
+									+policy
+								.col-lg-auto.order-1.order-lg-2
+									+btnPrimary(data.btn, true)
+		// end sForm

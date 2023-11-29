@@ -1,47 +1,33 @@
-mixin sProducts(data)
-	// start sProducts
-	+b.sProducts.section#sProducts&attributes(attributes)
-		.container
-			+b.section-title.d-lg-none
-				.h2 Продукты
-				p Мы&nbsp;поддерживаем коммуникацию с&nbsp;широкой сетью предпринимателей, экспертов, банков, инвестиционных фондов и&nbsp;корпораций
-			+e.slider--js.swiper
-				.swiper-wrapper
-					+e.slide.swiper-slide
-						+b.section-title
-							.h2 Продукты
-							p Мы&nbsp;поддерживаем коммуникацию с&nbsp;широкой сетью предпринимателей, экспертов, банков, инвестиционных фондов и&nbsp;корпораций
-					mixin slide(i, h, t, product=h,label, modal=true)
+mixin sProducts()
+	- let data = baseLang.sProducts
+	if data
+		// start sProducts
+		+b.sProducts.section#sProducts&attributes(attributes)
+			.container
+				+b.section-title.d-lg-none
+					.h2!= data.h2
+					p!= data.p
+				+e.slider--js.swiper
+					.swiper-wrapper
 						+e.slide.swiper-slide
-							+e.item
-								if label
-									+e.label(style='--bgColor: #1096C9;')!= label
-								+e.img-wrap
-									+img(`img/sProducts-${i}.jpg`, `bg`)
-								+e.item-content
-									h4!= h
-									p!= t
-									+e.wrapper
-										if modal
-											+btnPrimary('оставить заявку')(data-src='modal-call' data-fancybox="modal" data-product=`${product}`)
-										else
-											+btnPrimary('Подробнее','','ipo')
-					+slide(9, `Консультационный продукт «От стартапа к IPO»`, 
-					`BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.`, h, 'Новая услуга', false)
-					+slide(2, `Привлечение финансирования`, 
-					`Подготовка материалов для фандрайзинга, разработка структуры и условий сделки, поиск инвестора, координация переговорного процесса на sell-side до закрытия сделки.`)
-					+slide(3, `Поиск и приобретение активов`, 
-					`Разработка мандата, организация воронки и отбора проектов на основе независимой экспертизы, лидирование переговорного процесса, структурирование и закрытие сделки на buy-side.`)
-					+slide(4, `Продажа активов`, 
-					`Подготовка актива, разработка материалов и документации, поиск покупателя, лидирование переговоров и организация полного цикла сделки.`)
-					+slide(5, `Управление активами`, 
-					`Разработка стратегии, формирование операционной команды, выстраивание бизнес-процессов, обеспечение развития бизнеса в соответствии с инвестиционными и финансовыми целями.`)
-					+slide(6, `Независимый директор`, 
-					`Изучение потребностей, составление карты экспертизы, подбор и предоставление в коллегиальные органы управления высокопрофессиональных независимых директоров из уникального нетворка BSF Capital.`)
-					+slide(7, `Семейный офис`, 
-					`Организация офиса по структурированию и управлению личным капиталом, активами и объектами собственности, обеспечение всех сопутствующих потребностей и услуг.`)
-					+slide(8, `Присоединение к сделкам BSF`, 
-					`Мы будем рады уточнить вашу сферу инвестиционных интересов, финансовые предпочтения и аппетит к риску, чтобы приглашать в наши сделки и синдикаты.`)
-				.swiper-scrollbar
-				+arrow
-	// end sProducts
+							+b.section-title
+								.h2!= data.h2
+								p!= data.p
+						each item in data.items
+							+e.slide.swiper-slide
+								+e.item
+									if item[4]
+										+e.label(style='--bgColor: #1096C9;')!= item[4]
+									+e.img-wrap
+										+img(`img/sProducts-${item[0]}.jpg`, `bg`)
+									+e.item-content
+										h4!= item[1]
+										p!= item[2]
+										+e.wrapper
+											if !item[5]
+												+btnPrimary(data.btn1)(data-src='modal-call' data-fancybox="modal" data-product=`${item[3]}`)
+											else
+												+btnPrimary(data.btn2,'',data.link)
+					.swiper-scrollbar
+					+arrow
+		// end sProducts

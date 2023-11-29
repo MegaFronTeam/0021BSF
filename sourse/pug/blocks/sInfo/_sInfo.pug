@@ -1,19 +1,15 @@
-mixin sInfo(data)
-	// start sInfo
-	+b.SECTION.sInfo.section#sInfo&attributes(attributes)
-		.container
-			+e.row.row
-				.col-lg-6.order-lg-2 
-					+img('img/sInfo-img-1.jpg').res-i
-				.col-lg-6 
-					+e.wrap
-						h2 Сроки
-						p Цикл проекта ориентировочно составляет 12&nbsp;месяцев. Каждый этап существенным образом увеличивает эффективность и&nbsp;капитализацию бизнеса.
-			+e.row.row
-				.col-lg-6
-					+img('img/sInfo-img-2.jpg').res-i
-				.col-lg-6 
-					+e.wrap
-						h2 Кому подходит
-						p Решение походит зрелым компаниям с&nbsp;выручкой от&nbsp;500&nbsp;млн. руб.&nbsp;в&nbsp;год, темпами роста более&nbsp;25%, и&nbsp;лидирующими позициями в&nbsp;своем сегменте на&nbsp;российском рынке.
-	// end sInfo
+mixin sInfo()
+	- const data = lan.sInfo
+	if data
+		// start sInfo
+		+b.SECTION.sInfo.section#sInfo&attributes(attributes)
+			.container
+				each item, index in data.items
+					+e.row.row
+						.col-lg-6(class=(index == 0 ? 'order-lg-2' : "")) 
+							+img(item[0]).res-i
+						.col-lg-6 
+							+e.wrap
+								h2= item[1]
+								p!= item[2]
+		// end sInfo
