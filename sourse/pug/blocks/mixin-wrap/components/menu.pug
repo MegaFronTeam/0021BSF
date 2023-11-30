@@ -2,8 +2,18 @@
 mixin mnu()
 	nav
 		ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")
-			each link in baseLang.nav
-				li.menu-item(itemprop="item" ): a(href= link.url itemprop="url")= link.name
+
+			- let path = "/"
+
+			if (lan.page != "ruMain" && lan.page != "enMain"  && baseLang.lang != "ru")
+				- path = "eng"
+			else if (lan.page == "enMain")
+				- path = ""
+			each link, index in baseLang.nav
+				if( index == baseLang.nav.length - 1)
+					- path = ""
+
+				li.menu-item(itemprop="item" ): a(href= (path + link.url) itemprop="url")= link.name
 				//- if link.subnav
 				//- 	li.menu-item.menu-item-has-children
 				//- 		a(href="#" itemprop="url") О нас

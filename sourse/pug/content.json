@@ -189,19 +189,19 @@
 			},
 			{
 				"name": "PRODUCTS",
-				"url": "/#sProducts"
+				"url": "#sProducts"
 			},
 			{
 				"name": "TEAM",
-				"url": "/#sTeam"
+				"url": "#sTeam"
 			},
 			{
 				"name": "PARTNERS",
-				"url": "/#sPartners"
+				"url": "#sPartners"
 			},
 			{
 				"name": "ADVANTAGES",
-				"url": "/#sAdvantages"
+				"url": "#sAdvantages"
 			},
 			{
 				"name": "CONTACTS",
