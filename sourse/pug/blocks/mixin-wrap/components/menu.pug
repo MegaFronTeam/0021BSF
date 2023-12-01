@@ -3,12 +3,12 @@ mixin mnu()
 	nav
 		ul.menu(itemscope itemtype="http://schema.org/SiteNavigationElement")
 
-			- let path = "/"
+			- let path = ""
 
-			if (lan.page != "ruMain" && lan.page != "enMain"  && baseLang.lang != "ru")
+			if (lan.page != "ruMain" && lan.page != "enMain"  && baseLang.lang == "ru")
+				- path = "/"
+			else
 				- path = "eng"
-			else if (lan.page == "enMain")
-				- path = ""
 			each link, index in baseLang.nav
 				if( index == baseLang.nav.length - 1)
 					- path = ""

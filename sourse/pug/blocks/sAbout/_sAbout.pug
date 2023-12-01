@@ -5,7 +5,8 @@ mixin sAbout()
 		+b.SECTION.sAbout.section#sAbout&attributes(attributes)
 			.container
 				+section-title(data)
-				+e.headline.h2= data.h2Second
+				if data.h2Second
+					+e.headline.h2= data.h2Second
 				+e.item-row.row
 					each item in data.items
 						.col-sm-6.col-lg-4(class=(data.items.length > 3 ? "col-xl-3" : 'col-xl-4'))
