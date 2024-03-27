@@ -58,11 +58,11 @@ html(lang= baseLang.lang)
 	//- body.loaded_hiding(class= mainPage) 
 	body(class=mainPage data-bg=bg)
 		.main-wrapper
-			+mob-mnu()
-				+mnu()
+			//- +mob-mnu()
+			//- 	+mnu()
 			+header()
 				+top-nav()
-					+mnu()
+					//- +mnu()
 			main
 				if page == 'ipo'
 					+headerBlock(  false, 'img/ipo-bg.jpg')
@@ -71,14 +71,15 @@ html(lang= baseLang.lang)
 					+sInfo
 					+sParticipant
 				else
-					+headerBlock(  true)
-					+sAbout
-					+sProducts()
-					+sTeam
-					+sPartners
-					+sAdvantages()
-				+sForm
-			+footer()
+					+headerBlockTime(  true)
+					//- +headerBlock(  true)
+					//- +sAbout
+					//- +sProducts()
+					//- +sTeam
+					//- +sPartners
+					//- +sAdvantages()
+				//- +sForm
+			//- +footer()
 		block pagecontent
 		
 		+modal()

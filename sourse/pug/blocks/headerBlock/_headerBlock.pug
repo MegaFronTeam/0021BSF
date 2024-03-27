@@ -40,3 +40,45 @@ mixin headerBlock(slider,   bg)
 									+slide('svg/headerBlock-img-3.svg')
 									+slide('headerBlock-img-4.png')
 	// end headerBlock
+mixin headerBlockTime(slider,   bg)
+	- let data = lan.headerBlock
+	// start headerBlock
+	+b.headerBlock--time.section#headerBlock&attributes(attributes).bg-wrap
+		+img(bg).img-bg.picture-bg.d-block
+		if !bg
+			+img('img/heaederBlock-bg.jpg').img-bg.picture-bg
+			video.picture-bg(loading='lazy' preload='auto' no-controls autoplay loop playsinline muted)
+				source(src="video/headerBlock-video.webm", type="video/webm")
+				source(src="video/headerBlock-video.mp4", type="video/mp4")
+			//- source(src="video/headerBlock-video.mov", type="video/mov")
+		+e.container.container
+			+e.main-row.row
+				.col-xl-7
+					+e.wrap
+						if data.bread
+							+breadcrumb(...data.bread)
+						h1!= data.title
+						+e.content
+							each text in data.text
+								p!= text
+						+btnPrimary(data.btn)(data-src='modal-call' data-fancybox="modal")
+			//- +e.bottom-row.row.d-none.d-lg-flex
+			//- 	.col-auto
+			//- 		+e.link(href='#sAbout')
+			//- 			+icon('mouse')
+			//- 			= baseLang.scrollDOwn
+			//- 	if slider
+			//- 		.col-lg-7.ms-auto
+			//- 			+e.slider--js.swiper
+			//- 				.swiper-wrapper
+			//- 					mixin slide(i)
+			//- 						+e.slide.swiper-slide
+			//- 							+e.img-wrap
+			//- 								.img-wrap-center
+			//- 									+img(`img/${i}`)
+			//- 					-for(let i = 0; i < 2; i++)
+			//- 						+slide('svg/headerBlock-img-1.svg')
+			//- 						+slide('svg/headerBlock-img-2.svg')
+			//- 						+slide('svg/headerBlock-img-3.svg')
+			//- 						+slide('headerBlock-img-4.png')
+	// end headerBlock
