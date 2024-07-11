@@ -22,7 +22,7 @@ mixin mob-mnu()
 					a(href="tel:+74959607770") +7 (495) 960-77-70
 					p= data.footer.time
 				+e.link
-					a(href="mailto:info@bsfcapital.ru") info@bsfcapital.ru
+					a(href="mailto:info@bsfPartners.ru") info@bsfPartners.ru
 					p= data.footer.qw
 				+e.text(href="#" data-src='modal-map' data-fancybox="modal")
 					+e.address= data.footer.address
@@ -46,8 +46,8 @@ mixin top-nav(data)
 				.col-auto.d-lg-none.order-4.ms-auto.ms-lg-0
 					+e.menu-toggle-wrap
 						+menu-toggle()
-				.col-auto.order-1.order-lg-4
-					+changeLang(data)
+				//- .col-auto.order-1.order-lg-4
+				//- 	+changeLang(data)
 					//- +e.lang
 					//- 	+img('img/svg/lang-1.svg')
 					//- 	| en

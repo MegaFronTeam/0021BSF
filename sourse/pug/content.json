@@ -1,799 +1,738 @@
 {
-	"ruBase": {
-		"lang": "ru",
-		"description":"BSF Capital – это инвестиционно-банковские услуги и управление инвестициями с повышенной доходностью.",
-		"nav": [
-			{
-				"name": "О нас",
-				"url": "#sAbout"
-			},
-			{
-				"name": "Продукты",
-				"url": "#sProducts"
-			},
-			{
-				"name": "Команда",
-				"url": "#sTeam"
-			},
-			{
-				"name": "Партнеры",
-				"url": "#sPartners"
-			},
-			{
-				"name": "почему мы",
-				"url": "#sAdvantages"
-			},
-			{
-				"name": "Контакты",
-				"url": "#footer"
-			}
-		],
-		"scrollDOwn":"Листайте вниз",
-		"sForm": {
-			"h2": "Связаться с&nbsp;нами",
-			"p": "Заполните форму, и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в ближайшее время для уточнения деталей",
-			"modalh3": "Получить консультацию",
-			"modalp": "Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами для консультации и&nbsp;уточнения деталей",
-			"inputName": "Ваше имя",
-			"inputEmail": "Ваш email",
-			"inputTel": "Ваш телефон",
-			"textarea": "Комментарий (рекомендуем указать название компании, возможный чек или друг, которая поможет провести разговор более эффективно)",
-			"select":"Интересующий продукт",
-			"textareaModal": "Комментарий",
-			"btn": "отправить заявку",
-			"policyTExt": "Нажимая на кнопку “Отправить заявку” я подтверждаю, что ознакомился с условиями",
-			"policyLink": "обработки персональных данных",
-			"policyText2": ". Ваши данные конфиденциальны и не передаются третьим лицам.",
-			"modalThankh3": "Спасибо за обращение!",
-			"modalThankp": "Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время для консультации и&nbsp;уточнения деталей",
-			"modalClose": "Закрыть"
-		},
-		"sProducts": {
-			"h2": "Продукты",
-			"p": "Мы&nbsp;рады предложить широкую линейку инвестиционно-банковских продуктов для корпораций, инвесторов и предпринимателей.&nbsp;",
-			"items": [
-				[
-					9,
-					"Консультационный продукт «От стартапа к IPO»",
-					"BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.",
-					"h",
-					"Новая услуга",
-					"false"
-				],
-				[
-					1,
-					"Управление фондами",
-					"Полный цикл или поддержка на любом этапе фандрайзинга, структурирования, инвестиционного периода, продажи активов или закрытия PE&amp;VC фонда."
-				],
+  "ruBase": {
+    "lang": "ru",
+    "description": "BSF Partners – это инвестиционно-банковские услуги и управление инвестициями с повышенной доходностью.",
+    "nav": [
+      {
+        "name": "О нас",
+        "url": "#sAbout"
+      },
+      {
+        "name": "Продукты",
+        "url": "#sProducts"
+      },
+      {
+        "name": "Команда",
+        "url": "#sTeam"
+      },
+      {
+        "name": "Партнеры",
+        "url": "#sPartners"
+      },
+      {
+        "name": "почему мы",
+        "url": "#sAdvantages"
+      },
+      {
+        "name": "Контакты",
+        "url": "#footer"
+      }
+    ],
+    "scrollDOwn": "Листайте вниз",
+    "sForm": {
+      "h2": "Связаться с&nbsp;нами",
+      "p": "Заполните форму, и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами в ближайшее время для уточнения деталей",
+      "modalh3": "Получить консультацию",
+      "modalp": "Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;Вами для консультации и&nbsp;уточнения деталей",
+      "inputName": "Ваше имя",
+      "inputEmail": "Ваш email",
+      "inputTel": "Ваш телефон",
+      "textarea": "Комментарий (рекомендуем указать название компании, возможный чек или друг, которая поможет провести разговор более эффективно)",
+      "select": "Интересующий продукт",
+      "textareaModal": "Комментарий",
+      "btn": "отправить заявку",
+      "policyTExt": "Нажимая на кнопку “Отправить заявку” я подтверждаю, что ознакомился с условиями",
+      "policyLink": "обработки персональных данных",
+      "policyText2": ". Ваши данные конфиденциальны и не передаются третьим лицам.",
+      "modalThankh3": "Спасибо за обращение!",
+      "modalThankp": "Мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;ближайшее время для консультации и&nbsp;уточнения деталей",
+      "modalClose": "Закрыть"
+    },
+    "sProducts": {
+      "h2": "Продукты",
+      "p": "Мы&nbsp;рады предложить широкую линейку инвестиционно-банковских продуктов для корпораций, инвесторов и предпринимателей.&nbsp;",
+      "items": [
+        [
+          9,
+          "Консультационный продукт «От стартапа к IPO»",
+          "BSF Partners подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO.",
+          "h",
+          "Новая услуга",
+          "false"
+        ],
+        [
+          1,
+          "Управление фондами",
+          "Полный цикл или поддержка на любом этапе фандрайзинга, структурирования, инвестиционного периода, продажи активов или закрытия PE&amp;VC фонда."
+        ],
 
-				[
-					2,
-					"Привлечение финансирования",
-					"Подготовка материалов для фандрайзинга, разработка структуры и условий сделки, поиск инвестора, координация переговорного процесса на sell-side до закрытия сделки."
-				],
-				[
-					3,
-					"Поиск и приобретение активов",
-					"Разработка мандата, организация воронки и отбора проектов на основе независимой экспертизы, лидирование переговорного процесса, структурирование и закрытие сделки на buy-side."
-				],
-				[
-					4,
-					"Продажа активов",
-					"Подготовка актива, разработка материалов и документации, поиск покупателя, лидирование переговоров и организация полного цикла сделки."
-				],
-				[
-					5,
-					"Управление активами",
-					"Разработка стратегии, формирование операционной команды, выстраивание бизнес-процессов, обеспечение развития бизнеса в соответствии с инвестиционными и финансовыми целями."
-				],
-				[
-					6,
-					"Независимый директор",
-					"Изучение потребностей, составление карты экспертизы, подбор и предоставление в коллегиальные органы управления высокопрофессиональных независимых директоров из уникального нетворка BSF Capital."
-				],
-				[
-					7,
-					"Семейный офис",
-					"Организация офиса по структурированию и управлению личным капиталом, активами и объектами собственности, обеспечение всех сопутствующих потребностей и услуг."
-				],
-				[
-					8,
-					"Присоединение к сделкам BSF",
-					"Мы будем рады уточнить вашу сферу инвестиционных интересов, финансовые предпочтения и аппетит к риску, чтобы приглашать в наши сделки и синдикаты."
-				]
-			],
-			"btn1": "оставить заявку",
-			"btn2": "Подробнее",
-			"link": "ipo"
-		},
-		"sTeam": {
-			"h2": "Команда",
-			"items": [
-				[
-					1,
-					"Алексей Басов",
-					"управляющий партнер",
-					"22&nbsp;года опыта частных и&nbsp;корпоративных инвестиций. Основатель ряда технологических компаний, вице-президент Ростелеком и&nbsp;Mail.ru Group. Управляющий партнер Finam IT&nbsp;Fund и&nbsp;Commit Capital ",
-					"Fund. На посту главы Фонда Фондов RVC управлял 29&nbsp;PE&amp;VC фондами объемом более $1&nbsp;млрд. долл. Бизнес-ангел с&nbsp;2002&nbsp;года. Более 100 выходов объемом в&nbsp;$800&nbsp;млн. через российские частные и госкомпании, международные корпорации и&nbsp;инвестиционные фонды. Зампред&nbsp; комитета РСПП по&nbsp;инвестполитике, член координационного совета ММВБ, член&nbsp;СД ряда институтов развития и технологических компаний. Лауреат ряда профессиональных премий и наград.&nbsp;Специалист ФСФР 5.0 («Управление инвестфондами, паевыми&nbsp; фондами и негосударственными пенсионными фондами»).",
-					"true"
-				],
-				[
-					2,
-					"Ренат Батыров",
-					"венчурный партнер",
-					"10&nbsp;лет управления крупнейшим технопарком Европы. Превратил Сколково в точку притяжения для венчурного бизнеса. Сформировал несколько десятков сообществ с аудиторией более 30 000 инвесторов, основателей и специалистов",
-					". Организатор крупнейших российских венчурных мероприятий «Открытые инновации», Startup Village и Road Show Startup Tour, в которых приняли участие десятки тысяч участников из 90 стран. Основатель и инвестор нескольких технологических компаний. Член совета директоров Международной ассоциации технопарков и других компаний, почетный профессор МФЮА."
-				],
-				[
-					5,
-					"Анна Морозова",
-					"Венчурный партнер",
-					"Бизнес-ангел, сооснователь российского клуба венчурных инвесторов «Синдикат». Более 18&nbsp;лет опыта в&nbsp;технологиях, инновациях, стратегии, инвестициях, масштабировании бизнеса, трансформации и&nbsp;запуске продуктовых решений.",
-					"В прошлом&nbsp;- инвестиционный директор венчурного клуба AngelsDeck, глава инноваций VEON&nbsp;(Билайн), глава Digital PMO VEON. Advisor направлений: стратегия, стратегический маркетинг, BizDev, построение команды, построение процессов, масштабирование."
-				],
-				[
-					3,
-					"Артем Утенов",
-					"Венчурный партнер",
-					"10&nbsp;лет в&nbsp;инвестициях и&nbsp;банковской сфере. В&nbsp;прошлом&nbsp;— Директор по&nbsp;сопровождению портфеля из&nbsp;более 200 стартапов в&nbsp;РВК и&nbsp;РФПИ, инвестиционный менеджер в&nbsp;Абсолют Банке. Создал систему оценки ",
-					"качества и&nbsp;стоимости венчурного инвестиционного портфеля фонда фондов, подтвержденную аудиторами большой четверки. Обеспечил более 30&nbsp;успешных аудиторских, казначейских проверок и&nbsp;Due Diligence. MBA, сертифицированный трекер и&nbsp;эксперт в&nbsp;акселерационных программах."
-				],
-				
-				[
-					4,
-					"Виктор Никоненко",
-					"Венчурный партнер",
-					"10 лет бизнес-консультирования в области инвестиционной упаковки, финансового моделирования и госфинансирования технологических компаний.&nbsp;",
-					"За карьеру помог привлечь финансирование более 100 компаний от Фонда содействия инновациям, Российского фонда развития информационных технологий, Фонда Сколково, Московского инновационного кластера и других институтов развития."
-				]
+        [
+          2,
+          "Привлечение финансирования",
+          "Подготовка материалов для фандрайзинга, разработка структуры и условий сделки, поиск инвестора, координация переговорного процесса на sell-side до закрытия сделки."
+        ],
+        [
+          3,
+          "Поиск и приобретение активов",
+          "Разработка мандата, организация воронки и отбора проектов на основе независимой экспертизы, лидирование переговорного процесса, структурирование и закрытие сделки на buy-side."
+        ],
+        [
+          4,
+          "Продажа активов",
+          "Подготовка актива, разработка материалов и документации, поиск покупателя, лидирование переговоров и организация полного цикла сделки."
+        ],
+        [
+          5,
+          "Управление активами",
+          "Разработка стратегии, формирование операционной команды, выстраивание бизнес-процессов, обеспечение развития бизнеса в соответствии с инвестиционными и финансовыми целями."
+        ],
+        [
+          6,
+          "Независимый директор",
+          "Изучение потребностей, составление карты экспертизы, подбор и предоставление в коллегиальные органы управления высокопрофессиональных независимых директоров из уникального нетворка BSF Partners."
+        ],
+        [
+          7,
+          "Семейный офис",
+          "Организация офиса по структурированию и управлению личным капиталом, активами и объектами собственности, обеспечение всех сопутствующих потребностей и услуг."
+        ],
+        [
+          8,
+          "Присоединение к сделкам BSF",
+          "Мы будем рады уточнить вашу сферу инвестиционных интересов, финансовые предпочтения и аппетит к риску, чтобы приглашать в наши сделки и синдикаты."
+        ]
+      ],
+      "btn1": "оставить заявку",
+      "btn2": "Подробнее",
+      "link": "ipo"
+    },
+    "sTeam": {
+      "h2": "Команда",
+      "items": [
+        [
+          1,
+          "Алексей Басов",
+          "управляющий партнер",
+          "22&nbsp;года опыта частных и&nbsp;корпоративных инвестиций. Основатель ряда технологических компаний, вице-президент Ростелеком и&nbsp;Mail.ru Group. Управляющий партнер Finam IT&nbsp;Fund и&nbsp;Commit Partners ",
+          "Fund. На посту главы Фонда Фондов RVC управлял 29&nbsp;PE&amp;VC фондами объемом более $1&nbsp;млрд. долл. Бизнес-ангел с&nbsp;2002&nbsp;года. Более 100 выходов объемом в&nbsp;$800&nbsp;млн. через российские частные и госкомпании, международные корпорации и&nbsp;инвестиционные фонды. Зампред&nbsp; комитета РСПП по&nbsp;инвестполитике, член координационного совета ММВБ, член&nbsp;СД ряда институтов развития и технологических компаний. Лауреат ряда профессиональных премий и наград.&nbsp;Специалист ФСФР 5.0 («Управление инвестфондами, паевыми&nbsp; фондами и негосударственными пенсионными фондами»).",
+          "true"
+        ],
+        [
+          2,
+          "Ренат Батыров",
+          "венчурный партнер",
+          "10&nbsp;лет управления крупнейшим технопарком Европы. Превратил Сколково в точку притяжения для венчурного бизнеса. Сформировал несколько десятков сообществ с аудиторией более 30 000 инвесторов, основателей и специалистов",
+          ". Организатор крупнейших российских венчурных мероприятий «Открытые инновации», Startup Village и Road Show Startup Tour, в которых приняли участие десятки тысяч участников из 90 стран. Основатель и инвестор нескольких технологических компаний. Член совета директоров Международной ассоциации технопарков и других компаний, почетный профессор МФЮА."
+        ],
+        [
+          5,
+          "Анна Морозова",
+          "Венчурный партнер",
+          "Бизнес-ангел, сооснователь российского клуба венчурных инвесторов «Синдикат». Более 18&nbsp;лет опыта в&nbsp;технологиях, инновациях, стратегии, инвестициях, масштабировании бизнеса, трансформации и&nbsp;запуске продуктовых решений.",
+          "В прошлом&nbsp;- инвестиционный директор венчурного клуба AngelsDeck, глава инноваций VEON&nbsp;(Билайн), глава Digital PMO VEON. Advisor направлений: стратегия, стратегический маркетинг, BizDev, построение команды, построение процессов, масштабирование."
+        ],
+        [
+          3,
+          "Артем Утенов",
+          "Венчурный партнер",
+          "10&nbsp;лет в&nbsp;инвестициях и&nbsp;банковской сфере. В&nbsp;прошлом&nbsp;— Директор по&nbsp;сопровождению портфеля из&nbsp;более 200 стартапов в&nbsp;РВК и&nbsp;РФПИ, инвестиционный менеджер в&nbsp;Абсолют Банке. Создал систему оценки ",
+          "качества и&nbsp;стоимости венчурного инвестиционного портфеля фонда фондов, подтвержденную аудиторами большой четверки. Обеспечил более 30&nbsp;успешных аудиторских, казначейских проверок и&nbsp;Due Diligence. MBA, сертифицированный трекер и&nbsp;эксперт в&nbsp;акселерационных программах."
+        ],
 
-			],
-			"btnShow":"Подробнее",
-			"btnHide":"Скрыть"
-		},
-		"sPartners":{
-			"h2":"Партнеры и<br>советники",
-			"items":[
-				[1, "акселерационный партнер","Один из крупнейших российских венчурных фондов и&nbsp;оператор ведущей акселерационной программы для&nbsp;стартапов."],
-				[2, "GR партнер","Агентство по&nbsp;защите интересов бизнеса и&nbsp;взаимодействию с&nbsp;органами власти."]
-			]
-		},
-		"sAdvantages":{
-			"h2":"Почему мы",
-			"items":[
-				["flag", "#219653", "Traction", "Мы создаем фонды, закрываем сделки и помогаем компаниям становиться великими со стабильно отличным результатом на протяжении многих лет."],
-				["partnership", "#C3363A", "Репутация", "Прозрачные и профессиональные отношения, не зависящие от обстоятельств, со всеми участниками рынка, независимо от обстоятельств, формируют наш главный капитал – безупречную репутацию и высокое доверие."],
-				["bank", "#EEDA2A", "Общие интересы", "Команда участвует собственными средствами в сделках и продуктах, подтверждая их качество и эффективность."],
-				["trophy", "#734BE3", "Признание", "Наш команда – лауреаты многих престижных премий и наград, мы вовлечены в работу ключевых институтов развития, комитетов и отраслевых организаций, активно развивая инвестиционный рынок и венчурную экосистему."],
-				["diagram", "#1096C9", "Включенность", "Мы непрерывно коммуницируем с регуляторами, институтами развития, предпринимателями, экспертами, ассоциациями, фондами и корпорациями, получая доступ к лучшим сделкам и не упуская окна возможностей."]
-			]
-		},
+        [
+          4,
+          "Виктор Никоненко",
+          "Венчурный партнер",
+          "10 лет бизнес-консультирования в области инвестиционной упаковки, финансового моделирования и госфинансирования технологических компаний.&nbsp;",
+          "За карьеру помог привлечь финансирование более 100 компаний от Фонда содействия инновациям, Российского фонда развития информационных технологий, Фонда Сколково, Московского инновационного кластера и других институтов развития."
+        ]
+      ],
+      "btnShow": "Подробнее",
+      "btnHide": "Скрыть"
+    },
+    "sPartners": {
+      "h2": "Партнеры и<br>советники",
+      "items": [
+        [
+          1,
+          "акселерационный партнер",
+          "Один из крупнейших российских венчурных фондов и&nbsp;оператор ведущей акселерационной программы для&nbsp;стартапов."
+        ],
+        [
+          2,
+          "GR партнер",
+          "Агентство по&nbsp;защите интересов бизнеса и&nbsp;взаимодействию с&nbsp;органами власти."
+        ]
+      ]
+    },
+    "sAdvantages": {
+      "h2": "Почему мы",
+      "items": [
+        [
+          "flag",
+          "#219653",
+          "Traction",
+          "Мы создаем фонды, закрываем сделки и помогаем компаниям становиться великими со стабильно отличным результатом на протяжении многих лет."
+        ],
+        [
+          "partnership",
+          "#C3363A",
+          "Репутация",
+          "Прозрачные и профессиональные отношения, не зависящие от обстоятельств, со всеми участниками рынка, независимо от обстоятельств, формируют наш главный капитал – безупречную репутацию и высокое доверие."
+        ],
+        [
+          "bank",
+          "#EEDA2A",
+          "Общие интересы",
+          "Команда участвует собственными средствами в сделках и продуктах, подтверждая их качество и эффективность."
+        ],
+        [
+          "trophy",
+          "#734BE3",
+          "Признание",
+          "Наш команда – лауреаты многих престижных премий и наград, мы вовлечены в работу ключевых институтов развития, комитетов и отраслевых организаций, активно развивая инвестиционный рынок и венчурную экосистему."
+        ],
+        [
+          "diagram",
+          "#1096C9",
+          "Включенность",
+          "Мы непрерывно коммуницируем с регуляторами, институтами развития, предпринимателями, экспертами, ассоциациями, фондами и корпорациями, получая доступ к лучшим сделкам и не упуская окна возможностей."
+        ]
+      ]
+    },
 
-		"footer": {
-			"address": "Москва, ул. Арбат, д. 6/2, 119019",
-			"lookMap": "посмотреть на карте",
-			"qw": "по любым вопросам",
-			"time": "пн-пт с 9.00 до 19.00",
-			"policy": "Политика конфиденциальности",
-			"prava": "&nbsp;ООО &laquo;БСФ Капитал&raquo;. Все права защищены.",
-			"developer": "Разработка сайта – Artsman"
-		}
-	},
-	"enBase": {
-		"lang": "en",
-		"description":"BSF Capital is an investment banking and high-yield investment management services provider.",
-		"nav": [
-			{
-				"name": "ABOUT",
-				"url": "#sAbout"
-			},
-			{
-				"name": "PRODUCTS",
-				"url": "#sProducts"
-			},
-			{
-				"name": "TEAM",
-				"url": "#sTeam"
-			},
-			{
-				"name": "PARTNERS",
-				"url": "#sPartners"
-			},
-			{
-				"name": "ADVANTAGES",
-				"url": "#sAdvantages"
-			},
-			{
-				"name": "CONTACTS",
-				"url": "#footer"
-			}
-		],
-		"scrollDOwn":"Scroll down",
-		"sForm": {
-			"h2": "Contact Us",
-			"p": "Fill out the form, and we will contact you soon to clarify details.",
-			"modalh3": "Get Consultation",
-			"modalp": "Fill out the form, and we&nbsp;will contact you for a&nbsp;consultation to&nbsp;discuss and clarify the details.",
-			"inputName": "Your Name",
-			"inputEmail": "Your Email",
-			"inputTel": "Your Phone",
-			"select":"Interested Product",
-			"textarea": "Comment (recommend specifying the company name, possible check, and other information that will help conduct a more effective conversation)",
-			"textareaModal": "Comment",
-			"btn": "Submit Application",
-			"policyTExt": "By clicking the 'Submit Application' button, you confirm that you have read the terms of  ",
-			"policyLink": "personal data processing",
-			"policyText2": ". Your data is confidential and not disclosed to third parties.",
-			"modalThankh3": "Thank you for reaching out! ",
-			"modalThankp": "We&nbsp;will contact you shortly for a&nbsp;consultation to&nbsp;discuss and clarify the details.",
-			"modalClose": "Close"
-		},
-		"sProducts": {
-			"h2": "Products",
-			"p": "We&nbsp;foster communication with a&nbsp;wide network of&nbsp;entrepreneurs, experts, banks, investment funds, and corporations.",
-			"items": [
-				[
-					9,
-					"Consultation Product «From Startup to IPO»",
-					"BSF Capital will prepare your company for public market operations and assist in&nbsp;placing a&nbsp;bond issue or&nbsp;going public with an&nbsp;IPO.",
-					"h",
-					"New Service",
-					"false"
-				],
-				[
-					1,
-					"Fund Management",
-					"Full-cycle or&nbsp;support at&nbsp;any stage of&nbsp;fundraising, structuring, investment period, asset sales, or&nbsp;PE&amp;VC fund closure."
-				],
+    "footer": {
+      "address": "Москва, ул. Арбат, д. 6/2, 119019",
+      "lookMap": "посмотреть на карте",
+      "qw": "по любым вопросам",
+      "time": "пн-пт с 9.00 до 19.00",
+      "policy": "Политика конфиденциальности",
+      "prava": "&nbsp;ООО &laquo;БСФ Капитал&raquo;. Все права защищены.",
+      "developer": "Разработка сайта – Artsman"
+    }
+  },
+  "enBase": {
+    "lang": "en",
+    "description": "BSF Partners is an investment banking and high-yield investment management services provider.",
+    "nav": [
+      {
+        "name": "ABOUT",
+        "url": "#sAbout"
+      },
+      {
+        "name": "PRODUCTS",
+        "url": "#sProducts"
+      },
+      {
+        "name": "TEAM",
+        "url": "#sTeam"
+      },
+      {
+        "name": "PARTNERS",
+        "url": "#sPartners"
+      },
+      {
+        "name": "ADVANTAGES",
+        "url": "#sAdvantages"
+      },
+      {
+        "name": "CONTACTS",
+        "url": "#footer"
+      }
+    ],
+    "scrollDOwn": "Scroll down",
+    "sForm": {
+      "h2": "Contact Us",
+      "p": "Fill out the form, and we will contact you soon to clarify details.",
+      "modalh3": "Get Consultation",
+      "modalp": "Fill out the form, and we&nbsp;will contact you for a&nbsp;consultation to&nbsp;discuss and clarify the details.",
+      "inputName": "Your Name",
+      "inputEmail": "Your Email",
+      "inputTel": "Your Phone",
+      "select": "Interested Product",
+      "textarea": "Comment (recommend specifying the company name, possible check, and other information that will help conduct a more effective conversation)",
+      "textareaModal": "Comment",
+      "btn": "Submit Application",
+      "policyTExt": "By clicking the 'Submit Application' button, you confirm that you have read the terms of  ",
+      "policyLink": "personal data processing",
+      "policyText2": ". Your data is confidential and not disclosed to third parties.",
+      "modalThankh3": "Thank you for reaching out! ",
+      "modalThankp": "We&nbsp;will contact you shortly for a&nbsp;consultation to&nbsp;discuss and clarify the details.",
+      "modalClose": "Close"
+    },
+    "sProducts": {
+      "h2": "Products",
+      "p": "We&nbsp;foster communication with a&nbsp;wide network of&nbsp;entrepreneurs, experts, banks, investment funds, and corporations.",
+      "items": [
+        [
+          9,
+          "Consultation Product «From Startup to IPO»",
+          "BSF Partners will prepare your company for public market operations and assist in&nbsp;placing a&nbsp;bond issue or&nbsp;going public with an&nbsp;IPO.",
+          "h",
+          "New Service",
+          "false"
+        ],
+        [
+          1,
+          "Fund Management",
+          "Full-cycle or&nbsp;support at&nbsp;any stage of&nbsp;fundraising, structuring, investment period, asset sales, or&nbsp;PE&amp;VC fund closure."
+        ],
 
-				[
-					2,
-					"Fundraising",
-					"Preparing materials for fundraising, structuring, deal terms development, investor search, negotiation coordination on&nbsp;the sell-side until deal closure."
-				],
-				[
-					3,
-					"Asset Search and Acquisition",
-					"Mandate development, project funnel organization and selection based on&nbsp;independent expertise, leading negotiation processes, structuring, and closing deals on&nbsp;the buy-side."
-				],
-				[
-					4,
-					"Asset Sale",
-					"Asset preparation, material and documentation development, buyer search, leading negotiations, and organizing the entire deal cycle."
-				],
-				[
-					5,
-					"Asset Management",
-					"Strategy development, operational team formation, business process alignment, ensuring business development in&nbsp;line with investment and financial goals."
-				],
-				[
-					6,
-					"Independent Director",
-					"Understanding needs, expertise mapping, selection, and provision of&nbsp;highly professional independent directors from the unique BSF Capital network to&nbsp;collegial management bodies."
-				],
-				[
-					7,
-					"Family Office",
-					"Office organization for structuring and managing personal capital, assets, and property, ensuring all related needs and services."
-				],
-				[
-					8,
-					"Joining BSF Deals",
-					"We&nbsp;would be&nbsp;pleased to&nbsp;clarify your investment interests, financial preferences, and risk appetite to&nbsp;invite you to&nbsp;our deals and syndicates."
-				]
-			],
-			"btn1": "Submit Application",
-			"btn2": "Learn More",
-			"link": "ipo-eng"
-		},
-		"sTeam": {
-			"h2": "Team",
-			"items": [
-				[
-					1,
-					"Alexey Basov",
-					"MANAGING PARTNER",
-					"22&nbsp;years of&nbsp;experience in&nbsp;private and corporate investments. Founder of&nbsp;several technology companies, Vice President of&nbsp;Rostelecom and Mail.ru Group. Managing partner of&nbsp;Finam IT&nbsp;Fund and Commit Capital ",
-					"owned companies, international corporations, and investment funds. Deputy Chair of&nbsp;the RSPP Investment Policy Committee, member of&nbsp;the Moscow Exchange Coordination Council, and member of&nbsp;the Supervisory Board of&nbsp;various development institutions and technology companies. Recipient of&nbsp;numerous professional awards. Certified specialist by&nbsp;the Federal Financial Markets Service&nbsp;5.0 (&laquo;Management of&nbsp;investment funds, unit investment funds, and non-state pension funds&raquo;).",
-					"true"
-				],
-				[
-					2,
-					"Renat Batyrov",
-					"VENTURE PARTNER",
-					"10&nbsp;years managing Europe&rsquo;s largest technopark. Turned Skolkovo into a&nbsp;hub for venture business. Formed several communities with an&nbsp;audience of&nbsp;over 30,000&nbsp;investors, founders, and specialists",
-					". Organizer of&nbsp;the largest Russian venture events &laquo;Open Innovations,&raquo; Startup Village, and Road Show Startup Tour, with tens of&nbsp;thousands of&nbsp;participants from 90&nbsp;countries. Founder and investor in&nbsp;several technology companies. Member of&nbsp;the board of&nbsp;directors of&nbsp;the International Association of&nbsp;Technoparks and other companies, honorary professor at&nbsp;MFUA."
-				],
-				[
-					5,
-					"Anna Morozova",
-					"VENTURE PARTNER",
-					"10&nbsp;years in&nbsp;investments and banking. Former Portfolio Management Director of&nbsp;over 200 startups at&nbsp;RVK and RFPI, investment manager at&nbsp;Absolut Bank. Created an&nbsp;assessment system",
-					". Ensured the quality and valuation of&nbsp;the venture investment portfolio of&nbsp;the fund of&nbsp;funds, validated by&nbsp;Big Four auditors. Facilitated over 30&nbsp;successful audits, treasury checks, and due diligence processes. Holds an&nbsp;MBA, certified tracker, and expert in&nbsp;acceleration programs."
-				],
-				[
-					3,
-					"Artem Utenov",
-					"VENTURE PARTNER",
-					"10 years in investments and banking. Former Portfolio Management Director of over 200 startups at RVK and RFPI, investment manager at Absolut Bank. Created an assessment system ",
-					"Ensured the quality and valuation of the venture investment portfolio of the fund of funds, validated by Big Four auditors. Facilitated over 30 successful audits, treasury checks, and due diligence processes. Holds an MBA, certified tracker, and expert in acceleration programs."
-				],
-				
-				[
-					4,
-					"Victor Niconenko",
-					"VENTURE PARTNER",
-					"10&nbsp;years of&nbsp;business consulting in&nbsp;investment packaging, financial modeling, and government financing of&nbsp;technology companies",
-					". Throughout the career, assisted in&nbsp;securing funding for over 100 companies from the Innovation Support Fund, Russian Fund for the Development of&nbsp;Information Technologies, Skolkovo Foundation, Moscow Innovation Cluster, and other development institutions."
-				]
+        [
+          2,
+          "Fundraising",
+          "Preparing materials for fundraising, structuring, deal terms development, investor search, negotiation coordination on&nbsp;the sell-side until deal closure."
+        ],
+        [
+          3,
+          "Asset Search and Acquisition",
+          "Mandate development, project funnel organization and selection based on&nbsp;independent expertise, leading negotiation processes, structuring, and closing deals on&nbsp;the buy-side."
+        ],
+        [
+          4,
+          "Asset Sale",
+          "Asset preparation, material and documentation development, buyer search, leading negotiations, and organizing the entire deal cycle."
+        ],
+        [
+          5,
+          "Asset Management",
+          "Strategy development, operational team formation, business process alignment, ensuring business development in&nbsp;line with investment and financial goals."
+        ],
+        [
+          6,
+          "Independent Director",
+          "Understanding needs, expertise mapping, selection, and provision of&nbsp;highly professional independent directors from the unique BSF Partners network to&nbsp;collegial management bodies."
+        ],
+        [
+          7,
+          "Family Office",
+          "Office organization for structuring and managing personal partners, assets, and property, ensuring all related needs and services."
+        ],
+        [
+          8,
+          "Joining BSF Deals",
+          "We&nbsp;would be&nbsp;pleased to&nbsp;clarify your investment interests, financial preferences, and risk appetite to&nbsp;invite you to&nbsp;our deals and syndicates."
+        ]
+      ],
+      "btn1": "Submit Application",
+      "btn2": "Learn More",
+      "link": "ipo-eng"
+    },
+    "sTeam": {
+      "h2": "Team",
+      "items": [
+        [
+          1,
+          "Alexey Basov",
+          "MANAGING PARTNER",
+          "22&nbsp;years of&nbsp;experience in&nbsp;private and corporate investments. Founder of&nbsp;several technology companies, Vice President of&nbsp;Rostelecom and Mail.ru Group. Managing partner of&nbsp;Finam IT&nbsp;Fund and Commit Partners ",
+          "owned companies, international corporations, and investment funds. Deputy Chair of&nbsp;the RSPP Investment Policy Committee, member of&nbsp;the Moscow Exchange Coordination Council, and member of&nbsp;the Supervisory Board of&nbsp;various development institutions and technology companies. Recipient of&nbsp;numerous professional awards. Certified specialist by&nbsp;the Federal Financial Markets Service&nbsp;5.0 (&laquo;Management of&nbsp;investment funds, unit investment funds, and non-state pension funds&raquo;).",
+          "true"
+        ],
+        [
+          2,
+          "Renat Batyrov",
+          "VENTURE PARTNER",
+          "10&nbsp;years managing Europe&rsquo;s largest technopark. Turned Skolkovo into a&nbsp;hub for venture business. Formed several communities with an&nbsp;audience of&nbsp;over 30,000&nbsp;investors, founders, and specialists",
+          ". Organizer of&nbsp;the largest Russian venture events &laquo;Open Innovations,&raquo; Startup Village, and Road Show Startup Tour, with tens of&nbsp;thousands of&nbsp;participants from 90&nbsp;countries. Founder and investor in&nbsp;several technology companies. Member of&nbsp;the board of&nbsp;directors of&nbsp;the International Association of&nbsp;Technoparks and other companies, honorary professor at&nbsp;MFUA."
+        ],
+        [
+          5,
+          "Anna Morozova",
+          "VENTURE PARTNER",
+          "10&nbsp;years in&nbsp;investments and banking. Former Portfolio Management Director of&nbsp;over 200 startups at&nbsp;RVK and RFPI, investment manager at&nbsp;Absolut Bank. Created an&nbsp;assessment system",
+          ". Ensured the quality and valuation of&nbsp;the venture investment portfolio of&nbsp;the fund of&nbsp;funds, validated by&nbsp;Big Four auditors. Facilitated over 30&nbsp;successful audits, treasury checks, and due diligence processes. Holds an&nbsp;MBA, certified tracker, and expert in&nbsp;acceleration programs."
+        ],
+        [
+          3,
+          "Artem Utenov",
+          "VENTURE PARTNER",
+          "10 years in investments and banking. Former Portfolio Management Director of over 200 startups at RVK and RFPI, investment manager at Absolut Bank. Created an assessment system ",
+          "Ensured the quality and valuation of the venture investment portfolio of the fund of funds, validated by Big Four auditors. Facilitated over 30 successful audits, treasury checks, and due diligence processes. Holds an MBA, certified tracker, and expert in acceleration programs."
+        ],
 
-			],
-			"btnShow":"Learn More",
-			"btnHide":"Hide"
-		},
-		"sPartners":{
-			"h2":"Partners and <br> Advisors",
-			"items":[
-				[1, "ACCELERATION PARTNER","One of the largest Russian venture funds and operator of a leading acceleration program for startups."],
-				[2, "GR PARTNER","Business interests protection agency and interaction with government authorities."]
-			]
-		},
-		"sAdvantages":{
-			"h2":"Why Choose Us",
-			"items":[
-				["flag", "#219653", "Traction", "We&nbsp;create funds, close deals, and help companies achieve sustained excellence over many years."],
-				["partnership", "#C3363A", "Reputation", "Transparent and professional relationships with all market participants, regardless of&nbsp;circumstances, form our main capital&nbsp;&mdash; impeccable reputation and high trust."],
-				["bank", "#EEDA2A", "Common Interests", "The team invests its own funds in&nbsp;deals and products, confirming their quality and effectiveness."],
-				["trophy", "#734BE3", "Recognition", "Our team is&nbsp;a&nbsp;laureate of&nbsp;many prestigious awards, actively involved in&nbsp;the work of&nbsp;key development institutions, committees, and industry organizations, actively developing the investment market and venture ecosystem."],
-				["diagram", "#1096C9", "Involvement", "We&nbsp;continuously communicate with regulators, development institutions, entrepreneurs, experts, associations, funds, and corporations, gaining access to&nbsp;the best deals and not missing opportunities."]
-			]
-		},
+        [
+          4,
+          "Victor Niconenko",
+          "VENTURE PARTNER",
+          "10&nbsp;years of&nbsp;business consulting in&nbsp;investment packaging, financial modeling, and government financing of&nbsp;technology companies",
+          ". Throughout the career, assisted in&nbsp;securing funding for over 100 companies from the Innovation Support Fund, Russian Fund for the Development of&nbsp;Information Technologies, Skolkovo Foundation, Moscow Innovation Cluster, and other development institutions."
+        ]
+      ],
+      "btnShow": "Learn More",
+      "btnHide": "Hide"
+    },
+    "sPartners": {
+      "h2": "Partners and <br> Advisors",
+      "items": [
+        [
+          1,
+          "ACCELERATION PARTNER",
+          "One of the largest Russian venture funds and operator of a leading acceleration program for startups."
+        ],
+        [
+          2,
+          "GR PARTNER",
+          "Business interests protection agency and interaction with government authorities."
+        ]
+      ]
+    },
+    "sAdvantages": {
+      "h2": "Why Choose Us",
+      "items": [
+        [
+          "flag",
+          "#219653",
+          "Traction",
+          "We&nbsp;create funds, close deals, and help companies achieve sustained excellence over many years."
+        ],
+        [
+          "partnership",
+          "#C3363A",
+          "Reputation",
+          "Transparent and professional relationships with all market participants, regardless of&nbsp;circumstances, form our main partners&nbsp;&mdash; impeccable reputation and high trust."
+        ],
+        [
+          "bank",
+          "#EEDA2A",
+          "Common Interests",
+          "The team invests its own funds in&nbsp;deals and products, confirming their quality and effectiveness."
+        ],
+        [
+          "trophy",
+          "#734BE3",
+          "Recognition",
+          "Our team is&nbsp;a&nbsp;laureate of&nbsp;many prestigious awards, actively involved in&nbsp;the work of&nbsp;key development institutions, committees, and industry organizations, actively developing the investment market and venture ecosystem."
+        ],
+        [
+          "diagram",
+          "#1096C9",
+          "Involvement",
+          "We&nbsp;continuously communicate with regulators, development institutions, entrepreneurs, experts, associations, funds, and corporations, gaining access to&nbsp;the best deals and not missing opportunities."
+        ]
+      ]
+    },
 
-		"footer": {
-			"address": "Moscow, Arbat St., 6/2, 119019",
-			"lookMap": "VIEW ON MAP",
-			"qw": "FOR ANY INQUIRIES",
-			"time": "MON-FRI 9:00 AM - 7:00 PM",
-			"policy": "Privacy Policy",
-			"prava": "&nbsp; LLC  &laquo;BSF Capital&raquo;. All rights reserved.",
-			"developer": "Website Development – Artsman"
-		}
-	},
-	"ruMain": {
-		"page": "ruMain",
-		"title":"BSF Capital | Высокотехнологичный инвестиционный банк для своих",
-		"headerBlock": {
-			"title": "Высокотехнологичный инвестиционный банк&nbsp; для своих",
-			"text": [
-				"BSF Capital&nbsp;— это инвестиционно-банковские услуги и&nbsp;управление инвестициями с&nbsp;повышенной доходностью.",
-				"Мы&nbsp;оперируем собственным капиталом, делясь&nbsp; инвестиционными возможностями и&nbsp;экспертизой с&nbsp;нашими друзьями и партнерами."
-			],
-			"btn": "связаться с нами"
-		},
-		"sAbout": {
-			"h2": "О компании",
-			"h4": "Мы&nbsp;накопили многолетний опыт инвестиционно-банковских услуг, прямых и&nbsp;венчурных инвестиций, управления фондами и&nbsp;крупными активами.",
-			"p": "Мы поддерживаем коммуникацию с широкой сетью предпринимателей, экспертов, инвестиционных фондов, корпораций и банков. Наши связи и опыт обеспечивают доступ к уникальным сделкам и финансовым решениям на лучших условиях.",
-			"items": [
-				[
-					"flag",
-					"22&nbsp;года команда BSF Capital управляет активами и&nbsp;инвестирует",
-					"#219653"
-				],
-				[
-					"bag",
-					"Более 200 закрытых сделок партнерами нашей компании",
-					"#C3363A"
-				],
-				[
-					"graphic",
-					"Более 1&nbsp;миллиарда долларов дохода принесли своим партнерам",
-					"#1096C9"
-				]
-			]
-		}
-	},
-	"enMain": {
-		"page": "enMain",
-		"title":"BSF Capital | High-tech investment bank",
-		"headerBlock": {
-			"title": "High-tech investment bank",
-			"text": [
-				"BSF Capital is investment banking services and investment management with increased profitability.",
-				"We operate with our own capital, sharing investment opportunities and expertise with our friends and partners."
-			],
-			"btn": "CONTACT US"
-		},
-		"sAbout": {
-			"h2": "About the Company",
-			"h4": "With years of&nbsp;experience in&nbsp;investment banking services, direct and venture investments, fund management, and large asset handling, we&nbsp;maintain connections with a&nbsp;broad network of&nbsp;entrepreneurs, experts, investment funds, corporations, and banks. ",
-			"p": "Our relationships and experience provide access to&nbsp;unique deals and financial solutions on&nbsp;favorable terms.",
-			"items": [
-				[
-					"flag",
-					"BSF Capital&rsquo;s team has managed and invested for 22&nbsp;years",
-					"#219653"
-				],
-				[
-					"bag",
-					"Over 200 closed deals with our company&rsquo;s partners",
-					"#C3363A"
-				],
-				[
-					"graphic",
-					"Generated over 1&nbsp;billion dollars in&nbsp;revenue for our partners",
-					"#1096C9"
-				]
-			]
-		}
-	},
-	"ruIpo": {
-		"page": "ruIpo",
-		"title":"IP BSF Capital | Высокотехнологичный инвестиционный банк для своих",
-		"headerBlock": {
-			"title": "Консультационный продукт &laquo;От&nbsp;стартапа к&nbsp;IPO&raquo;",
-			"text": [
-				"BSF Capital подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO."
-			],
-			"btn": "Оставить заявку",
-			"bread": [
-				"Главная",
-				"От стартапа к IPO"
-			]
-		},
-		"sAbout": {
-			"h2": "IPO ближе,<br>чем кажется",
-			"h4": "Мы&nbsp;накопили многолетний опыт инвестиционно-банковских услуг, прямых и&nbsp;венчурных инвестиций, управления фондами и&nbsp;крупными активами.",
-			"p": "Мы&nbsp;поддерживаем коммуникацию с&nbsp;широкой сетью предпринимателей, экспертов, инвестиционных фондов, корпораций и&nbsp;банков. Наши связи и&nbsp;опыт обеспечивают доступ к&nbsp;уникальным сделкам и&nbsp;финансовым решениям на&nbsp;лучших условиях.",
-			"h2Second": "Результат",
-			"items": [
-				[
-					"flag",
-					"Возможность привлечения долга с&nbsp;публичных рынков",
-					"#219653"
-				],
-				[
-					"money",
-					"Готовность к&nbsp;первичному листингу на&nbsp;российских биржах",
-					"#C3363A"
-				],
-				[
-					"rocket",
-					"Повышение эффективности бизнеса и&nbsp;качество управления",
-					"#1096C9"
-				],
-				[
-					"invest",
-					"Рост капитализации и&nbsp;привлекательности для инвесторов",
-					"#FFA801"
-				]
-			]
-		},
-		"sHowWeWork": {
-			"h2": "Как мы работаем",
-			"h4": "Проект охватывает ключевые аспекты бизнеса организации, приводя их&nbsp;к&nbsp;стандартам работы публичных компаний.",
-			"p": "В&nbsp;зависимости от&nbsp;состояния компании, изменения могут затронуть юридическую и&nbsp;организационную структуру, финансовую отчетность, корпоративное управление, процедуру раскрытия информации и&nbsp;работы с&nbsp;инвесторами.",
-			"items": [
-				[
-					"sHowWeWork-img-1.jpg",
-					"Планирование",
-					"sHowWeWork-icon-1",
-					[
-						"Диагностика готовности компании к IPO",
-						"Стратегия и дорожная карта трансформации"
-					]
-				],
-				[
-					"sHowWeWork-img-2.jpg",
-					"Оценка",
-					"sHowWeWork-icon-2",
-					[
-						"Сопровождение независимого аудита",
-						"Получение инвестиционного рейтинга"
-					]
-				],
-				[
-					"sHowWeWork-img-3.jpg",
-					"Реструктуризация и прозрачность",
-					"sHowWeWork-icon-3",
-					[
-						"Реорганизация в акционерное общество",
-						"Запуск службы IR и раскрытия информации"
-					]
-				],
-				[
-					"sHowWeWork-img-4.jpg",
-					"Реформа управления",
-					"sHowWeWork-icon-4",
-					[
-						"Приведение Совета директоров по станд",
-						"Формирование ключевых комитетов и Правления"
-					]
-				],
-				[
-					"sHowWeWork-img-5.jpg",
-					"Подготовка размещения",
-					"sHowWeWork-icon-5",
-					[
-						"Подбор пулла участников и площадки",
-						"Разработка эмиссионной документации, типа и размера размещения"
-					]
-				],
-				[
-					"sHowWeWork-img-6.jpg",
-					"Роадшоу",
-					"sHowWeWork-icon-6",
-					[
-						"Разработка стратегии роад-шоу и маркетинговых материалов",
-						"Премаркетинг, совпровождение роадшоу и старта обращения бумаг"
-					]
-				]
-			]
-		},
-		"sInfo": {
-			"items": [
-				[
-					"img/sInfo-img-1.jpg",
-					"Сроки",
-					"Цикл проекта ориентировочно составляет 12&nbsp;месяцев. Каждый этап существенным образом увеличивает эффективность и&nbsp;капитализацию бизнеса."
-				],
-				[
-					"img/sInfo-img-2.jpg",
-					"Кому подходит",
-					"Решение походит зрелым компаниям с&nbsp;выручкой от&nbsp;500&nbsp;млн. руб.&nbsp;в&nbsp;год, темпами роста более&nbsp;25%, и&nbsp;лидирующими позициями в&nbsp;своем сегменте на&nbsp;российском рынке."
-				]
-			]
-		},
-		"sParticipant": {
-			"h2": "Участники проекта",
-			"h4": "Проект лидирует партнер BSF Capital, имеющий не&nbsp;менее чем 10-летний опыт работы в&nbsp;СД компаний, опыт работы в&nbsp;руководстве публичных компаний и&nbsp;организации первичных размещений.",
-			"p": "Для подготовки компании и&nbsp;организации размещений мы&nbsp;работаем с&nbsp;лидерами отрасли: ведущими аудиторскими компаниями, рейтинговым агентствами, брокерами и&nbsp;банками.",
-			"items": [
-				[
-					"sParticipant-img-1.png",
-					"Аудиторская компания"
-				],
-				[
-					"sParticipant-img-2.png",
-					"Аудиторская компания"
-				],
-				[
-					"sParticipant-img-3.png",
-					"Аудиторская компания"
-				],
-				[
-					"sParticipant-img-4.png",
-					"Организатор"
-				],
-				[
-					"sParticipant-img-5.svg",
-					"Организатор"
-				],
-				[
-					"sParticipant-img-6.svg",
-					"Организатор"
-				],
-				[
-					"sParticipant-img-7.png",
-					"Организатор"
-				],
-				[
-					"sParticipant-img-8.png",
-					"Организатор"
-				],
-				[
-					"sParticipant-img-9.png",
-					"биржа"
-				],
-				[
-					"sParticipant-img-10.png",
-					"биржа"
-				]
-			]
-		}
-	},
-	"enIpo": {
-		"page": "enIpo",
-		"lang": "en",
-		"title":"Consultation Product \"From Startup to IPO\"",
-		"nav": [
-			{
-				"name": "О нас",
-				"url": "#sAbout"
-			},
-			{
-				"name": "Продукты",
-				"url": "#sProducts"
-			},
-			{
-				"name": "Команда",
-				"url": "#sTeam"
-			},
-			{
-				"name": "Партнеры",
-				"url": "#sPartners"
-			},
-			{
-				"name": "почему мы",
-				"url": "#sAdvantages"
-			},
-			{
-				"name": "Контакты",
-				"url": "#footer"
-			}
-		],
-		"headerBlock": {
-			"title": "Consulting Product  \"From Startup to IPO\"",
-			"text": [
-				"BSF Capital will prepare your company for operation in&nbsp;public markets and assist in&nbsp;placing bond issues or&nbsp;going public with an&nbsp;IPO."
-			],
-			"btn": "CONTACT US",
-			"bread": [
-				"Main",
-				"From Startup to IPO"
-			]
-		},
-		"sAbout": {
-			"h2": "IPO is Closer <br> Than It Seems",
-			"h4": "We&nbsp;have accumulated years of&nbsp;experience in&nbsp;investment banking services, direct and venture investments, fund management, and large asset management. ",
-			"p": "We&nbsp;maintain communication with a&nbsp;broad network of&nbsp;entrepreneurs, experts, investment funds, corporations, and banks. Our connections and experience provide access to&nbsp;unique deals and financial solutions on&nbsp;the best terms.",
-			"h2Second": "Results",
-			"items": [
-				[
-					"flag",
-					"Possibility to&nbsp;attract debt from public markets",
-					"#219653"
-				],
-				[
-					"money",
-					"Readiness for an&nbsp;initial listing on&nbsp;Russian stock exchanges",
-					"#C3363A"
-				],
-				[
-					"rocket",
-					"Increased business efficiency and management quality",
-					"#1096C9"
-				],
-				[
-					"invest",
-					"Growth in&nbsp;capitalization and attractiveness for investors",
-					"#FFA801"
-				]
-			]
-		},
-		"sHowWeWork": {
-			"h2": "How We Work",
-			"h4": "The project covers key aspects of&nbsp;the organization&rsquo;s business, aligning them with the standards of&nbsp;public companies.",
-			"p": "Depending on&nbsp;the company&rsquo;s condition, changes may affect legal and organizational structure, financial reporting, corporate governance, information disclosure procedures, and investor relations.",
-			"items": [
-				[
-					"sHowWeWork-img-1.jpg",
-					"Planning",
-					"sHowWeWork-icon-1",
-					[
-						"Diagnosis of&nbsp;the company&rsquo;s readiness for IPO",
-						"Strategy and transformation roadmap"
-					]
-				],
-				[
-					"sHowWeWork-img-2.jpg",
-					"Assessment",
-					"sHowWeWork-icon-2",
-					[
-						"Independent audit support",
-						"Attainment of&nbsp;an&nbsp;investment rating"
-					]
-				],
-				[
-					"sHowWeWork-img-3.jpg",
-					"Restructuring and Transparency",
-					"sHowWeWork-icon-3",
-					[
-						"Reorganization into a&nbsp;joint-stock company",
-						"Launch of&nbsp;IR and information disclosure services"
-					]
-				],
-				[
-					"sHowWeWork-img-4.jpg",
-					"Management Reform",
-					"sHowWeWork-icon-4",
-					[
-						"Alignment of&nbsp;the Board of&nbsp;Directors with standards",
-						"Formation of&nbsp;key committees and the Board"
-					]
-				],
-				[
-					"sHowWeWork-img-5.jpg",
-					"Placement Preparation",
-					"sHowWeWork-icon-5",
-					[
-						"Selection of&nbsp;a&nbsp;participant pool and platform",
-						"Development of&nbsp;issuance documentation, type, and size of&nbsp;placement"
-					]
-				],
-				[
-					"sHowWeWork-img-6.jpg",
-					"Roadshow",
-					"sHowWeWork-icon-6",
-					[
-						"Development of&nbsp;roadshow strategy and marketing materials",
-						"Pre-marketing, roadshow support, and the start of&nbsp;securities trading"
-					]
-				]
-			]
-		},
-		"sInfo": {
-			"items": [
-				[
-					"img/sInfo-img-1.jpg",
-					"Timeline",
-					"The project cycle is&nbsp;estimated at&nbsp;approximately 12&nbsp;months. Each stage significantly enhances business efficiency and capitalization."
-				],
-				[
-					"img/sInfo-img-2.jpg",
-					"Who It's For",
-					"The solution is suitable for mature companies with annual revenue exceeding 500 million rubles, a growth rate of over 25%, and leading positions in their segment in the Russian market."
-				]
-			]
-		},
-		"sParticipant": {
-			"h2": "Project Participants",
-			"h4": "The project is led by a partner at BSF Capital with at least 10 years of experience in investment banking, management of public companies, and organizing initial placements.",
-			"p": "To prepare the company and organize placements, we collaborate with industry leaders:",
-			"items": [
-				[
-					"sParticipant-img-1.png",
-					"Auditing firms"
-				],
-				[
-					"sParticipant-img-2.png",
-					"Auditing firms"
-				],
-				[
-					"sParticipant-img-3.png",
-					"Auditing firms"
-				],
-				[
-					"sParticipant-img-4.png",
-					"Organizers"
-				],
-				[
-					"sParticipant-img-5.svg",
-					"Organizers"
-				],
-				[
-					"sParticipant-img-6.svg",
-					"Organizers"
-				],
-				[
-					"sParticipant-img-7.png",
-					"Organizers"
-				],
-				[
-					"sParticipant-img-8.png",
-					"Organizers"
-				],
-				[
-					"sParticipant-img-9.png",
-					"Stock exchanges"
-				],
-				[
-					"sParticipant-img-10.png",
-					"Stock exchanges"
-				]
-			]
-		}
-	},
-	"social": [
-		{
-			"name": "fb",
-			"color": "#3E6AD6",
-			"link": "https://www.facebook.com/alexey.basov "
-		},
-		{
-			"name": "telegram",
-			"color": "#039BE5",
-			"link": "https://t.me/basovalexey"
-		}
-	]
+    "footer": {
+      "address": "Moscow, Arbat St., 6/2, 119019",
+      "lookMap": "VIEW ON MAP",
+      "qw": "FOR ANY INQUIRIES",
+      "time": "MON-FRI 9:00 AM - 7:00 PM",
+      "policy": "Privacy Policy",
+      "prava": "&nbsp; LLC  &laquo;BSF Partners&raquo;. All rights reserved.",
+      "developer": "Website Development – Artsman"
+    }
+  },
+  "ruMain": {
+    "page": "ruMain",
+    "title": "BSF Partners | Высокотехнологичный инвестиционный банк для своих",
+    "headerBlock": {
+      "title": "Высокотехнологичный инвестиционный банк&nbsp; для своих",
+      "text": [
+        "BSF partners&nbsp;— это инвестиционно-банковские услуги и&nbsp;управление инвестициями с&nbsp;повышенной доходностью.",
+        "Мы&nbsp;оперируем собственным капиталом, делясь&nbsp; инвестиционными возможностями и&nbsp;экспертизой с&nbsp;нашими друзьями и партнерами."
+      ],
+      "btn": "связаться с нами"
+    },
+    "sAbout": {
+      "h2": "О компании",
+      "h4": "Мы&nbsp;накопили многолетний опыт инвестиционно-банковских услуг, прямых и&nbsp;венчурных инвестиций, управления фондами и&nbsp;крупными активами.",
+      "p": "Мы поддерживаем коммуникацию с широкой сетью предпринимателей, экспертов, инвестиционных фондов, корпораций и банков. Наши связи и опыт обеспечивают доступ к уникальным сделкам и финансовым решениям на лучших условиях.",
+      "items": [
+        [
+          "flag",
+          "22&nbsp;года команда BSF Partners управляет активами и&nbsp;инвестирует",
+          "#219653"
+        ],
+        ["bag", "Более 200 закрытых сделок партнерами нашей компании", "#C3363A"],
+        ["graphic", "Более 1&nbsp;миллиарда долларов дохода принесли своим партнерам", "#1096C9"]
+      ]
+    }
+  },
+  "enMain": {
+    "page": "enMain",
+    "title": "BSF Partners | High-tech investment bank",
+    "headerBlock": {
+      "title": "High-tech investment bank",
+      "text": [
+        "BSF Partners is investment banking services and investment management with increased profitability.",
+        "We operate with our own partners, sharing investment opportunities and expertise with our friends and partners."
+      ],
+      "btn": "CONTACT US"
+    },
+    "sAbout": {
+      "h2": "About the Company",
+      "h4": "With years of&nbsp;experience in&nbsp;investment banking services, direct and venture investments, fund management, and large asset handling, we&nbsp;maintain connections with a&nbsp;broad network of&nbsp;entrepreneurs, experts, investment funds, corporations, and banks. ",
+      "p": "Our relationships and experience provide access to&nbsp;unique deals and financial solutions on&nbsp;favorable terms.",
+      "items": [
+        ["flag", "BSF Partners&rsquo;s team has managed and invested for 22&nbsp;years", "#219653"],
+        ["bag", "Over 200 closed deals with our company&rsquo;s partners", "#C3363A"],
+        [
+          "graphic",
+          "Generated over 1&nbsp;billion dollars in&nbsp;revenue for our partners",
+          "#1096C9"
+        ]
+      ]
+    }
+  },
+  "ruIpo": {
+    "page": "ruIpo",
+    "title": "IP BSF Partners | Высокотехнологичный инвестиционный банк для своих",
+    "headerBlock": {
+      "title": "Консультационный продукт &laquo;От&nbsp;стартапа к&nbsp;IPO&raquo;",
+      "text": [
+        "BSF Partners подготовит вашу компанию к&nbsp;работе на&nbsp;публичных рынках, а&nbsp;также поможет разместить облигационный выпуск или выйти на&nbsp;IPO."
+      ],
+      "btn": "Оставить заявку",
+      "bread": ["Главная", "От стартапа к IPO"]
+    },
+    "sAbout": {
+      "h2": "IPO ближе,<br>чем кажется",
+      "h4": "Мы&nbsp;накопили многолетний опыт инвестиционно-банковских услуг, прямых и&nbsp;венчурных инвестиций, управления фондами и&nbsp;крупными активами.",
+      "p": "Мы&nbsp;поддерживаем коммуникацию с&nbsp;широкой сетью предпринимателей, экспертов, инвестиционных фондов, корпораций и&nbsp;банков. Наши связи и&nbsp;опыт обеспечивают доступ к&nbsp;уникальным сделкам и&nbsp;финансовым решениям на&nbsp;лучших условиях.",
+      "h2Second": "Результат",
+      "items": [
+        ["flag", "Возможность привлечения долга с&nbsp;публичных рынков", "#219653"],
+        ["money", "Готовность к&nbsp;первичному листингу на&nbsp;российских биржах", "#C3363A"],
+        ["rocket", "Повышение эффективности бизнеса и&nbsp;качество управления", "#1096C9"],
+        ["invest", "Рост капитализации и&nbsp;привлекательности для инвесторов", "#FFA801"]
+      ]
+    },
+    "sHowWeWork": {
+      "h2": "Как мы работаем",
+      "h4": "Проект охватывает ключевые аспекты бизнеса организации, приводя их&nbsp;к&nbsp;стандартам работы публичных компаний.",
+      "p": "В&nbsp;зависимости от&nbsp;состояния компании, изменения могут затронуть юридическую и&nbsp;организационную структуру, финансовую отчетность, корпоративное управление, процедуру раскрытия информации и&nbsp;работы с&nbsp;инвесторами.",
+      "items": [
+        [
+          "sHowWeWork-img-1.jpg",
+          "Планирование",
+          "sHowWeWork-icon-1",
+          ["Диагностика готовности компании к IPO", "Стратегия и дорожная карта трансформации"]
+        ],
+        [
+          "sHowWeWork-img-2.jpg",
+          "Оценка",
+          "sHowWeWork-icon-2",
+          ["Сопровождение независимого аудита", "Получение инвестиционного рейтинга"]
+        ],
+        [
+          "sHowWeWork-img-3.jpg",
+          "Реструктуризация и прозрачность",
+          "sHowWeWork-icon-3",
+          ["Реорганизация в акционерное общество", "Запуск службы IR и раскрытия информации"]
+        ],
+        [
+          "sHowWeWork-img-4.jpg",
+          "Реформа управления",
+          "sHowWeWork-icon-4",
+          ["Приведение Совета директоров по станд", "Формирование ключевых комитетов и Правления"]
+        ],
+        [
+          "sHowWeWork-img-5.jpg",
+          "Подготовка размещения",
+          "sHowWeWork-icon-5",
+          [
+            "Подбор пулла участников и площадки",
+            "Разработка эмиссионной документации, типа и размера размещения"
+          ]
+        ],
+        [
+          "sHowWeWork-img-6.jpg",
+          "Роадшоу",
+          "sHowWeWork-icon-6",
+          [
+            "Разработка стратегии роад-шоу и маркетинговых материалов",
+            "Премаркетинг, совпровождение роадшоу и старта обращения бумаг"
+          ]
+        ]
+      ]
+    },
+    "sInfo": {
+      "items": [
+        [
+          "img/sInfo-img-1.jpg",
+          "Сроки",
+          "Цикл проекта ориентировочно составляет 12&nbsp;месяцев. Каждый этап существенным образом увеличивает эффективность и&nbsp;капитализацию бизнеса."
+        ],
+        [
+          "img/sInfo-img-2.jpg",
+          "Кому подходит",
+          "Решение походит зрелым компаниям с&nbsp;выручкой от&nbsp;500&nbsp;млн. руб.&nbsp;в&nbsp;год, темпами роста более&nbsp;25%, и&nbsp;лидирующими позициями в&nbsp;своем сегменте на&nbsp;российском рынке."
+        ]
+      ]
+    },
+    "sParticipant": {
+      "h2": "Участники проекта",
+      "h4": "Проект лидирует партнер BSF Partners, имеющий не&nbsp;менее чем 10-летний опыт работы в&nbsp;СД компаний, опыт работы в&nbsp;руководстве публичных компаний и&nbsp;организации первичных размещений.",
+      "p": "Для подготовки компании и&nbsp;организации размещений мы&nbsp;работаем с&nbsp;лидерами отрасли: ведущими аудиторскими компаниями, рейтинговым агентствами, брокерами и&nbsp;банками.",
+      "items": [
+        ["sParticipant-img-1.png", "Аудиторская компания"],
+        ["sParticipant-img-2.png", "Аудиторская компания"],
+        ["sParticipant-img-3.png", "Аудиторская компания"],
+        ["sParticipant-img-4.png", "Организатор"],
+        ["sParticipant-img-5.svg", "Организатор"],
+        ["sParticipant-img-6.svg", "Организатор"],
+        ["sParticipant-img-7.png", "Организатор"],
+        ["sParticipant-img-8.png", "Организатор"],
+        ["sParticipant-img-9.png", "биржа"],
+        ["sParticipant-img-10.png", "биржа"]
+      ]
+    }
+  },
+  "enIpo": {
+    "page": "enIpo",
+    "lang": "en",
+    "title": "Consultation Product \"From Startup to IPO\"",
+    "nav": [
+      {
+        "name": "О нас",
+        "url": "#sAbout"
+      },
+      {
+        "name": "Продукты",
+        "url": "#sProducts"
+      },
+      {
+        "name": "Команда",
+        "url": "#sTeam"
+      },
+      {
+        "name": "Партнеры",
+        "url": "#sPartners"
+      },
+      {
+        "name": "почему мы",
+        "url": "#sAdvantages"
+      },
+      {
+        "name": "Контакты",
+        "url": "#footer"
+      }
+    ],
+    "headerBlock": {
+      "title": "Consulting Product  \"From Startup to IPO\"",
+      "text": [
+        "BSF Partners will prepare your company for operation in&nbsp;public markets and assist in&nbsp;placing bond issues or&nbsp;going public with an&nbsp;IPO."
+      ],
+      "btn": "CONTACT US",
+      "bread": ["Main", "From Startup to IPO"]
+    },
+    "sAbout": {
+      "h2": "IPO is Closer <br> Than It Seems",
+      "h4": "We&nbsp;have accumulated years of&nbsp;experience in&nbsp;investment banking services, direct and venture investments, fund management, and large asset management. ",
+      "p": "We&nbsp;maintain communication with a&nbsp;broad network of&nbsp;entrepreneurs, experts, investment funds, corporations, and banks. Our connections and experience provide access to&nbsp;unique deals and financial solutions on&nbsp;the best terms.",
+      "h2Second": "Results",
+      "items": [
+        ["flag", "Possibility to&nbsp;attract debt from public markets", "#219653"],
+        [
+          "money",
+          "Readiness for an&nbsp;initial listing on&nbsp;Russian stock exchanges",
+          "#C3363A"
+        ],
+        ["rocket", "Increased business efficiency and management quality", "#1096C9"],
+        ["invest", "Growth in&nbsp;partnersization and attractiveness for investors", "#FFA801"]
+      ]
+    },
+    "sHowWeWork": {
+      "h2": "How We Work",
+      "h4": "The project covers key aspects of&nbsp;the organization&rsquo;s business, aligning them with the standards of&nbsp;public companies.",
+      "p": "Depending on&nbsp;the company&rsquo;s condition, changes may affect legal and organizational structure, financial reporting, corporate governance, information disclosure procedures, and investor relations.",
+      "items": [
+        [
+          "sHowWeWork-img-1.jpg",
+          "Planning",
+          "sHowWeWork-icon-1",
+          [
+            "Diagnosis of&nbsp;the company&rsquo;s readiness for IPO",
+            "Strategy and transformation roadmap"
+          ]
+        ],
+        [
+          "sHowWeWork-img-2.jpg",
+          "Assessment",
+          "sHowWeWork-icon-2",
+          ["Independent audit support", "Attainment of&nbsp;an&nbsp;investment rating"]
+        ],
+        [
+          "sHowWeWork-img-3.jpg",
+          "Restructuring and Transparency",
+          "sHowWeWork-icon-3",
+          [
+            "Reorganization into a&nbsp;joint-stock company",
+            "Launch of&nbsp;IR and information disclosure services"
+          ]
+        ],
+        [
+          "sHowWeWork-img-4.jpg",
+          "Management Reform",
+          "sHowWeWork-icon-4",
+          [
+            "Alignment of&nbsp;the Board of&nbsp;Directors with standards",
+            "Formation of&nbsp;key committees and the Board"
+          ]
+        ],
+        [
+          "sHowWeWork-img-5.jpg",
+          "Placement Preparation",
+          "sHowWeWork-icon-5",
+          [
+            "Selection of&nbsp;a&nbsp;participant pool and platform",
+            "Development of&nbsp;issuance documentation, type, and size of&nbsp;placement"
+          ]
+        ],
+        [
+          "sHowWeWork-img-6.jpg",
+          "Roadshow",
+          "sHowWeWork-icon-6",
+          [
+            "Development of&nbsp;roadshow strategy and marketing materials",
+            "Pre-marketing, roadshow support, and the start of&nbsp;securities trading"
+          ]
+        ]
+      ]
+    },
+    "sInfo": {
+      "items": [
+        [
+          "img/sInfo-img-1.jpg",
+          "Timeline",
+          "The project cycle is&nbsp;estimated at&nbsp;approximately 12&nbsp;months. Each stage significantly enhances business efficiency and partnersization."
+        ],
+        [
+          "img/sInfo-img-2.jpg",
+          "Who It's For",
+          "The solution is suitable for mature companies with annual revenue exceeding 500 million rubles, a growth rate of over 25%, and leading positions in their segment in the Russian market."
+        ]
+      ]
+    },
+    "sParticipant": {
+      "h2": "Project Participants",
+      "h4": "The project is led by a partner at BSF Partners with at least 10 years of experience in investment banking, management of public companies, and organizing initial placements.",
+      "p": "To prepare the company and organize placements, we collaborate with industry leaders:",
+      "items": [
+        ["sParticipant-img-1.png", "Auditing firms"],
+        ["sParticipant-img-2.png", "Auditing firms"],
+        ["sParticipant-img-3.png", "Auditing firms"],
+        ["sParticipant-img-4.png", "Organizers"],
+        ["sParticipant-img-5.svg", "Organizers"],
+        ["sParticipant-img-6.svg", "Organizers"],
+        ["sParticipant-img-7.png", "Organizers"],
+        ["sParticipant-img-8.png", "Organizers"],
+        ["sParticipant-img-9.png", "Stock exchanges"],
+        ["sParticipant-img-10.png", "Stock exchanges"]
+      ]
+    }
+  },
+  "social": [
+    {
+      "name": "fb",
+      "color": "#3E6AD6",
+      "link": "https://www.facebook.com/alexey.basov "
+    },
+    {
+      "name": "telegram",
+      "color": "#039BE5",
+      "link": "https://t.me/basovalexey"
+    }
+  ]
 }
